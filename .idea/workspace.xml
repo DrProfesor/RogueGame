@@ -38,288 +38,212 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/embed.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/intermediate.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/manifest.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/manifest.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/objects1.rsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/src/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGL-Template.dir/vc140.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/embed.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/intermediate.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/manifest.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/manifest.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/objects1.rsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/src/bigg/bigg.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/src/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/vc140.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/RogueGame.dir/vc140.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/RogueGame.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RogueGame.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RogueGame.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RogueGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RogueGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RogueGame.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RogueGame.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/RogueGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/RogueGame.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/imgui.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/astc.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/astc.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_averages_and_directions.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_averages_and_directions.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_block_sizes2.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_block_sizes2.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_color_quantize.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_color_quantize.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_color_unquantize.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_color_unquantize.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_compress_symbolic.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_compress_symbolic.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_compute_variance.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_compute_variance.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_decompress_symbolic.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_decompress_symbolic.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_encoding_choice_error.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_encoding_choice_error.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_find_best_partitioning.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_find_best_partitioning.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_ideal_endpoints_and_weights.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_ideal_endpoints_and_weights.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_imageblock.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_imageblock.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_integer_sequence.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_integer_sequence.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_kmeans_partitioning.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_kmeans_partitioning.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_lib.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_lib.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_partition_tables.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_partition_tables.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_percentile_tables.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_percentile_tables.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_pick_best_endpoint_format.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_pick_best_endpoint_format.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_quantization.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_quantization.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_symbolic_physical.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_symbolic_physical.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_weight_align.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_weight_align.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_weight_quant_xfer_tables.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/astc_weight_quant_xfer_tables.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/mathlib.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/mathlib.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/softfloat.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/bimg/3rdparty/astc/softfloat.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/astc.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/bgfx.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/bgfx.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/debug_renderdoc.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/debug_renderdoc.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/dxgi.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/dxgi.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/glcontext_egl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/glcontext_egl.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/glcontext_wgl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/glcontext_wgl.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/nvapi.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/nvapi.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d11.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d11.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d12.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d12.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d9.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_d3d9.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_gl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_gl.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_gnm.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_gnm.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_noop.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_noop.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_vk.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/renderer_vk.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_dx9bc.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_dx9bc.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_dxbc.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_dxbc.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_spirv.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/shader_spirv.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/topology.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/topology.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/vertexdecl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/bgfx/src/vertexdecl.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bgfx.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_cubemap_filter.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_cubemap_filter.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_decode.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_decode.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_encode.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_encode.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_gnf.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/bimg/src/image_gnf.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bimg.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/allocator.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/allocator.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/bx.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/bx.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/commandline.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/commandline.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/crtnone.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/crtnone.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/debug.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/debug.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/dtoa.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/dtoa.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/easing.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/easing.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/file.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/file.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/filepath.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/filepath.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/hash.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/hash.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/math.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/math.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/mutex.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/mutex.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/os.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/os.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/process.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/process.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/semaphore.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/semaphore.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/settings.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/settings.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/sort.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/sort.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/string.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/string.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/thread.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/thread.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/timer.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/timer.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/url.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/bx/src/url.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/bx.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/dear-imgui.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/bimg/3rdparty/edtaa3/edtaa3func.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/bimg/3rdparty/edtaa3/edtaa3func.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/edtaa3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/edtaa3.dir/edtaa3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/bimg/3rdparty/etc1/etc1.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/bimg/3rdparty/etc1/etc1.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/etc1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/etc1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc1.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/bimg/3rdparty/etc2/ProcessRGB.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/bimg/3rdparty/etc2/ProcessRGB.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/bimg/3rdparty/etc2/Tables.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/bimg/3rdparty/etc2/Tables.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/etc2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/etc2.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/etc2.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/example-common.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/fcpp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/forsyth-too.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/geometryc.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glcpp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glsl-optimizer.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/glslang.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/ib-compress.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/convolve.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/convolve.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/decimate.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/decimate.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/math_utils.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/math_utils.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/ms_ssim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/ms_ssim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/mse.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/mse.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/psnr.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/psnr.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/ssim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/bimg/3rdparty/iqa/source/ssim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/iqa.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/iqa.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/iqa.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/mesa.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zoh.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zoh.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zoh_utils.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zoh_utils.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zohone.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zohone.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zohtwo.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc6h/zohtwo.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode0.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode0.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode1.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode1.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode2.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode2.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode3.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode3.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode4.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode4.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode5.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode5.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode6.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode6.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode7.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_mode7.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_utils.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/bc7/avpcl_utils.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/nvmath/fitting.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/nvmath/fitting.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/nvtt.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/bimg/3rdparty/nvtt/nvtt.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/nvtt.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/nvtt.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/nvtt.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/BitScale.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/BitScale.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/MortonTable.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/MortonTable.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcDecoder.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcDecoder.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcEncoder.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcEncoder.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcPacket.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/bimg/3rdparty/pvrtc/PvrTcPacket.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/pvrtc.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/pvrtc.dir/pvrtc.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/shaderc.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturec.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/texturev.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/alpha.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/alpha.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/clusterfit.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/clusterfit.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourblock.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourblock.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourfit.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourfit.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourset.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/colourset.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/maths.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/maths.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/rangefit.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/rangefit.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/singlecolourfit.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/singlecolourfit.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/squish.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/bimg/3rdparty/libsquish/squish.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/squish.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/CMakeFiles/squish.dir/squish.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/astc.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/astc.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bgfx.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bgfx.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/bounds.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/bounds.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/shader_spirv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/shader_spirv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/vertexdecl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/generated/vertexdecl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bgfxd.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bgfxd.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bimgd.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bimgd.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bxd.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/bxd.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/edtaa3.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/edtaa3.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/etc1.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/etc1.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/etc2.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/etc2.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/iqa.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/iqa.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/nvtt.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/nvtt.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/pvrtc.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/pvrtc.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/squish.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/bgfx.cmake/squish.lib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/GLFW.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/GLFW.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/cmake_clean_target.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/context.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/context.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/glfw.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/input.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/input.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw3.pc" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw3.pc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw_config.h" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw_config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_tls.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_tls.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/window.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/CMakeFiles/glfw.dir/window.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw3.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/glfw/src/glfw3.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/imgui.lib" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/imgui.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/imgui_demo/CMakeFiles/imgui_demo.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/imgui_demo/CMakeFiles/imgui_demo.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/cubes/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/imgui_demo/CMakeLists.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Application.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -371,53 +295,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app/Application.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="266" column="24" selection-start-line="266" selection-start-column="24" selection-end-line="266" selection-end-column="24" />
+            <state relative-caret-position="570">
+              <caret line="299" column="82" selection-start-line="299" selection-start-column="82" selection-end-line="299" selection-end-column="82" />
+              <folding>
+                <element signature="e#630#1016#0" />
+                <element signature="e#1018#1131#0" />
+                <element signature="e#1133#1355#0" />
+                <element signature="e#1371#1821#0" />
+                <element signature="e#1823#2315#0" />
+                <element signature="e#7487#7591#0" expanded="true" />
+                <element signature="e#7615#7662#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="127" column="78" selection-start-line="127" selection-start-column="72" selection-end-line="127" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="bigg_imgui.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/bigg_imgui.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+            <state relative-caret-position="145">
+              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="imgui_demo.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/imgui_demo/imgui_demo.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cubes.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/cubes/cubes.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="e#43#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Application.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            <state relative-caret-position="1173">
+              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -450,9 +395,7 @@
       <find>amal</find>
       <find>initial</find>
       <find>onRese</find>
-      <find>imguiInit</find>
-      <find>Render</find>
-      <find>imguiRender</find>
+      <find>view</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -465,9 +408,9 @@
         <option value="$PROJECT_DIR$/src/bigg/bigg.cpp" />
         <option value="$PROJECT_DIR$/src/bigg/Application.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/app/Application.hpp" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/app/Application.hpp" />
         <option value="$PROJECT_DIR$/src/app/Application.cpp" />
       </list>
     </option>
@@ -507,6 +450,12 @@
               <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="cubes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
@@ -559,147 +508,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="RogueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RogueGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="RogueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="astc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="astc" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bgfx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bgfx" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bimg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bimg" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bx" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dear-imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="dear-imgui" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="edtaa3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="edtaa3" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="etc1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc1" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="etc2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc2" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="example-common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="example-common" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="fcpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="forsyth-too" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="forsyth-too" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometryc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="geometryc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="geometryc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glcpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glfw" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glsl-optimizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glsl-optimizer" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glslang" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glslang" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ib-compress" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="ib-compress" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="imgui" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="iqa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="iqa" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mesa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="mesa" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nvtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="nvtt" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pvrtc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="pvrtc" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="shaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="shaderc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="squish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="squish" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="texturec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturec">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="texturev" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturev">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.RogueGame">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="RogueGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="RogueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
+    <configuration name="astc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="astc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="bgfx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bgfx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="bimg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bimg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="bx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="dear-imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="dear-imgui" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="edtaa3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="edtaa3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="etc1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="etc2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="example-common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="example-common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="fcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="fcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="forsyth-too" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="forsyth-too" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="geometryc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="geometryc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="glcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glfw" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="glsl-optimizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glsl-optimizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="glslang" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glslang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="ib-compress" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="ib-compress" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="imgui" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="iqa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="iqa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="mesa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="mesa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="nvtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="nvtt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="pvrtc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="pvrtc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="shaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="shaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="squish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="squish" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="texturec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
+    <configuration name="texturev" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="imgui_demo" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.RogueGame" />
@@ -740,7 +577,9 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289777" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20443925" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289777" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -777,24 +616,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/imgui_demo/imgui_demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="17">
+            <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/cubes/cubes.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1129" />
+        <state relative-caret-position="255">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/imgui_demo/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -808,36 +648,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Application.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        <state relative-caret-position="1173">
+          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.h">
+    <entry file="file://$PROJECT_DIR$/examples/cubes/cubes.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
+        <state relative-caret-position="289">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="87" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.cpp">
+    <entry file="file://$PROJECT_DIR$/examples/imgui_demo/imgui_demo.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="127" column="78" selection-start-line="127" selection-start-column="72" selection-end-line="127" selection-end-column="78" />
+        <state relative-caret-position="306">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/bigg_imgui.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+        <state relative-caret-position="145">
+          <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="70" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Application.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="266" column="24" selection-start-line="266" selection-start-column="24" selection-end-line="266" selection-end-column="24" />
+        <state relative-caret-position="570">
+          <caret line="299" column="82" selection-start-line="299" selection-start-column="82" selection-end-line="299" selection-end-column="82" />
+          <folding>
+            <element signature="e#630#1016#0" />
+            <element signature="e#1018#1131#0" />
+            <element signature="e#1133#1355#0" />
+            <element signature="e#1371#1821#0" />
+            <element signature="e#1823#2315#0" />
+            <element signature="e#7487#7591#0" expanded="true" />
+            <element signature="e#7615#7662#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

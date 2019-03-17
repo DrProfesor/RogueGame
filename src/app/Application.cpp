@@ -260,6 +260,9 @@ int Application::run( int argc, char** argv, bgfx::RendererType::Enum type, uint
 
 		glfwPollEvents();
 		imguiEvents( dt );
+
+        bgfx::touch(0);
+
 		ImGui::NewFrame();
 
 		update( dt );
@@ -297,6 +300,9 @@ void Application::reset( uint32_t flags )
 	mReset = flags;
 	bgfx::reset( mWidth, mHeight, mReset );
 	imguiReset( uint16_t( getWidth() ), uint16_t( getHeight() ) );
+
+    bgfx::setViewClear( 0, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x303030ff, 1.0f, 0 );
+    bgfx::setViewRect( 0, 0, 0, uint16_t( getWidth() ), uint16_t( getHeight() ) );
 }
 
 uint32_t Application::getWidth()

@@ -30,13 +30,3 @@ endif (APPLE)
 
 target_link_libraries( ${APP_TARGET} bgfx imgui glfw glm )
 target_include_directories( ${APP_TARGET} PUBLIC include )
-
-option( BIGG_EXAMPLES "Build examples." OFF )
-if( BIGG_EXAMPLES )
-	add_subdirectory( examples )
-endif()
-
-option( BIGG_ASSET_GEN "Generate binary assets." OFF )
-if( BIGG_ASSET_GEN )
-	add_subdirectory( assets/gen )
-endif()
