@@ -28,7 +28,7 @@
 
 using namespace app;
 
-const bgfx::Memory* loadMemory( const char* filename )
+const bgfx::Memory* app::loadMemory( const char* filename )
 {
 	std::ifstream file( filename, std::ios::binary | std::ios::ate );
 	std::streamsize size = file.tellg();
@@ -42,12 +42,12 @@ const bgfx::Memory* loadMemory( const char* filename )
 	return nullptr;
 }
 
-bgfx::ShaderHandle loadShader( const char* shader )
+bgfx::ShaderHandle app::loadShader( const char* shader )
 {
 	return bgfx::createShader( app::loadMemory( shader ) );
 }
 
-bgfx::ProgramHandle loadProgram( const char* vsName, const char* fsName )
+bgfx::ProgramHandle app::loadProgram( const char* vsName, const char* fsName )
 {
 	bgfx::ShaderHandle vs = app::loadShader( vsName );
 	bgfx::ShaderHandle fs = app::loadShader( fsName );
@@ -56,7 +56,7 @@ bgfx::ProgramHandle loadProgram( const char* vsName, const char* fsName )
 
 // glm utils
 
-glm::tmat4x4<float, glm::defaultp> perspective( float fovy, float aspect, float zNear, float zFar )
+glm::tmat4x4<float, glm::defaultp> app::perspective( float fovy, float aspect, float zNear, float zFar )
 {
 	glm::tmat4x4<float, glm::defaultp> mtx;
 #	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
@@ -67,7 +67,7 @@ glm::tmat4x4<float, glm::defaultp> perspective( float fovy, float aspect, float 
 	return mtx;
 }
 
-glm::tmat4x4<float, glm::defaultp> ortho( float left, float right, float bottom, float top, float zNear, float zFar, float offset )
+glm::tmat4x4<float, glm::defaultp> app::ortho( float left, float right, float bottom, float top, float zNear, float zFar, float offset )
 {
 	glm::tmat4x4<float, glm::defaultp> mtx;
 #	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
@@ -261,8 +261,11 @@ int Application::run( int argc, char** argv, bgfx::RendererType::Enum type, uint
 		glfwPollEvents();
 		imguiEvents( dt );
 		ImGui::NewFrame();
+
 		update( dt );
+
 		ImGui::Render();
+
 		bgfx::frame();
 
 		int w, h;
@@ -281,6 +284,12 @@ int Application::run( int argc, char** argv, bgfx::RendererType::Enum type, uint
 	bgfx::shutdown();
 	glfwTerminate();
 	return ret;
+}
+
+void Application::update(float dt)
+{
+    bgfx::touch(0);
+    ImGui::ShowDemoWindow();
 }
 
 void Application::reset( uint32_t flags )

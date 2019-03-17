@@ -71,7 +71,7 @@ namespace app
 		uint32_t getHeight();
 
 		void initialize( int _argc, char** _argv ) {};
-		void update( float dt ) {};
+		void update( float dt );
 		int shutdown() { return 0; };
 
 		GLFWwindow* mWindow;

@@ -13,9 +13,22 @@ add_subdirectory( deps )
 
 file(GLOB_RECURSE SRC_FILES src/*.cpp src/*.h src/*.hpp)
 
+if (APPLE)
+    find_library(corefoundation_lib CoreFoundation)
+    find_library(cfnetwork_lib CFNetwork)
+
+    set(frameworks
+            ${cfnetwork_lib}
+            ${corefoundation_lib})
+endif (APPLE)
+
 add_executable( ${APP_TARGET} ${SRC_FILES} )
 
-target_link_libraries( ${APP_TARGET} PUBLIC bgfx imgui glfw glm )
+if (APPLE)
+    target_link_libraries(${APP_TARGET} ${frameworks})
+endif (APPLE)
+
+target_link_libraries( ${APP_TARGET} bgfx imgui glfw glm )
 target_include_directories( ${APP_TARGET} PUBLIC include )
 
 option( BIGG_EXAMPLES "Build examples." OFF )
