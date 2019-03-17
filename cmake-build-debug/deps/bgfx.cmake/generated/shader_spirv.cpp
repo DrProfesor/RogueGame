@@ -1,0 +1,1 @@
+#include "D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_spirv.cpp"

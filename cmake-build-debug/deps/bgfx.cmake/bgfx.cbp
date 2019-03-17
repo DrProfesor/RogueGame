@@ -1,0 +1,3392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="bgfx"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\deps\;CMake Files\deps\glfw\;CMake Files\deps\glfw\CMake\;CMake Files\deps\glfw\CMake\modules\;CMake Files\deps\glfw\src\;CMake Files\deps\bgfx.cmake\;CMake Files\deps\bgfx.cmake\cmake\;CMake Files\deps\bgfx.cmake\cmake\3rdparty\;CMake Files\deps\bgfx.cmake\cmake\tools\;CMake Files\deps\bgfx.cmake\cmake\util\;CMake Files\examples\;CMake Files\examples\cubes\;CMake Files\examples\imgui_demo\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shaderc">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/shaderc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Public"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 shaderc"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="shaderc/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/shaderc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Public"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 shaderc/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pvrtc">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/pvrtc.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 pvrtc"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pvrtc/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/pvrtc.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 pvrtc/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iqa">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/iqa.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 iqa"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="iqa/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/iqa.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 iqa/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glslang">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glslang.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DENABLE_HLSL=1"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Public"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glslang"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glslang/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glslang.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DENABLE_HLSL=1"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/Public"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glslang/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edtaa3">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/edtaa3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 edtaa3"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edtaa3/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/edtaa3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 edtaa3/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesa">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/mesa.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 mesa"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mesa/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/mesa.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 mesa/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bx">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bxd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DBX_CONFIG_DEBUG=1"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bx"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bx/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bxd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add option="-DBX_CONFIG_DEBUG=1"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bx/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="astc">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/astc.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 astc"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="astc/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/astc.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 astc/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="etc1">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/etc1.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 etc1"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="etc1/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/etc1.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 etc1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="etc2">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/etc2.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 etc2"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="etc2/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/etc2.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 etc2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="squish">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/squish.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 squish"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="squish/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/squish.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 squish/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example-common">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/example-common.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DENTRY_CONFIG_IMPLEMENT_MAIN=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 example-common"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example-common/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/example-common.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-DENTRY_CONFIG_IMPLEMENT_MAIN=1"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 example-common/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="texturec">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/texturec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 texturec"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="texturec/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/texturec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 texturec/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nvtt">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/nvtt.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 nvtt"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nvtt/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/nvtt.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 nvtt/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bimg">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bimgd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bimg"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bimg/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bimgd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bimg/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bgfx">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bgfxd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DBGFX_CONFIG_DEBUG=1"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/khronos"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bgfx"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bgfx/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/bgfxd.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DBGFX_CONFIG_DEBUG=1"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/khronos"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 bgfx/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="forsyth-too">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/forsyth-too.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 forsyth-too"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="forsyth-too/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/forsyth-too.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 forsyth-too/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ib-compress">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/ib-compress.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 ib-compress"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ib-compress/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/ib-compress.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 ib-compress/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometryc">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/geometryc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 geometryc"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="geometryc/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/geometryc.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 geometryc/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fcpp">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/fcpp.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 fcpp"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fcpp/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/fcpp.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 fcpp/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glcpp">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glcpp.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glcpp"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glcpp/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glcpp.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glcpp/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glsl-optimizer">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glsl-optimizer.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glsl-optimizer"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="glsl-optimizer/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/glsl-optimizer.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mapi"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 glsl-optimizer/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="texturev">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/texturev.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 texturev"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="texturev/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/texturev.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 texturev/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dear-imgui">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/dear-imgui.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 dear-imgui"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dear-imgui/fast">
+				<Option output="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/dear-imgui.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D__STDC_FORMAT_MACROS"/>
+					<Add option="-D__STDC_LIMIT_MACROS"/>
+					<Add option="-D__STDC_CONSTANT_MACROS"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/3rdparty"/>
+					<Add directory="D:/Dev/RogueGame/deps/bgfx.cmake/bx/include/compat/msvc"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 dear-imgui/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Dev\RogueGame\cmake-build-debug\deps\bgfx.cmake\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/generated/bounds.cpp">
+			<Option target="geometryc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/generated/shader_spirv.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/cmake-build-debug/deps/bgfx.cmake/generated/vertexdecl.cpp">
+			<Option target="shaderc"/>
+			<Option target="geometryc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imconfig.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.cpp">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_demo.cpp">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_draw.cpp">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_internal.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_user.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_user.inl">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/stb_rect_pack.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/stb_textedit.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/stb_truetype.h">
+			<Option target="dear-imgui"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/FPPBase.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/FPP_protos.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp1.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp2.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp3.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp4.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp5.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cpp6.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cppadd.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/cppdef.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/fpp.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/fpp_pragmas.h">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/fcpp/usecpp.c">
+			<Option target="fcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/forsyth-too/forsythtriangleorderoptimizer.cpp">
+			<Option target="forsyth-too"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/forsyth-too/forsythtriangleorderoptimizer.h">
+			<Option target="forsyth-too"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ast_array_index.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ast_expr.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ast_function.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ast_to_hir.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ast_type.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/builtin_functions.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/builtin_types.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/builtin_variables.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glcpp/glcpp-lex.c">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glcpp/glcpp-parse.c">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glcpp/glcpp-parse.h">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glcpp/pp.c">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_lexer.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_optimizer.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_optimizer.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_parser.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_parser.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_parser_extras.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_parser_extras.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_symbol_table.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_symbol_table.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_types.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/glsl_types.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/hir_field_selection.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_basic_block.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_basic_block.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_builder.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_builder.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_clone.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_constant_expression.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_equals.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_expression_flattening.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_expression_flattening.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_function.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_function_can_inline.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_function_detect_recursion.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_hierarchical_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_hierarchical_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_hv_accept.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_import_prototypes.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_glsl_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_glsl_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_metal_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_metal_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_print_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_rvalue_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_rvalue_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_stats.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_stats.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_unused_structs.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_unused_structs.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_validate.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_variable_refcount.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/ir_variable_refcount.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_atomics.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_functions.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_interface_blocks.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_uniform_block_active_visitor.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_uniform_block_active_visitor.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_uniform_blocks.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_uniform_initializers.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_uniforms.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_varyings.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/link_varyings.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/linker.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/linker.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/loop_analysis.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/loop_analysis.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/loop_controls.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/loop_unroll.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_clip_distance.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_discard.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_discard_flow.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_if_to_cond_assign.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_instructions.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_jumps.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_mat_op_to_vec.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_named_interface_blocks.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_noise.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_offset_array.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_output_reads.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_packed_varyings.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_packing_builtins.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_ubo_reference.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_variable_index_to_cond_assign.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_vec_index_to_cond_assign.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_vec_index_to_swizzle.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_vector.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_vector_insert.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/lower_vertex_id.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_algebraic.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_array_splitting.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_constant_folding.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_constant_propagation.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_constant_variable.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_copy_propagation.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_copy_propagation_elements.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_cse.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_dead_builtin_variables.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_dead_builtin_varyings.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_dead_code.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_dead_code_local.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_dead_functions.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_flatten_nested_if_blocks.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_flip_matrices.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_function_inlining.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_if_simplification.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_minmax.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_noop_swizzle.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_rebalance_tree.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_redundant_jumps.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_structure_splitting.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_swizzle_swizzle.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_tree_grafting.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/opt_vectorize.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/s_expression.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/s_expression.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/standalone_scaffolding.cpp">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/standalone_scaffolding.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/strtod.c">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/glsl/strtod.h">
+			<Option target="glsl-optimizer"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa/main/imports.c">
+			<Option target="mesa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa/main/imports.h">
+			<Option target="mesa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa/program/prog_hash_table.c">
+			<Option target="mesa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa/program/symbol_table.c">
+			<Option target="mesa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/mesa/program/symbol_table.h">
+			<Option target="mesa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/util/hash_table.c">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/util/hash_table.h">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/util/ralloc.c">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glsl-optimizer/src/util/ralloc.h">
+			<Option target="glcpp"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/OGLCompilersDLL/InitializeDll.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/OGLCompilersDLL/InitializeDll.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/GlslangToSpv.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/GlslangToSpv.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/InReadableOrder.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/Logger.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/Logger.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/SPVRemapper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/SPVRemapper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/SpvBuilder.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/SpvBuilder.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/SpvPostProcess.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/disassemble.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/disassemble.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/doc.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/SPIRV/doc.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/GenericCodeGen/CodeGen.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/GenericCodeGen/Link.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Constant.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/InfoSink.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Initialize.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Initialize.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/IntermTraverse.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Intermediate.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/ParseContextBase.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/ParseHelper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/ParseHelper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/PoolAlloc.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/RemoveTree.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/RemoveTree.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Scan.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Scan.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/ShaderLang.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/SymbolTable.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/SymbolTable.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Versions.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/Versions.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/attribute.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/attribute.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/glslang_tab.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/intermOut.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/iomapper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/iomapper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/limits.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/linkValidate.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/parseConst.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpContext.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/preprocessor/PpTokens.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/propagateNoContraction.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/propagateNoContraction.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/reflection.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/MachineIndependent/reflection.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/glslang/OSDependent/Windows/ossource.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslAttributes.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslAttributes.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslGrammar.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslGrammar.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslOpMap.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslOpMap.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslParseHelper.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslParseHelper.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslParseables.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslParseables.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslScanContext.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslScanContext.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslTokenStream.cpp">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/glslang/hlsl/hlslTokenStream.h">
+			<Option target="glslang"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexbuffercompression.cpp">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexbuffercompression.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexbuffercompressionformat.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexbufferdecompression.cpp">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexbufferdecompression.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/indexcompressionconstants.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/readbitstream.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/3rdparty/ib-compress/writebitstream.h">
+			<Option target="ib-compress"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/aviwriter.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/bgfx_utils.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/bgfx_utils.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/bounds.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/bounds.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/camera.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/camera.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/common.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/cube_atlas.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/cube_atlas.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/debugdraw.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/debugdraw.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill_lit.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill_lit.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill_texture.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_fill_texture.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_lines.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_lines.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_lines_stipple.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/fs_debugdraw_lines_stipple.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/varying.def.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_lit.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_lit.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_lit_mesh.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_lit_mesh.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_mesh.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_mesh.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_texture.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_fill_texture.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_lines.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_lines.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_lines_stipple.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/debugdraw/vs_debugdraw_lines_stipple.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/cmd.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/cmd.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/dbg.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_android.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_asmjs.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_glfw.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_noop.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_p.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_sdl.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_windows.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/entry_x11.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/input.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/entry/input.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/example-glue.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/font_manager.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/font_manager.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_basic.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_basic.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_distance_field.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_distance_field.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_distance_field_subpixel.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/fs_font_distance_field_subpixel.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/text_buffer_manager.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/text_buffer_manager.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/text_metrics.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/text_metrics.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/utf8.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/utf8.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/varying.def.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_basic.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_basic.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_distance_field.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_distance_field.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_distance_field_subpixel.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/font/vs_font_distance_field_subpixel.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/droidsans.ttf.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_color.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_color.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_cubemap.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_cubemap.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_image.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_image.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_image_swizz.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_image_swizz.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_latlong.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_latlong.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_texture.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_imgui_texture.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_ocornut_imgui.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/fs_ocornut_imgui.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/icons_font_awesome.ttf.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/icons_kenney.ttf.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/imgui.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/imgui.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/roboto_regular.ttf.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/robotomono_regular.ttf.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/scintilla.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/scintilla.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/varying.def.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_color.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_color.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_cubemap.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_cubemap.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_image.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_image.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_latlong.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_latlong.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_texture.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_imgui_texture.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_ocornut_imgui.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/imgui/vs_ocornut_imgui.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/fontstash.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/fs_nanovg_fill.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/fs_nanovg_fill.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/nanovg.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/nanovg.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/nanovg_bgfx.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/nanovg_bgfx.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/varying.def.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/vs_nanovg_fill.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/nanovg/vs_nanovg_fill.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/packrect.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/fs_particle.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/fs_particle.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/particle_system.cpp">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/particle_system.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/varying.def.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/vs_particle.bin.h">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/examples/common/ps/vs_particle.sc">
+			<Option target="example-common"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/bgfx.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/c99/bgfx.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/c99/platform.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/defines.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/embedded_shader.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/include/bgfx/platform.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/amalgamated.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/amalgamated.mm">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/bgfx.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/bgfx_p.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/charset.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/config.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/debug_renderdoc.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/debug_renderdoc.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/dxgi.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/dxgi.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear0.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear1.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear2.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear3.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear4.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear5.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear6.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_clear7.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/fs_debugfont.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_eagl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_eagl.mm">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_egl.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_egl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_glx.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_glx.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_nsgl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_nsgl.mm">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_wgl.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glcontext_wgl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/glimports.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/nvapi.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/nvapi.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d11.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d11.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d12.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d12.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d9.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_d3d9.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_gl.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_gl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_gnm.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_mtl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_mtl.mm">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_noop.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_vk.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/renderer_vk.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_dx9bc.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_dx9bc.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_dxbc.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_dxbc.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_spirv.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/shader_spirv.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/topology.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/topology.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/vertexdecl.cpp">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/vertexdecl.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/vs_clear.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/vs_debugfont.bin.h">
+			<Option target="bgfx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/geometryc/geometryc.cpp">
+			<Option target="geometryc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.h">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc_glsl.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc_hlsl.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc_pssl.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc_spirv.cpp">
+			<Option target="shaderc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/texturev/texturev.cpp">
+			<Option target="texturev"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_averages_and_directions.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_block_sizes2.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_codec_internals.h">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_color_quantize.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_color_unquantize.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_compress_symbolic.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_compute_variance.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_decompress_symbolic.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_encoding_choice_error.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_find_best_partitioning.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_ideal_endpoints_and_weights.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_imageblock.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_integer_sequence.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_kmeans_partitioning.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_lib.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_lib.h">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_partition_tables.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_percentile_tables.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_pick_best_endpoint_format.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_quantization.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_symbolic_physical.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_weight_align.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/astc_weight_quant_xfer_tables.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/mathlib.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/mathlib.h">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/softfloat.cpp">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/softfloat.h">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/astc/vectypes.h">
+			<Option target="astc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/edtaa3/edtaa3func.cpp">
+			<Option target="edtaa3"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/edtaa3/edtaa3func.h">
+			<Option target="edtaa3"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc1/etc1.cpp">
+			<Option target="etc1"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc1/etc1.h">
+			<Option target="etc1"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc2/ProcessRGB.cpp">
+			<Option target="etc2"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc2/ProcessRGB.hpp">
+			<Option target="etc2"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc2/Tables.cpp">
+			<Option target="etc2"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/etc2/Tables.hpp">
+			<Option target="etc2"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/convolve.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/decimate.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/iqa.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/iqa_os.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/math_utils.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/include/ssim.h">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/convolve.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/decimate.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/math_utils.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/ms_ssim.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/mse.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/psnr.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/iqa/source/ssim.c">
+			<Option target="iqa"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/alpha.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/alpha.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/clusterfit.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/clusterfit.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourblock.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourblock.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourfit.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourfit.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourset.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/colourset.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/config.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/maths.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/maths.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/rangefit.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/rangefit.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/simd.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/simd_float.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/singlecolourfit.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/singlecolourfit.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/singlecolourlookup.inl">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/squish.cpp">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/libsquish/squish.h">
+			<Option target="squish"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/bits.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/shapes_two.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/tile.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zoh.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zoh.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zoh_utils.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zoh_utils.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zohone.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc6h/zohtwo.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode0.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode1.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode2.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode3.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode4.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode5.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode6.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_mode7.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_utils.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/avpcl_utils.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/bits.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/endpts.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/shapes_three.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/shapes_two.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/bc7/tile.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/array.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/array.inl">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/debug.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/defsgnucdarwin.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/defsgnuclinux.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/defsgnucwin32.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/defsvcwin32.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/foreach.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/hash.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/memory.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/nvcore.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/posh.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/stdstream.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/stream.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/strlib.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvcore/utils.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/fitting.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/fitting.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/matrix.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/nvmath.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/plane.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvmath/vector.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvtt.cpp">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/nvtt/nvtt.h">
+			<Option target="nvtt"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/AlphaBitmap.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/BitScale.cpp">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/BitScale.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/BitUtility.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/Bitmap.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/ColorRgba.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/Interval.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/MortonTable.cpp">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/MortonTable.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/Point2.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcDecoder.cpp">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcDecoder.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcEncoder.cpp">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcEncoder.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcPacket.cpp">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/PvrTcPacket.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/RgbBitmap.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/3rdparty/pvrtc/RgbaBitmap.h">
+			<Option target="pvrtc"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/src/image.cpp">
+			<Option target="bimg"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/src/image_cubemap_filter.cpp">
+			<Option target="bimg"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/src/image_decode.cpp">
+			<Option target="bimg"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/src/image_encode.cpp">
+			<Option target="bimg"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/src/image_gnf.cpp">
+			<Option target="bimg"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bimg/tools/texturec/texturec.cpp">
+			<Option target="texturec"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/allocator.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/amalgamated.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/bx.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/commandline.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/crtnone.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/debug.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/dtoa.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/easing.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/file.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/filepath.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/hash.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/math.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/mutex.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/os.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/process.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/semaphore.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/settings.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/sort.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/string.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/thread.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/timer.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/bx/src/url.cpp">
+			<Option target="bx"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glm.cmake">
+			<Option virtualFolder="CMake Files\deps\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/imgui.cmake">
+			<Option virtualFolder="CMake Files\deps\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\glfw\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\deps\glfw\CMake\modules\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\deps\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\deps\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\deps\glfw\src\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/bgfx.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/bimg.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/bx.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/examples.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/shared.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/tools.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/astc.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/dear-imgui.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/edtaa3.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/etc1.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/etc2.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/fcpp.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/forsyth-too.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/glsl-optimizer.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/glslang.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/ib-compress.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/iqa.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/libsquish.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/nvtt.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/3rdparty/pvrtc.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\3rdparty\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/tools/geometryc.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\tools\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/tools/shaderc.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\tools\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/tools/texturec.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\tools\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/tools/texturev.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\tools\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/deps/bgfx.cmake/cmake/util/ConfigureDebugging.cmake">
+			<Option virtualFolder="CMake Files\deps\bgfx.cmake\cmake\util\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/examples/cubes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\cubes\"/>
+		</Unit>
+		<Unit filename="D:/Dev/RogueGame/examples/imgui_demo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\imgui_demo\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
