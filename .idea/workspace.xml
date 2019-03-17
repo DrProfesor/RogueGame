@@ -40,14 +40,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/bigg.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigg.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigg_assets.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bigg_assets.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigg_imgui.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bigg_imgui.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bigg_shaders.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/bigg_shaders.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Application.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="641">
@@ -81,6 +75,18 @@
                 <element signature="e#1371#1821#0" />
                 <element signature="e#1823#2315#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="34">
+                <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -130,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.hpp" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -334,6 +341,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/imgui_demo/imgui_demo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -348,13 +362,6 @@
           <folding>
             <element signature="e#43#62#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/imgui_demo/imgui_demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -376,6 +383,16 @@
             <element signature="e#1371#1821#0" />
             <element signature="e#1823#2315#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
