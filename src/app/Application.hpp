@@ -56,7 +56,7 @@ namespace app
 
 		Application();
 
-		int run(
+		int Init(
 			int argc,
 			char** argv,
 			bgfx::RendererType::Enum type = bgfx::RendererType::Count,
@@ -66,13 +66,13 @@ namespace app
 			bx::AllocatorI* allocator = NULL
 		);
 
-		void reset( uint32_t flags = 0 );
-		uint32_t getWidth();
-		uint32_t getHeight();
+		bool Update(float dt);
+		void PostUpdate();
+		void Shutdown();
 
-		void initialize( int _argc, char** _argv ) {};
-		void update( float dt );
-		int shutdown() { return 0; };
+		void Reset( uint32_t flags = 0 );
+		uint32_t GetWidth();
+		uint32_t GetHeight();
 
 		GLFWwindow* mWindow;
 		app::Allocator mAllocator;
