@@ -5,58 +5,21 @@
 #ifndef ROGUEGAME_ENTITYMANAGER_H
 #define ROGUEGAME_ENTITYMANAGER_H
 
-#include <vector>
-#include <map>
-#include <glm/glm.hpp>
-
-using namespace glm;
+#include <unordered_set>
+#include <unordered_map>
 
 struct Entity {
     unsigned int Id;
-    const char * Name;
 };
 
-// Core components
-struct Transform {
-    vec3 Position;
-    vec3 Scale;
-};
+namespace Entities {
 
-template <typename T>
-struct Manager {
-    std::map<unsigned int, T*> Transforms;
+    std::unordered_map<unsigned int, Entity> AllEntities;
+    unsigned int NextEntity;
 
-    T* Connect(Entity * e)
+    Entity Instantiate()
     {
-        auto t = new T();
-        Transforms[e->Id] = t;
-        return t;
-    }
-
-    T* Get(Entity* e)
-    {
-        return Transforms[e->Id];
-    }
-};
-
-
-struct Entities {
-
-    static std::map<uint, Entity*> AllEntities;
-    static uint NextEntity;
-
-    static Manager<Transform> TransformManager;
-
-    static void Init()
-    {
-        TransformManager = Manager<Transform>();
-    }
-
-    static Entity* Instantiate(const char * name, Entity * parent = nullptr)
-    {
-        auto ne = new Entity{ NextEntity, name };
-
-        TransformManager.Connect(ne);
+        auto ne = Entity{ NextEntity };
 
         AllEntities[NextEntity] = ne;
         NextEntity++;
@@ -64,9 +27,14 @@ struct Entities {
         return ne;
     }
 
-    static void Update(float dt)
+    bool IsAlive(Entity e)
     {
-        // Update components
+        return AllEntities.find(e.Id) != AllEntities.end();
+    }
+
+    void Destroy(Entity entity)
+    {
+        AllEntities.erase(entity.Id);
     }
 };
 
