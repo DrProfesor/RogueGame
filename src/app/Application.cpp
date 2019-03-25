@@ -257,34 +257,6 @@ void Application::imguiEvents( float dt )
 #endif
 }
 
-//utils
-
-const bgfx::Memory* app::loadMemory( const char* filename )
-{
-	std::ifstream file( filename, std::ios::binary | std::ios::ate );
-	std::streamsize size = file.tellg();
-	file.seekg( 0, std::ios::beg );
-	const bgfx::Memory* mem = bgfx::alloc( uint32_t( size + 1 ) );
-	if ( file.read( ( char* )mem->data, size ) )
-	{
-		mem->data[ mem->size - 1 ] = '\0';
-		return mem;
-	}
-	return nullptr;
-}
-
-bgfx::ShaderHandle app::loadShader( const char* shader )
-{
-	return bgfx::createShader( app::loadMemory( shader ) );
-}
-
-bgfx::ProgramHandle app::loadProgram( const char* vsName, const char* fsName )
-{
-	bgfx::ShaderHandle vs = app::loadShader( vsName );
-	bgfx::ShaderHandle fs = app::loadShader( fsName );
-	return bgfx::createProgram( vs, fs, true );
-}
-
 // glm utils
 
 glm::tmat4x4<float, glm::defaultp> app::perspective( float fovy, float aspect, float zNear, float zFar )

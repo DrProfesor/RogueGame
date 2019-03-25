@@ -19,15 +19,19 @@ file(GLOB_RECURSE SRC_FILES src/*.cpp src/*.h src/*.hpp)
 if (APPLE)
     find_library(corefoundation_lib CoreFoundation)
     find_library(cfnetwork_lib CFNetwork)
+    find_library(assimp Assimp)
 
     set(frameworks
             ${cfnetwork_lib}
-            ${corefoundation_lib})
+            ${corefoundation_lib}
+            ${assimp})
 endif (APPLE)
 
 
 add_executable( ${APP_TARGET} ${SRC_FILES} )
 
+message("Generating Code")
+execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/build.py")
 
 if (APPLE)
     target_link_libraries(${APP_TARGET} ${frameworks})

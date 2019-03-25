@@ -7,42 +7,48 @@
 
 #include <map>
 #include <bgfx/bgfx.h>
+#include <bx/bx.h>
 #include <fstream>
+#include <bx/math.h>
+
 #include "Entities.h"
+#include "Generated.h"
+#include "../dev/Logger.h"
+
+#include "../assets/Assets.h"
 
 using namespace bgfx;
 
-struct MeshRenderer {
-    VertexBufferHandle VBO;
-    IndexBufferHandle IBO;
-};
-
+// Depends on transform, and material
 namespace MeshRendererManager
 {
-    std::map<unsigned int, MeshRenderer*> Meshes;
-
-    MeshRenderer* Connect(Entity e, VertexBufferHandle vbo, IndexBufferHandle ibo)
+    //@component_update(RENDER, MeshRender)
+    void RenderAll(int currentView)
     {
-        auto mr = new MeshRenderer{vbo, ibo};
+        for (auto kp : Entities::MeshRenderers)
+        {
+            auto mesh = kp.second;
+            auto material = Entities::GetComponent<Entities::Material>(kp.first);
+            Entities::GetComponent<Entities::Transform>(kp.first);
 
-        Meshes[e.Id] = mr;
+            // set transform
 
-        return mr;
-    }
+            float mtx[16];
+            bx::mtxIdentity(&mtx[0]);
+            bgfx::setTransform(mtx);
 
-    MeshRenderer* Get(Entity e)
-    {
-        return Meshes[e.Id];
-    }
+            bgfx::setVertexBuffer(0, mesh->Model.VBO);
+            bgfx::setIndexBuffer(mesh->Model.IBO);
 
-    void Destroy(Entity e)
-    {
-        auto t = Meshes[e.Id];
-        if (t == nullptr) return;
+            //bgfx::setTexture(0, material->Uniforms, material->Texture);
+            bgfx::setState(0
+                  | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
+                  | BGFX_STATE_WRITE_Z | BGFX_STATE_DEPTH_TEST_LESS
+                  | BGFX_STATE_MSAA);
 
-        Meshes.erase(e.Id);
+            bgfx::submit(currentView, material->Shader);
 
-        delete t;
+        }
     }
 }
 

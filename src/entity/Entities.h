@@ -7,12 +7,41 @@
 
 #include <unordered_set>
 #include <unordered_map>
+#include <bgfx/bgfx.h>
+#include <glm/vec3.hpp>
+#include "../assets/Assets.h"
+
+using namespace bgfx;
+using namespace glm;
 
 struct Entity {
     unsigned int Id;
 };
 
 namespace Entities {
+
+    //@component
+    struct Camera {
+        int View;
+    };
+
+    //@component
+    struct Transform {
+        vec3 Position;
+        vec3 Scale;
+    };
+
+    //@component
+    struct MeshRenderer {
+        ModelHandle Model;
+    };
+
+    //@component
+    struct Material {
+        bgfx::ProgramHandle Shader;
+        bgfx::TextureHandle Texture;
+        bgfx::UniformHandle Uniforms;
+    };
 
     std::unordered_map<unsigned int, Entity> AllEntities;
     unsigned int NextEntity;

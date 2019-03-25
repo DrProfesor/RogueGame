@@ -1,16 +1,22 @@
 //
-// Created by Jake on 3/20/19.
+// Created by jwvan on 2019-03-09.
 //
 
-#ifndef ROGUEGAME_LOGGER_H
-#define ROGUEGAME_LOGGER_H
+#ifndef PROGRAMVIEWER_LOGGER_H
+#define PROGRAMVIEWER_LOGGER_H
 
+#include <cstdarg>
+#include <imguial_log.h>
 
+struct Logger {
+    static void Init();
+    static void Log(const char* format, ...);
+    static void LogWarn(const char* format, ...);
+    static void LogError(const char* format, ...);
 
-class Logger {
+    static ImGuiAl::Log GetLogObj();
 
 };
 
 
-
-#endif //ROGUEGAME_LOGGER_H
+#endif //PROGRAMVIEWER_LOGGER_H

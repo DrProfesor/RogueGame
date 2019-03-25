@@ -2,7 +2,7 @@
 // Created by Jake on 3/21/19.
 //
 
-#include "Utils.h"
+#include "AssetUtils.h"
 
 namespace Utils {
     bx::AllocatorI* g_allocator = Utils::GetDefaultAllocator();
@@ -54,9 +54,11 @@ bx::AllocatorI* Utils::GetDefaultAllocator()
     BX_PRAGMA_DIAGNOSTIC_POP();
 }
 
-bgfx::ShaderHandle loadShader( const char* shader )
+#define SHADER_DIR "/Users/jake/Documents/Dev/RogueGame/assets/shaders/"
+
+bgfx::ShaderHandle loadShader(std::string shader)
 {
-    return bgfx::createShader( Utils::LoadMemory( shader ) );
+    return bgfx::createShader(Utils::LoadMemory( (SHADER_DIR + shader).c_str() ));
 }
 
 const bgfx::Memory* Utils::LoadMemory(const char* filePath)
@@ -75,14 +77,14 @@ const bgfx::Memory* Utils::LoadMemory(const char* filePath)
 
 bgfx::ProgramHandle Utils::LoadShader(std::string name)
 {
-    bgfx::ShaderHandle vs = loadShader( ("vs_" + name + ".sc").c_str() );
-    bgfx::ShaderHandle fs = loadShader( ("fs_" + name + ".sc").c_str() );
+    bgfx::ShaderHandle vs = loadShader("vs_" + name + ".sc");
+    bgfx::ShaderHandle fs = loadShader("fs_" + name + ".sc");
     return bgfx::createProgram( vs, fs, true );
 }
 
 static void imageReleaseCb(void* _ptr, void* _userData)
 {
-    bimg::ImageContainer* imageContainer = (bimg::ImageContainer*)_userData;
+    auto * imageContainer = (bimg::ImageContainer*)_userData;
     bimg::imageFree(imageContainer);
 }
 
@@ -90,22 +92,22 @@ void* load(bx::FileReaderI* _reader, bx::AllocatorI* _allocator, const char* _fi
 {
     if (bx::open(_reader, _filePath))
     {
-        uint32_t size = (uint32_t)bx::getSize(_reader);
+        auto size = (uint32_t)bx::getSize(_reader);
         void* data = BX_ALLOC(_allocator, size);
         bx::read(_reader, data, size);
         bx::close(_reader);
-        if (NULL != _size)
+        if (nullptr != _size)
         {
             *_size = size;
         }
         return data;
     }
-    if (NULL != _size)
+    if (nullptr != _size)
     {
         *_size = 0;
     }
 
-    return NULL;
+    return nullptr;
 }
 
 void unload(void* _ptr)
@@ -120,7 +122,7 @@ bgfx::TextureHandle Utils::LoadTexture(const char* filePath, uint32_t _flags, ui
 
     uint32_t size;
     void* data = load(fileReader, Utils::GetDefaultAllocator(), filePath, &size);
-    if (NULL != data)
+    if (nullptr != data)
     {
         bimg::ImageContainer* imageContainer;
         if (bimg::imageParse(*imageContainer, data, size))
@@ -179,7 +181,7 @@ bgfx::TextureHandle Utils::LoadTexture(const char* filePath, uint32_t _flags, ui
                 bgfx::setName(handle, filePath);
             }
 
-            if (NULL != _info)
+            if (nullptr != _info)
             {
                 bgfx::calcTextureSize(
                         *_info

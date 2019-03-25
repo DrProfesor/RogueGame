@@ -4,23 +4,20 @@
 
 
 #include <iostream>
+#include <vector>
 
 #include "app/Application.hpp"
+#include "assets/AssetUtils.h"
+#include <bx/math.h>
+
+#include "entity/Generated.h"
 #include "entity/Entities.h"
-#include "utils/Utils.h"
+#include "dev/Logger.h"
+#include "assets/Assets.h"
+#include "scene/Scene.h"
 #include "entity/MeshRenderer.h"
 
-#include <assimp/scene.h>
-#include <assimp/mesh.h>
-#include <assimp/Importer.hpp>
-#include <assimp/postprocess.h>
-
-struct Vertex
-{
-    glm::vec3 pos;
-    glm::vec2 tex;
-    glm::vec3 nor;
-};
+using namespace Entities;
 
 int main(int argc, char** argv)
 {
@@ -29,66 +26,40 @@ int main(int argc, char** argv)
     Application app;
     app.Init(argc, argv);
 
-    bgfx::VertexDecl ms_decl;
-    ms_decl
-            .begin()
-            .add(bgfx::Attrib::Position, 3, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Normal, 3, bgfx::AttribType::Float)
-            .end();
+    Logger::Init();
 
-    Assimp::Importer importer;
-    const aiScene *scene = importer.ReadFile("assets/models/Knight2/maria_prop_j_j_ong.fbx", aiProcess_CalcTangentSpace |
-                                                       aiProcess_Triangulate |
-                                                       aiProcess_JoinIdenticalVertices |
-                                                       aiProcess_SortByPType | aiProcess_FlipWindingOrder);
+    SceneManager::LoadScene("main.scene");
 
-    if (!scene) {
-        printf("Unable to laod mesh: %s\n", importer.GetErrorString());
+    auto ids = Assets::LoadModel("knight", "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx");
+
+    auto e = Entities::Instantiate();
+    auto mr = Entities::AddComponent<MeshRenderer>(e);
+    mr->Model = Assets::Models[ids[0]];
+
+    auto material = Entities::AddComponent<Material>(e);
+    material->Shader = Utils::LoadShader("cubes");
+
+    auto transform = Entities::AddComponent<Entities::Transform>(e);
+
+    auto camera = Entities::Instantiate();
+    auto c = Entities::AddComponent<Camera>(camera);
+    c->View = 0;
+    Entities::AddComponent<Entities::Transform>(camera);
+
+    const vec3 at  = { 0.0f, 0.0f,   0.0f };
+    const vec3 eye = { 0.0f, 0.0f, -35.0f };
+
+    { //TODO camera stuff here
+        float view[16];
+        bx::mtxLookAt(view, &eye[0], &at[0]);
+
+        float proj[16];
+        bx::mtxProj(proj, 60.0f, float(app.mWidth)/float(app.mHeight), 0.1f, 100.0f, bgfx::getCaps()->homogeneousDepth);
+        bgfx::setViewTransform(0, view, proj);
+
+        // Set view 0 default viewport.
+        bgfx::setViewRect(0, 0, 0, uint16_t(app.mWidth), uint16_t(app.mHeight) );
     }
-
-    std::vector<Entity> Meshes;
-
-    for (int i = 0; i < scene->mNumMeshes; ++i)
-    {
-        aiMesh *mesh = scene->mMeshes[i];
-
-        std::vector<Vertex> vertices(mesh->mNumVertices);
-
-        for (size_t i = 0; i < mesh->mNumVertices; i++)
-        {
-            auto vert = mesh->mVertices[i];
-            vertices[i].pos = glm::vec3(vert.x, vert.y, vert.z);
-
-            auto norm = mesh->mNormals[i];
-            vertices[i].nor = glm::vec3(norm.x, norm.y, norm.z);
-
-            if (mesh->mTextureCoords[0])
-            {
-                auto tex = mesh->mTextureCoords[0][i];
-                vertices[i].tex = glm::vec2(tex.x , tex.y);
-            }
-        }
-
-        auto vbo = createVertexBuffer(bgfx::copy(&vertices[0], mesh->mNumVertices * sizeof(Vertex)), ms_decl);
-
-        std::vector<unsigned int> indices;
-        for (size_t i = 0; i < mesh->mNumFaces; i++)
-        {
-            for (size_t j = 0; j < mesh->mFaces[i].mNumIndices; j++)
-            {
-                indices.push_back(mesh->mFaces[i].mIndices[j]);
-            }
-        }
-
-        auto ibo = bgfx::createIndexBuffer(bgfx::copy(indices.data(), indices.size() * sizeof(unsigned int)), BGFX_BUFFER_INDEX32);
-
-        auto e = Entities::Instantiate();
-        MeshRendererManager::Connect(e, vbo, ibo);
-
-        Meshes.push_back(e);
-    }
-
 
     float lastTime = 0;
     float dt;
@@ -101,19 +72,12 @@ int main(int argc, char** argv)
 
         if (!app.Update(dt)) break;
 
-        ImGui::ShowDemoWindow();
-
-        for (auto e : Meshes)
-        {
-            auto mr = MeshRendererManager::Get(e);
-            bgfx::setVertexBuffer(0, mr->VBO);
-            bgfx::setIndexBuffer(mr->IBO);
-
-            bgfx::submit(0, );
-        }
+        auto cam = Entities::GetComponent<Camera>(camera);
+        MeshRendererManager::RenderAll(cam->View);
 
         // Post update contains the bgfx frame call,
         // so should happen after everything has been submitted
+        Logger::GetLogObj().Draw();
         app.PostUpdate();
     }
 

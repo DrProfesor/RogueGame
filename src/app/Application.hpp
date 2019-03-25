@@ -13,11 +13,6 @@
 
 namespace app
 {
-	// bgfx utils
-	const bgfx::Memory* loadMemory( const char* filename );
-	bgfx::ShaderHandle loadShader( const char* shader );
-	bgfx::ProgramHandle loadProgram( const char* vsName, const char* fsName );
-
 	// glm utils
 	glm::tmat4x4<float, glm::defaultp> perspective( float fovy, float aspect, float zNear, float zFar );
 	glm::tmat4x4<float, glm::defaultp> ortho( float left, float right, float bottom, float top, float zNear, float zFar, float offset );
