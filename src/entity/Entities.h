@@ -20,6 +20,18 @@ struct Entity {
 
 namespace Entities {
 
+    template<typename T>
+    T* GetComponent(Entity e);
+
+    template<typename T>
+    T* AddComponent(Entity e);
+
+    template<typename T>
+    T* GetComponent(unsigned int e);
+
+    template<typename T>
+    T* AddComponent(unsigned int e);
+
     //@component
     struct Camera {
         int View;
@@ -64,6 +76,30 @@ namespace Entities {
     void Destroy(Entity entity)
     {
         AllEntities.erase(entity.Id);
+    }
+
+    //@component_update(RENDER, MeshRenderer)
+    void Update_MeshRender(unsigned int e, Entities::MeshRenderer* mesh)
+    {
+        auto material = Entities::GetComponent<Entities::Material>(e);
+        Entities::GetComponent<Entities::Transform>(e);
+
+        // set transform
+
+        float mtx[16];
+        bx::mtxIdentity(&mtx[0]);
+        bgfx::setTransform(mtx);
+
+        bgfx::setVertexBuffer(0, mesh->Model.VBO);
+        bgfx::setIndexBuffer(mesh->Model.IBO);
+
+        //bgfx::setTexture(0, material->Uniforms, material->Texture);
+        bgfx::setState(0
+                       | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
+                       | BGFX_STATE_WRITE_Z | BGFX_STATE_DEPTH_TEST_LESS
+                       | BGFX_STATE_MSAA);
+
+        bgfx::submit(0, material->Shader);
     }
 };
 

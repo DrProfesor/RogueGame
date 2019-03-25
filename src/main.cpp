@@ -15,7 +15,6 @@
 #include "dev/Logger.h"
 #include "assets/Assets.h"
 #include "scene/Scene.h"
-#include "entity/MeshRenderer.h"
 
 using namespace Entities;
 
@@ -72,8 +71,7 @@ int main(int argc, char** argv)
 
         if (!app.Update(dt)) break;
 
-        auto cam = Entities::GetComponent<Camera>(camera);
-        MeshRendererManager::RenderAll(cam->View);
+        Entities::UpdateEntities();
 
         // Post update contains the bgfx frame call,
         // so should happen after everything has been submitted

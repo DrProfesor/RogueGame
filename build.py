@@ -4,6 +4,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 components = {}
 update_functions = {}
+includes = {}
 
 for root, dirs, files in os.walk(dir_path + "/src"):
     for file in files:
@@ -19,45 +20,38 @@ for root, dirs, files in os.walk(dir_path + "/src"):
         update_comp = ""
 
         for line in f:
-
             if "}" in line:
                 inside_component = False
-
             if inside_component:
                 field = line.strip()
                 field = field.replace(";", "")
                 field_parts = field.split(" ")
-
                 field_data = {"type": field_parts[0], "name": field_parts[1]}
                 components[current_component].append(field_data)
-
             if is_component:
                 is_component = False
                 line = line.strip()
                 parts = line.split(" ")
                 component_name = parts[1]
                 components[component_name] = []
-
                 current_component = component_name
                 inside_component = True
-
             if is_update:
                 is_update = False
                 lineParts = line.split("(")
                 lineParts = lineParts[0].split(" ")
-                fun_name = lineParts[lineParts.count()-1].strip(" ")
+                fun_name = lineParts[len(lineParts)-1].strip(" ")
                 update_functions[update_comp] = {"func": fun_name, "priority": update_priority}
-
-            if "@component" in line:
-                is_component = True
-            elif "@component_update" in line:
+                includes[file] = True
+            if "@component_update" in line:
                 is_update = True
                 parts = line.split("(")
                 parts = parts[1].split(")")
                 parts = parts[0].split(",")
                 update_priority = parts[0].strip(" ")
                 update_comp = parts[1].strip(" ")
-
+            elif "@component" in line:
+                is_component = True
 
 indent_level = 0
 
@@ -73,7 +67,6 @@ def begin_proc(name, returnType, *params):
     global indent_level
     ret = ""
     ret += print_indents()
-
     ret += returnType + " " + name + "("
     first = True
     for param in params:
@@ -83,9 +76,7 @@ def begin_proc(name, returnType, *params):
         else:
             ret += ", " + param
     ret += ") {\n"
-
     indent_level += 1
-
     return ret
 
 
@@ -134,8 +125,9 @@ with open(dir_path + "/src/entity/Generated.h", 'w') as wr:
 
     source += line("#include <map>")
     source += line("#include <string>")
-    source += line("#include \"Entities.h\"")
     source += line("#include \"../dev/Logger.h\"")
+    for inc, v in includes.items():
+        source += line("#include \"" + inc + "\"")
 
     source += "" \
 "#ifdef __GNUG__ // GCC\n \
@@ -178,7 +170,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strncmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\", 30) == 0) {")
+        source += line_indent(_if + " (std::strcmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\") == 0) {")
         source += line("auto nc = new " + comp + "();")
         source += line(comp + "s[e.Id] = nc;")
         source += line("return (T*)nc;")
@@ -204,7 +196,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strncmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\", 30) == 0) {")
+        source += line_indent(_if + " (std::strcmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\") == 0) {")
         source += line("return (T*)" + comp + "s[e.Id];")
         source += line_outdent("}")
     source += line_indent("else {")
@@ -218,9 +210,24 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += line("return GetComponent<T>(Entities::AllEntities[e]);")
     source += end_proc()
 
+    render_procs = {}
+    update_procs = {}
+    for comp, fd in update_functions.items():
+        if fd["priority"] == "RENDER":
+            render_procs[comp] = fd
+        else:
+            update_procs[comp] = fd
+
+    source += line("using namespace Entities;")
     source += begin_proc("UpdateEntities", "void", "")
-    for comp, function_data in update_functions.items():
-        source += line
+    for comp, function_data in update_procs.items():
+        source += line_indent("for (auto kp : " + comp + "s) {")
+        source += line(function_data["func"] + "(kp.first, kp.second);")
+        source += line_outdent("}")
+    for comp, function_data in render_procs.items():
+        source += line_indent("for (auto kp : " + comp + "s) {")
+        source += line(function_data["func"] + "(kp.first, kp.second);")
+        source += line_outdent("}")
     source += end_proc()
 
     source += "\n}"

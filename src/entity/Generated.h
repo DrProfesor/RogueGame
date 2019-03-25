@@ -2,8 +2,8 @@
 #define ROGUEGAME_CAMERA_H
 #include <map>
 #include <string>
-#include "Entities.h"
 #include "../dev/Logger.h"
+#include "Entities.h"
 #ifdef __GNUG__ // GCC
  
  #include <cxxabi.h> 
@@ -36,22 +36,22 @@ namespace Entities {
 
 	template<typename T>
 	T* AddComponent(Entity e) {
-		if (std::strncmp(readable_name(typeid(T).name()), "Entities::Material", 30) == 0) {
+		if (std::strcmp(readable_name(typeid(T).name()), "Entities::Material") == 0) {
 			auto nc = new Material();
 			Materials[e.Id] = nc;
 			return (T*)nc;
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::Camera", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Camera") == 0) {
 			auto nc = new Camera();
 			Cameras[e.Id] = nc;
 			return (T*)nc;
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::Transform", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Transform") == 0) {
 			auto nc = new Transform();
 			Transforms[e.Id] = nc;
 			return (T*)nc;
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::MeshRenderer", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::MeshRenderer") == 0) {
 			auto nc = new MeshRenderer();
 			MeshRenderers[e.Id] = nc;
 			return (T*)nc;
@@ -69,16 +69,16 @@ namespace Entities {
 
 	template<typename T>
 	T* GetComponent(Entity e) {
-		if (std::strncmp(readable_name(typeid(T).name()), "Entities::Material", 30) == 0) {
+		if (std::strcmp(readable_name(typeid(T).name()), "Entities::Material") == 0) {
 			return (T*)Materials[e.Id];
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::Camera", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Camera") == 0) {
 			return (T*)Cameras[e.Id];
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::Transform", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Transform") == 0) {
 			return (T*)Transforms[e.Id];
 		}
-		else if (std::strncmp(readable_name(typeid(T).name()), "Entities::MeshRenderer", 30) == 0) {
+		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::MeshRenderer") == 0) {
 			return (T*)MeshRenderers[e.Id];
 		}
 		else {
@@ -90,6 +90,13 @@ namespace Entities {
 	template<typename T>
 	T* GetComponent(unsigned int e) {
 		return GetComponent<T>(Entities::AllEntities[e]);
+	}
+
+	using namespace Entities;
+	void UpdateEntities() {
+		for (auto kp : MeshRenderers) {
+			Update_MeshRender(kp.first, kp.second);
+		}
 	}
 
 
