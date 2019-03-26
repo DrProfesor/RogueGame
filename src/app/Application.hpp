@@ -38,6 +38,9 @@ namespace app
 	// application
 	struct Application
 	{
+        bgfx::FrameBufferHandle frame_buffer_handle;
+        bgfx::TextureHandle frame_buffer_texture;
+
 		static void keyCallback( GLFWwindow* window, int key, int scancode, int action, int mods );
 		static void charCallback( GLFWwindow* window, unsigned int codepoint );
 		static void charModsCallback( GLFWwindow* window, unsigned int codepoint, int mods );

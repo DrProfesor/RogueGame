@@ -99,6 +99,9 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	// Initialize the application
 	Reset();
 
+    frame_buffer_texture = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
+    frame_buffer_handle = bgfx::createFrameBuffer(1, &frame_buffer_texture);
+
 	return 0;
 }
 

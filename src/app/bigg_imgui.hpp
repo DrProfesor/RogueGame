@@ -41,6 +41,9 @@ static void imguiInit()
 	// Setup render callback
 	io.RenderDrawListsFn = imguiRender;
 
+	io.ConfigFlags |= ImGuiConfigFlags_DockingEnable;
+    io.ConfigDockingWithShift = true;
+
 	// Key mapping
 	io.KeyMap[ ImGuiKey_Tab ] = GLFW_KEY_TAB;
 	io.KeyMap[ ImGuiKey_LeftArrow ] = GLFW_KEY_LEFT;
