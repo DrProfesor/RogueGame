@@ -6,7 +6,7 @@
 #define PROGRAMVIEWER_LOGGER_H
 
 #include <cstdarg>
-#include <imguial_log.h>
+#include <imgui.h>
 
 struct AppLog
 {

@@ -11,6 +11,7 @@
 #include <streambuf>
 #include "../assets/json.h"
 #include "../dev/Logger.h"
+#include "../filesystem/FileIO.h"
 
 using namespace std;
 using json = nlohmann::json;
@@ -19,26 +20,17 @@ struct Scene {
 
 };
 
-#define SCENE_DIR "/Users/jake/Documents/Dev/RogueGame/assets/scene/"
+#define SCENE_DIR "/RogueGame/assets/scene/"
 
 namespace SceneManager {
 
     void LoadScene(string sceneName)
     {
-        std::ifstream t(SCENE_DIR + sceneName);
-        std::string str;
-
-        t.seekg(0, std::ios::end);
-        str.reserve(t.tellg());
-        t.seekg(0, std::ios::beg);
-
-        str.assign((std::istreambuf_iterator<char>(t)),
-                   std::istreambuf_iterator<char>());
-
-        Logger::Log(str.c_str());
-
-        json j = json::parse(str);
-
+//        std::ifstream t(File::GetWorkingDir() + SCENE_DIR + sceneName);
+//        std::string str((std::istreambuf_iterator<char>(t)),
+//                        std::istreambuf_iterator<char>());
+//        Logger::Log(str.c_str());
+//        json j = json::parse(str);
     }
 
     void UnloadScene(string sceneName)

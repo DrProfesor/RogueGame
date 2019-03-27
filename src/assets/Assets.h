@@ -37,22 +37,22 @@ struct Vertex
 };
 
 namespace Assets {
-    map<string, TextureHandle> Textures;
-    map<string, ProgramHandle> Shaders;
-    map<string, ModelHandle> Models;
+    map<string, TextureHandle> Textures = {};
+    map<string, ProgramHandle> Shaders = {};
+    map<string, ModelHandle> Models = {};
 
-    void LoadTexture(string textureId, string texturePath)
+    void LoadTexture(const string textureId, const string texturePath)
     {
         auto tex = Utils::LoadTexture(texturePath.c_str());
         Textures[textureId] = tex;
     }
 
-    void LoadShader(string programId)
+    void LoadShader(const string programId)
     {
         Shaders[programId] = Utils::LoadShader(programId);
     }
 
-    std::vector<string> LoadModel(string modelId, string modelPath)
+    std::vector<string> LoadModel(const string modelId, const char* modelPath)
     {
         bgfx::VertexDecl ms_decl;
         ms_decl
@@ -63,10 +63,9 @@ namespace Assets {
                 .add(bgfx::Attrib::Color0, 4, bgfx::AttribType::Float)
                 .add(bgfx::Attrib::Color1, 4, bgfx::AttribType::Float)
                 .end();
-
         Assimp::Importer importer;
-        const aiScene *scene = importer.ReadFile(modelPath.c_str(), aiProcess_CalcTangentSpace | aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType | aiProcess_FlipWindingOrder);
-
+        std::cout << modelPath << std::endl;
+        const aiScene *scene = importer.ReadFile(modelPath, aiProcess_CalcTangentSpace | aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType | aiProcess_FlipWindingOrder);
         if (!scene) {
             printf("Unable to laod mesh: %s\n", importer.GetErrorString());
         }

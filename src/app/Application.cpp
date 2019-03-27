@@ -23,6 +23,7 @@
 #include "bigg_assets.h"
 #include "bigg_shaders.hpp"
 #include "bigg_imgui.hpp"
+#include <imgui.h>
 
 using namespace app;
 
@@ -74,6 +75,8 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	// Setup bgfx
 	bgfx::PlatformData platformData;
 	memset( &platformData, 0, sizeof( platformData ) );
+	bgfx::Init init;
+
 #if BX_PLATFORM_LINUX || BX_PLATFORM_BSD
 	platformData.nwh = (void*)(uintptr_t)glfwGetX11Window(mWindow);
 	platformData.ndt = glfwGetX11Display();
@@ -81,11 +84,12 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	platformData.nwh = glfwGetCocoaWindow(mWindow);
 #elif BX_PLATFORM_WINDOWS
 	platformData.nwh = glfwGetWin32Window(mWindow);
+	init.type = bgfx::RendererType::Direct3D12;
 #endif // BX_PLATFORM_
 	bgfx::setPlatformData( platformData );
 
 	// Init bgfx
-	bgfx::Init init;
+
 	init.type = type;
 	init.vendorId = vendorId;
 	init.deviceId = deviceId;
@@ -256,7 +260,7 @@ void Application::imguiEvents( float dt )
 	glfwSetInputMode( mWindow, GLFW_CURSOR, io.MouseDrawCursor ? GLFW_CURSOR_HIDDEN : GLFW_CURSOR_NORMAL );
 	io.ClipboardUserData = mWindow;
 #ifdef _WIN32
-	io.ImeWindowHandle = glfwGetWin32Window( mWindow );
+	//io.ImeWindowHandle = glfwGetWin32Window( mWindow );
 #endif
 }
 

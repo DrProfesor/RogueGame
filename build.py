@@ -162,6 +162,10 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += "\n"
     source += line("template<typename T>")
     source += begin_proc("AddComponent", "T*", "Entity e")
+    source += line("auto name = readable_name(typeid(T).name());")
+    source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
+    source += line("auto comparableName = sName.c_str();")
+
     first = True
     for comp, comp_data in components.items():
         _if = ""
@@ -170,14 +174,14 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strcmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\") == 0) {")
+        source += line_indent(_if + " (std::strcmp(comparableName, \"" + comp + "\") == 0) {")
         source += line("auto nc = new " + comp + "();")
         source += line(comp + "s[e.Id] = nc;")
         source += line("return (T*)nc;")
         source += line_outdent("}")
     source += line_indent("else {")
-    source += line("Logger::Log((std::string(\"Unhandled component:\") + readable_name(typeid(T).name())).c_str());")
-    source += line ("return nullptr;")
+    source += line("std::cout << std::string(\"Unhandled component:\") << sName << std::endl;")
+    source += line("return nullptr;")
     source += line_outdent("}")
     source += end_proc()
 
@@ -188,6 +192,9 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 
     source += line("template<typename T>")
     source += begin_proc("GetComponent", "T*", "Entity e")
+    source += line("auto name = readable_name(typeid(T).name());")
+    source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
+    source += line("auto comparableName = sName.c_str();")
     first = True
     for comp, comp_data in components.items():
         _if = ""
@@ -196,12 +203,12 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strcmp(readable_name(typeid(T).name()), \"Entities::" + comp + "\") == 0) {")
+        source += line_indent(_if + " (std::strcmp(comparableName, \"" + comp + "\") == 0) {")
         source += line("return (T*)" + comp + "s[e.Id];")
         source += line_outdent("}")
     source += line_indent("else {")
-    source += line("Logger::Log((std::string(\"Unhandled component:\") + readable_name(typeid(T).name())).c_str());")
-    source += line ("return nullptr;")
+    source += line("std::cout << std::string(\"Unhandled component:\") << sName << std::endl;")
+    source += line("return nullptr;")
     source += line_outdent("}")
     source += end_proc()
 

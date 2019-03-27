@@ -2,6 +2,7 @@
 // Created by Jake on 3/21/19.
 //
 
+#include <iostream>
 #include "AssetUtils.h"
 
 namespace Utils {
@@ -58,7 +59,9 @@ bx::AllocatorI* Utils::GetDefaultAllocator()
 
 bgfx::ShaderHandle loadShader(std::string shader)
 {
-    return bgfx::createShader(Utils::LoadMemory( (SHADER_DIR + shader).c_str() ));
+    auto dir = R"(D:\Dev\RogueGame\assets\shaders\)";
+    std::cout << dir + shader << std::endl;
+    return bgfx::createShader(Utils::LoadMemory( (dir + shader).c_str() ));
 }
 
 const bgfx::Memory* Utils::LoadMemory(const char* filePath)

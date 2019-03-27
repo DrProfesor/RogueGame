@@ -29,35 +29,38 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 #endif // __GNUG__
 
 namespace Entities {
-	static std::map<unsigned int, Material*> Materials;
 	static std::map<unsigned int, Camera*> Cameras;
 	static std::map<unsigned int, Transform*> Transforms;
 	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
+	static std::map<unsigned int, Material*> Materials;
 
 	template<typename T>
 	T* AddComponent(Entity e) {
-		if (std::strcmp(readable_name(typeid(T).name()), "Entities::Material") == 0) {
-			auto nc = new Material();
-			Materials[e.Id] = nc;
-			return (T*)nc;
-		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Camera") == 0) {
+		auto name = readable_name(typeid(T).name());
+		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
+		auto comparableName = sName.c_str();
+		if (std::strcmp(comparableName, "Camera") == 0) {
 			auto nc = new Camera();
 			Cameras[e.Id] = nc;
 			return (T*)nc;
 		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Transform") == 0) {
+		else if (std::strcmp(comparableName, "Transform") == 0) {
 			auto nc = new Transform();
 			Transforms[e.Id] = nc;
 			return (T*)nc;
 		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::MeshRenderer") == 0) {
+		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			auto nc = new MeshRenderer();
 			MeshRenderers[e.Id] = nc;
 			return (T*)nc;
 		}
+		else if (std::strcmp(comparableName, "Material") == 0) {
+			auto nc = new Material();
+			Materials[e.Id] = nc;
+			return (T*)nc;
+		}
 		else {
-			Logger::Log((std::string("Unhandled component:") + readable_name(typeid(T).name())).c_str());
+			std::cout << std::string("Unhandled component:") << sName << std::endl;
 			return nullptr;
 		}
 	}
@@ -69,20 +72,23 @@ namespace Entities {
 
 	template<typename T>
 	T* GetComponent(Entity e) {
-		if (std::strcmp(readable_name(typeid(T).name()), "Entities::Material") == 0) {
-			return (T*)Materials[e.Id];
-		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Camera") == 0) {
+		auto name = readable_name(typeid(T).name());
+		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
+		auto comparableName = sName.c_str();
+		if (std::strcmp(comparableName, "Camera") == 0) {
 			return (T*)Cameras[e.Id];
 		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::Transform") == 0) {
+		else if (std::strcmp(comparableName, "Transform") == 0) {
 			return (T*)Transforms[e.Id];
 		}
-		else if (std::strcmp(readable_name(typeid(T).name()), "Entities::MeshRenderer") == 0) {
+		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			return (T*)MeshRenderers[e.Id];
 		}
+		else if (std::strcmp(comparableName, "Material") == 0) {
+			return (T*)Materials[e.Id];
+		}
 		else {
-			Logger::Log((std::string("Unhandled component:") + readable_name(typeid(T).name())).c_str());
+			std::cout << std::string("Unhandled component:") << sName << std::endl;
 			return nullptr;
 		}
 	}
