@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 3.0 )
 set(APP_TARGET RogueGame)
 project(${APP_TARGET})
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(ASSIMP_BUILD_STATIC_LIB ON)
 
@@ -25,17 +25,20 @@ if (APPLE)
             ${cfnetwork_lib}
             ${corefoundation_lib}
             ${assimp})
-endif (APPLE)
+elseif(WIN32)
 
-
-add_executable( ${APP_TARGET} ${SRC_FILES} )
+endif()
 
 message("Generating Code")
 execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/build.py")
 
+add_executable( ${APP_TARGET} ${SRC_FILES} )
+
 if (APPLE)
     target_link_libraries(${APP_TARGET} ${frameworks})
-endif (APPLE)
+elseif(WIN32)
+    target_link_libraries(${APP_TARGET} assimp)
+endif()
 
 target_link_libraries( ${APP_TARGET} bgfx imgui glfw glm )
 target_include_directories( ${APP_TARGET} PUBLIC include )
