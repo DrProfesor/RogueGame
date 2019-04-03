@@ -90,6 +90,18 @@ namespace Assets {
                 vertices[i].col1 = glm::vec4(0.5, 0, 0.5, 1);
                 vertices[i].col2 = glm::vec4(0.5, 0, 0.5, 1);
 
+//                if (mesh->mColors[0])
+//                {
+//                    auto colour = mesh->mColors[0][i];
+//                    vertices[i].col1 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+//                }
+//
+//                if (mesh->mColors[1])
+//                {
+//                    auto colour = mesh->mColors[1][i];
+//                    vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+//                }
+
                 if (mesh->mTextureCoords[0])
                 {
                     auto tex = mesh->mTextureCoords[0][i];

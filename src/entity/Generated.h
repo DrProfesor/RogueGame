@@ -29,8 +29,8 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 #endif // __GNUG__
 
 namespace Entities {
+	static std::map<unsigned int, TransformComponent*> TransformComponents;
 	static std::map<unsigned int, Camera*> Cameras;
-	static std::map<unsigned int, Transform*> Transforms;
 	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
 	static std::map<unsigned int, Material*> Materials;
 
@@ -39,24 +39,28 @@ namespace Entities {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "Camera") == 0) {
-			auto nc = new Camera();
-			Cameras[e.Id] = nc;
+		if (std::strcmp(comparableName, "TransformComponent") == 0) {
+			auto nc = new TransformComponent();
+			TransformComponents[e.Id] = nc;
+			nc->Entity = e;
 			return (T*)nc;
 		}
-		else if (std::strcmp(comparableName, "Transform") == 0) {
-			auto nc = new Transform();
-			Transforms[e.Id] = nc;
+		else if (std::strcmp(comparableName, "Camera") == 0) {
+			auto nc = new Camera();
+			Cameras[e.Id] = nc;
+			nc->Entity = e;
 			return (T*)nc;
 		}
 		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			auto nc = new MeshRenderer();
 			MeshRenderers[e.Id] = nc;
+			nc->Entity = e;
 			return (T*)nc;
 		}
 		else if (std::strcmp(comparableName, "Material") == 0) {
 			auto nc = new Material();
 			Materials[e.Id] = nc;
+			nc->Entity = e;
 			return (T*)nc;
 		}
 		else {
@@ -75,11 +79,11 @@ namespace Entities {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "Camera") == 0) {
-			return (T*)Cameras[e.Id];
+		if (std::strcmp(comparableName, "TransformComponent") == 0) {
+			return (T*)TransformComponents[e.Id];
 		}
-		else if (std::strcmp(comparableName, "Transform") == 0) {
-			return (T*)Transforms[e.Id];
+		else if (std::strcmp(comparableName, "Camera") == 0) {
+			return (T*)Cameras[e.Id];
 		}
 		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			return (T*)MeshRenderers[e.Id];
@@ -100,12 +104,34 @@ namespace Entities {
 
 	using namespace Entities;
 	void UpdateEntities() {
+		for (auto kp : TransformComponents) {
+			Update_Transform(kp.first, kp.second);
+		}
 		for (auto kp : MeshRenderers) {
 			Update_MeshRender(kp.first, kp.second);
 		}
 	}
 
 
-}
+}	//TransformComponent
+	//{'type': 'vec3', 'name': 'Position'}
+	//{'type': 'quat', 'name': 'Rotation'}
+	//{'type': 'vec3', 'name': 'Scale'}
+	//Camera
+	//{'type': 'ViewId', 'name': 'View'}
+	//{'type': 'int', 'name': 'Width'}
+	//{'type': 'int', 'name': 'Height'}
+	//{'type': 'CameraMode', 'name': 'Mode'}
+	//{'type': '//', 'name': 'persp'}
+	//{'type': 'float', 'name': 'FieldOfView'}
+	//{'type': 'float', 'name': 'Near'}
+	//{'type': 'float', 'name': 'Far'}
+	//MeshRenderer
+	//{'type': 'ModelHandle', 'name': 'Model'}
+	//Material
+	//{'type': 'bgfx::ProgramHandle', 'name': 'Shader'}
+	//{'type': 'bgfx::TextureHandle', 'name': 'Texture'}
+	//{'type': 'bgfx::UniformHandle', 'name': 'Uniforms'}
+
 
 #endif

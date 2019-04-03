@@ -23,6 +23,7 @@
 #include "bigg_assets.h"
 #include "bigg_shaders.hpp"
 #include "bigg_imgui.hpp"
+#include "../input/Input.h"
 #include <imgui.h>
 
 using namespace app;
@@ -31,8 +32,8 @@ using namespace app;
 
 Application::Application()
 {
-	mWidth = 1280;
-	mHeight = 768;
+	mWidth = 1920;
+	mHeight = 1080;
 	mMousePressed[ 0 ] = false;
 	mMousePressed[ 1 ] = false;
 	mMousePressed[ 2 ] = false;
@@ -84,7 +85,6 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	platformData.nwh = glfwGetCocoaWindow(mWindow);
 #elif BX_PLATFORM_WINDOWS
 	platformData.nwh = glfwGetWin32Window(mWindow);
-	init.type = bgfx::RendererType::Direct3D12;
 #endif // BX_PLATFORM_
 	bgfx::setPlatformData( platformData );
 
@@ -96,6 +96,8 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	init.callback = callback;
 	init.allocator = allocator;
 	bgfx::init(init);
+
+	Input::Init(mWindow);
 
 	// Setup ImGui
 	imguiInit();
@@ -119,6 +121,7 @@ bool Application::Update(float dt)
 
 	// Begin frame
 	bgfx::touch(0);
+    bgfx::touch(1);
 	ImGui::NewFrame();
 
 	return true;
@@ -139,6 +142,8 @@ void Application::PostUpdate()
 		mHeight = h;
 		Reset( mReset );
 	}
+
+    Input::Update();
 }
 
 void Application::Shutdown()
@@ -156,6 +161,9 @@ void Application::Reset( uint32_t flags )
 
     bgfx::setViewClear( 0, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x303030ff, 1.0f, 0 );
     bgfx::setViewRect( 0, 0, 0, uint16_t( GetWidth() ), uint16_t( GetHeight() ) );
+
+    bgfx::setViewClear( 1, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x6dbae0ff, 1.0f, 0 );
+    bgfx::setViewRect( 1, 0, 0, uint16_t( GetWidth() ), uint16_t( GetHeight() ) );
 }
 
 uint32_t Application::GetWidth()
@@ -168,6 +176,7 @@ uint32_t Application::GetHeight()
 	return mHeight;
 }
 
+// TODO move these to input
 void Application::keyCallback( GLFWwindow* window, int key, int scancode, int action, int mods )
 {
 	ImGuiIO& io = ImGui::GetIO();
@@ -185,6 +194,7 @@ void Application::keyCallback( GLFWwindow* window, int key, int scancode, int ac
 	io.KeySuper = io.KeysDown[ GLFW_KEY_LEFT_SUPER ] || io.KeysDown[ GLFW_KEY_RIGHT_SUPER ];
 	if ( !io.WantCaptureKeyboard )
 	{
+	    Input::keyCallback(window, key, scancode, action, mods);
 	}
 }
 
@@ -195,10 +205,13 @@ void Application::charCallback( GLFWwindow* window, unsigned int codepoint )
 	{
 		io.AddInputCharacter( ( unsigned short )codepoint );
 	}
+
+	Input::charCallback(window, codepoint);
 }
 
 void Application::charModsCallback( GLFWwindow* window, unsigned int codepoint, int mods )
 {
+    Input::charModsCallback(window, codepoint, mods);
 }
 
 void Application::mouseButtonCallback( GLFWwindow* window, int button, int action, int mods )
@@ -209,25 +222,31 @@ void Application::mouseButtonCallback( GLFWwindow* window, int button, int actio
 	}
 	if ( !io.WantCaptureMouse )
 	{
+	    Input::mouseButtonCallback(window, button, action, mods);
 	}
 }
 
 void Application::cursorPosCallback( GLFWwindow* window, double xpos, double ypos )
 {
+    Input::cursorPosCallback(window, xpos, ypos);
 }
 
 void Application::cursorEnterCallback( GLFWwindow* window, int entered )
 {
+    Input::cursorEnterCallback(window, entered);
 }
 
 void Application::scrollCallback( GLFWwindow* window, double xoffset, double yoffset )
 {
 	Application* app = ( Application* )glfwGetWindowUserPointer( window );
 	app->mMouseWheel += (float)yoffset;
+
+	Input::scrollCallback(window, xoffset, yoffset);
 }
 
 void Application::dropCallback( GLFWwindow* window, int count, const char** paths )
 {
+    Input::dropCallback(window, count, paths);
 }
 
 void Application::imguiEvents( float dt )

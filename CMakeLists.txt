@@ -10,6 +10,8 @@ set(ASSIMP_BUILD_STATIC_LIB ON)
 add_subdirectory( deps )
 add_subdirectory(deps/assimp)
 include_directories(deps/assimp/include)
+include_directories(deps/iconfontheaders)
+include_directories(deps/stb)
 
 #include( deps/bgfx.cmake/cmake/util/ConfigureDebugging.cmake )
 #add_library( app STATIC src/app.cpp src/bigg_assets.h src/bigg_imgui.hpp src/bigg_shaders.hpp include/app.hpp )

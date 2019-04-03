@@ -15,7 +15,7 @@
 #include "dev/Logger.h"
 #include "assets/Assets.h"
 #include "scene/Scene.h"
-#include "filesystem/FileIO.h"
+#include "input/Input.h"
 
 using namespace Entities;
 
@@ -26,39 +26,33 @@ int main(int argc, char** argv)
     Application app;
     app.Init(argc, argv);
 
-    Logger::Init();
+    Logger log;
 
     SceneManager::LoadScene("main.scene");
-    // "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx"
-    auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
-    auto e = Entities::Instantiate();
-    auto mr = Entities::AddComponent<MeshRenderer>(e);
-    mr->Model = Assets::Models[ids[0]];
 
-    auto material = Entities::AddComponent<Material>(e);
-    material->Shader = Utils::LoadShader("cubes");
+    // Load model
+    {
+        // "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx"
+        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
+        auto e = Entities::Instantiate();
+        auto mr = Entities::AddComponent<MeshRenderer>(e);
+        mr->Model = Assets::Models[ids[0]];
 
-    auto transform = Entities::AddComponent<Entities::Transform>(e);
+        auto material = Entities::AddComponent<Material>(e);
+        material->Shader = Utils::LoadShader("cubes");
 
+        Entities::AddComponent<Entities::TransformComponent>(e);
+    }
+
+    // load camera
     auto camera = Entities::Instantiate();
     auto c = Entities::AddComponent<Camera>(camera);
-    c->View = 0;
-    Entities::AddComponent<Entities::Transform>(camera);
+    c->View = 1;
+    Entities::AddComponent<Entities::TransformComponent>(camera);
 
-    const vec3 at  = { 0.0f, 0.0f,   0.0f };
-    const vec3 eye = { 0.0f, 0.0f, -35.0f };
+    float speed = 2.0f;
 
-    { //TODO camera stuff here
-        float view[16];
-        bx::mtxLookAt(view, &eye[0], &at[0]);
-
-        float proj[16];
-        bx::mtxProj(proj, 60.0f, float(app.mWidth)/float(app.mHeight), 0.1f, 100.0f, bgfx::getCaps()->homogeneousDepth);
-        bgfx::setViewTransform(0, view, proj);
-
-        // Set view 0 default viewport.
-        bgfx::setViewRect(0, 0, 0, uint16_t(app.mWidth), uint16_t(app.mHeight) );
-    }
+    vec2 last_cursor_pos = vec2{};
 
     float lastTime = 0;
     float dt;
@@ -69,8 +63,88 @@ int main(int argc, char** argv)
         dt = time - lastTime;
         lastTime = time;
 
+        c->SetViewTransform();
+        c->SetViewRect();
+
+        auto cameraTransform = Entities::GetComponent<Entities::TransformComponent>(camera);
+        if (Input::GetKey(Input::KeyCode::W))
+        {
+            cameraTransform->Position += cameraTransform->Forward() * dt * speed;
+        }
+        if (Input::GetKey(Input::KeyCode::S))
+        {
+            cameraTransform->Position -= cameraTransform->Forward() * dt * speed;
+        }
+        if (Input::GetKey(Input::KeyCode::A))
+        {
+            cameraTransform->Position += cameraTransform->Left() * dt * speed;
+        }
+        if (Input::GetKey(Input::KeyCode::D))
+        {
+            cameraTransform->Position -= cameraTransform->Left() * dt * speed;
+        }
+        if (Input::GetKey(Input::KeyCode::E))
+        {
+            cameraTransform->Position += cameraTransform->Up() * dt * speed;
+        }
+        if (Input::GetKey(Input::KeyCode::Q))
+        {
+            cameraTransform->Position -= cameraTransform->Up() * dt * speed;
+        }
+
         if (!app.Update(dt)) break;
 
+        if (ImGui::Begin("CameraDebug"))
+        {
+            ImGui::Text("Position: %f %f %f", cameraTransform->Position.x, cameraTransform->Position.y, cameraTransform->Position.z);
+            ImGui::Text("Forward: %f %f %f", cameraTransform->Forward().x, cameraTransform->Forward().y, cameraTransform->Forward().z);
+            ImGui::Text("Roatation: %f %f %f %f", cameraTransform->Rotation.x, cameraTransform->Rotation.y, cameraTransform->Rotation.z, cameraTransform->Rotation.w);
+            ImGui::SliderFloat("Speed", &speed, 1, 10);
+        }
+        ImGui::End();
+
+        bgfx::setViewFrameBuffer(1, app.frame_buffer_handle);
+        Entities::UpdateEntities();
+
+        if (ImGui::Begin("Scene"))
+        {
+            auto size = ImGui::GetContentRegionAvail();
+
+            ImGui::CaptureMouseFromApp(false);
+
+            union { ImTextureID ptr; struct { uint16_t flags; bgfx::TextureHandle handle; } s; } texture;
+            texture.s.handle = app.frame_buffer_texture;
+            texture.s.flags  = 0x01;
+
+            ImGui::Image(texture.ptr, size, ImVec2(1, 0), ImVec2(0, 1));
+
+            if (Input::GetButton(Input::Button::RIGHT_MOUSE))
+            {
+                auto current = Input::GetMousePosition() - vec2{app.GetWidth(), app.GetHeight()};//vec2{ImGui::GetCursorPos().x + ImGui::GetWindowSize().x/2, ImGui::GetCursorPos().y + ImGui::GetWindowSize().y/2};
+                auto delta = vec2{current.x - last_cursor_pos.x, current.y - last_cursor_pos.y} * dt;
+                //Logger::Instance->Info("Pos: {%f, %f}", delta.x, delta.y);
+
+                auto qx = glm::angleAxis(delta.y, vec3(1,0,0));
+                auto qy = glm::angleAxis(-delta.x, vec3(0,1,0));
+                cameraTransform->Rotation = cameraTransform->Rotation * qx * qy;
+//                cameraTransform->Rotation = glm::rotate(cameraTransform->Rotation, delta.x, vec3(0,1,0));
+//                cameraTransform->Rotation = glm::rotate(cameraTransform->Rotation, delta.y, vec3(1,0,0));
+//                cameraTransform->Rotation = glm::normalize(cameraTransform->Rotation);
+
+            }
+            last_cursor_pos = Input::GetMousePosition() - vec2{app.GetWidth(), app.GetHeight()};
+
+            ImGui::End();
+        }
+
+        // Post update contains the bgfx frame call,
+        // so should happen after everything has been submitted
+        log.Draw();
+        app.PostUpdate();
+    }
+
+    return 0;
+}
 //        bool open = true;
 //        static bool opt_fullscreen_persistant = true;
 //        static ImGuiDockNodeFlags opt_flags = ImGuiDockNodeFlags_None;
@@ -101,24 +175,3 @@ int main(int argc, char** argv)
 //        ImGuiID dockspace_id = ImGui::GetID("MyDockspace");
 //        ImGui::DockSpace(dockspace_id, ImVec2(0.0f, 0.0f), opt_flags);
 //        ImGui::End();
-
-        //bgfx::setViewFrameBuffer(0, app.frame_buffer_handle);
-        Entities::UpdateEntities();
-
-//        if (ImGui::Begin("Scene"))
-//        {
-//            std::cout << &app.frame_buffer_texture << std::endl;
-//            auto size = ImGui::GetContentRegionAvail();
-//            ImGui::Image(&app.frame_buffer_texture, size, ImVec2(0, 1), ImVec2(1, 0));
-//
-//            ImGui::End();
-//        }
-
-        // Post update contains the bgfx frame call,
-        // so should happen after everything has been submitted
-        Logger::GetLogObj().Draw("Log");
-        app.PostUpdate();
-    }
-
-    return 0;
-}

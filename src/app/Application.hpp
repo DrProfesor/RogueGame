@@ -78,6 +78,8 @@ namespace app
 		uint32_t mReset;
 		uint32_t mWidth;
 		uint32_t mHeight;
+
+		//TODO move to input
 		bool  mMousePressed[ 3 ];
 		float mMouseWheel;
 	};
