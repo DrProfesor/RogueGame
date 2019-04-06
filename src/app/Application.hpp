@@ -10,6 +10,7 @@
 #include <glm/glm.hpp>
 
 #include <bx/allocator.h>
+#include "../entity/Entities.h"
 
 namespace app
 {
@@ -38,9 +39,6 @@ namespace app
 	// application
 	struct Application
 	{
-        bgfx::FrameBufferHandle frame_buffer_handle;
-        bgfx::TextureHandle frame_buffer_texture;
-
 		static void keyCallback( GLFWwindow* window, int key, int scancode, int action, int mods );
 		static void charCallback( GLFWwindow* window, unsigned int codepoint );
 		static void charModsCallback( GLFWwindow* window, unsigned int codepoint, int mods );
@@ -75,6 +73,8 @@ namespace app
 		GLFWwindow* mWindow;
 		app::Allocator mAllocator;
 
+		Entity MainCamera;
+
 		uint32_t mReset;
 		uint32_t mWidth;
 		uint32_t mHeight;
@@ -82,5 +82,7 @@ namespace app
 		//TODO move to input
 		bool  mMousePressed[ 3 ];
 		float mMouseWheel;
+
+		static Application * Instance;
 	};
 }

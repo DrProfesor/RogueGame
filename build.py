@@ -132,11 +132,12 @@ def line_outdent(*args):
     return ret
 
 
-with open(dir_path + "/src/entity/Generated.h", 'w') as wr:
+with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source = "#ifndef ROGUEGAME_CAMERA_H\n#define ROGUEGAME_CAMERA_H\n"
 
     source += line("#include <map>")
     source += line("#include <string>")
+    source += line("#include <iostream>")
     source += line("#include \"../dev/Logger.h\"")
     for inc, v in includes.items():
         source += line("#include \"" + inc + "\"")
@@ -173,7 +174,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 
     source += "\n"
     source += line("template<typename T>")
-    source += begin_proc("AddComponent", "T*", "Entity e")
+    source += begin_proc("EntityManager::AddComponent", "T*", "Entity e")
     source += line("auto name = readable_name(typeid(T).name());")
     source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
     source += line("auto comparableName = sName.c_str();")
@@ -199,12 +200,12 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += end_proc()
 
     source += line("template<typename T>")
-    source += begin_proc("AddComponent", "T*", "unsigned int e")
-    source += line("return AddComponent<T>(Entities::AllEntities[e]);")
+    source += begin_proc("EntityManager::AddComponent", "T*", "unsigned int e")
+    source += line("return EntityManager::AddComponent<T>(EntityManager::AllEntities[e]);")
     source += end_proc()
 
     source += line("template<typename T>")
-    source += begin_proc("GetComponent", "T*", "Entity e")
+    source += begin_proc("EntityManager::GetComponent", "T*", "Entity e")
     source += line("auto name = readable_name(typeid(T).name());")
     source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
     source += line("auto comparableName = sName.c_str();")
@@ -226,8 +227,8 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += end_proc()
 
     source += line("template<typename T>")
-    source += begin_proc("GetComponent", "T*", "unsigned int e")
-    source += line("return GetComponent<T>(Entities::AllEntities[e]);")
+    source += begin_proc("EntityManager::GetComponent", "T*", "unsigned int e")
+    source += line("return EntityManager::GetComponent<T>(EntityManager::AllEntities[e]);")
     source += end_proc()
 
     render_procs = {}
@@ -238,8 +239,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         else:
             update_procs[comp] = fd
 
-    source += line("using namespace Entities;")
-    source += begin_proc("UpdateEntities", "void", "")
+    source += begin_proc("EntityManager::UpdateEntities", "void", "")
     for comp, function_data in update_procs.items():
         source += line_indent("for (auto kp : " + comp + "s) {")
         source += line(function_data["func"] + "(kp.first, kp.second);")
@@ -249,6 +249,12 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line(function_data["func"] + "(kp.first, kp.second);")
         source += line_outdent("}")
     source += end_proc()
+
+    for comp, comp_data in components.items():
+        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(unsigned int e);")
+        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(Entity e);")
+        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(unsigned int e);")
+        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(Entity e);")
 
     source += "\n}"
 

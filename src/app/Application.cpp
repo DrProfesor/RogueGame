@@ -20,6 +20,7 @@
 #include <glm/glm.hpp>
 #include <fstream>
 
+#include "../entity/Entities.h"
 #include "bigg_assets.h"
 #include "bigg_shaders.hpp"
 #include "bigg_imgui.hpp"
@@ -27,8 +28,10 @@
 #include <imgui.h>
 
 using namespace app;
+using namespace Entities;
 
 // application
+Application * Application::Instance;
 
 Application::Application()
 {
@@ -38,6 +41,8 @@ Application::Application()
 	mMousePressed[ 1 ] = false;
 	mMousePressed[ 2 ] = false;
 	mMouseWheel = 0.0f;
+
+	Instance = this;
 }
 
 int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uint16_t vendorId, uint16_t deviceId, bgfx::CallbackI* callback, bx::AllocatorI* allocator )
@@ -105,8 +110,14 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	// Initialize the application
 	Reset();
 
-    frame_buffer_texture = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
-    frame_buffer_handle = bgfx::createFrameBuffer(1, &frame_buffer_texture);
+    {// init the main camera
+        MainCamera = EntityManager::Instantiate();
+        auto c = EntityManager::AddComponent<Camera>(MainCamera);
+        EntityManager::AddComponent<Entities::TransformComponent>(MainCamera);
+        c->View = 1;
+        c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
+        c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
+    }
 
 	return 0;
 }

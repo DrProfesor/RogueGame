@@ -2,6 +2,7 @@
 #define ROGUEGAME_CAMERA_H
 #include <map>
 #include <string>
+#include <iostream>
 #include "../dev/Logger.h"
 #include "Entities.h"
 #ifdef __GNUG__ // GCC
@@ -35,7 +36,7 @@ namespace Entities {
 	static std::map<unsigned int, Material*> Materials;
 
 	template<typename T>
-	T* AddComponent(Entity e) {
+	T* EntityManager::AddComponent(Entity e) {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
@@ -70,12 +71,12 @@ namespace Entities {
 	}
 
 	template<typename T>
-	T* AddComponent(unsigned int e) {
-		return AddComponent<T>(Entities::AllEntities[e]);
+	T* EntityManager::AddComponent(unsigned int e) {
+		return EntityManager::AddComponent<T>(EntityManager::AllEntities[e]);
 	}
 
 	template<typename T>
-	T* GetComponent(Entity e) {
+	T* EntityManager::GetComponent(Entity e) {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
@@ -98,12 +99,11 @@ namespace Entities {
 	}
 
 	template<typename T>
-	T* GetComponent(unsigned int e) {
-		return GetComponent<T>(Entities::AllEntities[e]);
+	T* EntityManager::GetComponent(unsigned int e) {
+		return EntityManager::GetComponent<T>(EntityManager::AllEntities[e]);
 	}
 
-	using namespace Entities;
-	void UpdateEntities() {
+	void EntityManager::UpdateEntities() {
 		for (auto kp : TransformComponents) {
 			Update_Transform(kp.first, kp.second);
 		}
@@ -112,6 +112,22 @@ namespace Entities {
 		}
 	}
 
+	template TransformComponent* EntityManager::GetComponent<TransformComponent>(unsigned int e);
+	template TransformComponent* EntityManager::GetComponent<TransformComponent>(Entity e);
+	template TransformComponent* EntityManager::AddComponent<TransformComponent>(unsigned int e);
+	template TransformComponent* EntityManager::AddComponent<TransformComponent>(Entity e);
+	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::GetComponent<Camera>(Entity e);
+	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::AddComponent<Camera>(Entity e);
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
+	template Material* EntityManager::GetComponent<Material>(unsigned int e);
+	template Material* EntityManager::GetComponent<Material>(Entity e);
+	template Material* EntityManager::AddComponent<Material>(unsigned int e);
+	template Material* EntityManager::AddComponent<Material>(Entity e);
 
 }	//TransformComponent
 	//{'type': 'vec3', 'name': 'Position'}
@@ -121,6 +137,8 @@ namespace Entities {
 	//{'type': 'ViewId', 'name': 'View'}
 	//{'type': 'int', 'name': 'Width'}
 	//{'type': 'int', 'name': 'Height'}
+	//{'type': 'FrameBufferHandle', 'name': 'FrameBuffer'}
+	//{'type': 'TextureHandle', 'name': 'TextureHandle'}
 	//{'type': 'CameraMode', 'name': 'Mode'}
 	//{'type': '//', 'name': 'persp'}
 	//{'type': 'float', 'name': 'FieldOfView'}

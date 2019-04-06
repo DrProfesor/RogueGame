@@ -12,7 +12,6 @@
 #include "../assets/json.h"
 #include "../dev/Logger.h"
 
-using namespace std;
 using json = nlohmann::json;
 
 struct Scene {
@@ -23,7 +22,7 @@ struct Scene {
 
 namespace SceneManager {
 
-    void LoadScene(string sceneName)
+    void LoadScene(std::string sceneName)
     {
 //        std::ifstream t(File::GetWorkingDir() + SCENE_DIR + sceneName);
 //        std::string str((std::istreambuf_iterator<char>(t)),
@@ -32,7 +31,7 @@ namespace SceneManager {
 //        json j = json::parse(str);
     }
 
-    void UnloadScene(string sceneName)
+    void UnloadScene(std::string sceneName)
     {
 
     }
