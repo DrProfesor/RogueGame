@@ -7,8 +7,8 @@
       <config projectName="RogueGame" targetName="geometryc" />
       <config projectName="RogueGame" targetName="shaderc" />
       <config projectName="RogueGame" targetName="glfw" />
-      <config projectName="RogueGame" targetName="glsl-optimizer" />
       <config projectName="RogueGame" targetName="unit" />
+      <config projectName="RogueGame" targetName="glsl-optimizer" />
       <config projectName="RogueGame" targetName="nvtt" />
       <config projectName="RogueGame" targetName="fcpp" />
       <config projectName="RogueGame" targetName="iqa" />
@@ -21,16 +21,16 @@
       <config projectName="RogueGame" targetName="assimp_cmd" />
       <config projectName="RogueGame" targetName="bgfx" />
       <config projectName="RogueGame" targetName="texturec" />
-      <config projectName="RogueGame" targetName="etc2" />
       <config projectName="RogueGame" targetName="dear-imgui" />
+      <config projectName="RogueGame" targetName="etc2" />
       <config projectName="RogueGame" targetName="etc1" />
-      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="astc" />
       <config projectName="RogueGame" targetName="bimg" />
+      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="glslang" />
-      <config projectName="RogueGame" targetName="example-common" />
-      <config projectName="RogueGame" targetName="uninstall" />
       <config projectName="RogueGame" targetName="RogueGame" />
+      <config projectName="RogueGame" targetName="uninstall" />
+      <config projectName="RogueGame" targetName="example-common" />
       <config projectName="RogueGame" targetName="mesa" />
       <config projectName="RogueGame" targetName="bx" />
       <config projectName="RogueGame" targetName="forsyth-too" />
@@ -43,10 +43,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entities.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Generated.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Generated.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,54 +67,55 @@
     <session id="2077273381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cmake" value="7" />
-          <entry key="cpp" value="49" />
-          <entry key="h" value="70" />
+          <entry key="cpp" value="54" />
+          <entry key="h" value="75" />
           <entry key="hpp" value="16" />
           <entry key="in" value="1" />
           <entry key="md" value="2" />
           <entry key="mm" value="2" />
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
           <entry key="sc" value="6" />
           <entry key="scene" value="1" />
-          <entry key="txt" value="12" />
+          <entry key="txt" value="16" />
           <entry key="type_traits" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="19" />
+          <entry key="CMakeLists.txt" value="23" />
           <entry key="Markdown" value="2" />
-          <entry key="ObjectiveC" value="143" />
+          <entry key="ObjectiveC" value="153" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cmake" value="26" />
-          <entry key="cpp" value="4324" />
-          <entry key="h" value="7024" />
+          <entry key="cpp" value="4353" />
+          <entry key="h" value="7025" />
           <entry key="hpp" value="146" />
-          <entry key="py" value="4692" />
+          <entry key="py" value="4706" />
           <entry key="scene" value="17" />
-          <entry key="txt" value="274" />
+          <entry key="txt" value="296" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="300" />
-          <entry key="ObjectiveC" value="11494" />
+          <entry key="CMakeLists.txt" value="322" />
+          <entry key="ObjectiveC" value="11524" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="4692" />
+          <entry key="Python" value="4706" />
         </counts>
       </usages-collector>
     </session>
@@ -113,10 +123,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="189">
+              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+              <folding>
+                <element signature="e#107#131#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,48 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/types.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-              <folding>
-                <element signature="e#2171#2191#0" expanded="true" />
-                <element signature="e#2323#2341#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/defs.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deps/assimp/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="195" column="14" selection-start-line="195" selection-end-line="195" selection-end-column="14" />
+            <state relative-caret-position="233">
+              <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -181,12 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>imguiBeginFrame</find>
-      <find>s_tex</find>
-      <find>#include &quot;../filesystem/fileio</find>
-      <find>float m</find>
-      <find>getMatrixFast</find>
-      <find>equals</find>
       <find>Input</find>
       <find>Input::Update</find>
       <find>log</find>
@@ -211,10 +205,16 @@
       <find>TransformComponent</find>
       <find>Update_Transform</find>
       <find>addComponen</find>
+      <find>type</find>
+      <find>config</find>
+      <find>def</find>
+      <find>CMAKE_CURRENT_BINARY_DIR</find>
+      <find>ASSIMP_BUILD_MINIZIP</find>
+      <find>cubes&quot;</find>
     </findStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>D:\Dev\RogueGame\src</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -232,10 +232,8 @@
         <option value="$PROJECT_DIR$/deps/imgui/imguial_log.cpp" />
         <option value="$PROJECT_DIR$/deps/imgui.cmake" />
         <option value="$PROJECT_DIR$/src/filesystem/FileIO.h" />
-        <option value="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/code/Importer.cpp" />
-        <option value="$PROJECT_DIR$/src/assets/AssetUtils.cpp" />
         <option value="$PROJECT_DIR$/src/app/imgui/imgui.h" />
         <option value="$PROJECT_DIR$/src/app/imgui/imgui.cpp" />
         <option value="$PROJECT_DIR$/src/app/bigg_imgui.hpp" />
@@ -251,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/math/Quaternion.cpp" />
         <option value="$PROJECT_DIR$/src/math/Transform.h" />
         <option value="$PROJECT_DIR$/src/math/Transform.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/assets/Assets.h" />
         <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
         <option value="$PROJECT_DIR$/src/input/Input.h" />
@@ -267,18 +264,21 @@
         <option value="$PROJECT_DIR$/src/physics/Time.cpp" />
         <option value="$PROJECT_DIR$/src/editor/Editor.h" />
         <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/entity/Scene.h" />
         <option value="$PROJECT_DIR$/src/entity/Entities.cpp" />
-        <option value="$PROJECT_DIR$/src/entity/Generated.cpp" />
-        <option value="$PROJECT_DIR$/build.py" />
-        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/entity/Generated.cpp" />
+        <option value="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/build.py" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/assets/AssetUtils.cpp" />
+        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="267" />
     <option name="y" value="-21" />
     <option name="width" value="1934" />
@@ -290,80 +290,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="Knight2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="shaders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="deps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="deps" type="462c0819:PsiDirectoryNode" />
               <item name="assimp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="RogueGame" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
@@ -372,12 +335,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/src/entity/Material.h" />
+    <property name="SearchEverywhereHistoryKey" value="config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
@@ -639,20 +603,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21367522" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21611722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32820907" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25826287" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37040818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
-      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.20510204" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.20510204" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.34591836" />
@@ -667,20 +631,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/mesh.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="646" column="24" selection-start-line="646" selection-start-column="24" selection-end-line="646" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bx/include/bx/math.h" />
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bx/src/math.cpp" />
     <entry file="file://$PROJECT_DIR$/src/math/Quaternion.cpp" />
@@ -730,13 +680,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Generated.h" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/ImGuizmo.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -840,13 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="186" column="25" lean-forward="true" selection-start-line="186" selection-start-column="25" selection-end-line="186" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Entities.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -858,26 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="46" column="34" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="34" />
-          <folding>
-            <element signature="e#54#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
-          <folding>
-            <element signature="e#107#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,24 +846,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/imgui/imgui_internal.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="252" selection-start-line="252" selection-end-line="252" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -961,35 +863,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/types.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+        <state relative-caret-position="315">
+          <caret line="51" column="9" lean-forward="true" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
           <folding>
+            <element signature="e#1975#1997#0" expanded="true" />
             <element signature="e#2171#2191#0" expanded="true" />
             <element signature="e#2323#2341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/deps/assimp/include/assimp/config.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/assimp/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="368" column="26" selection-start-line="368" selection-start-column="6" selection-end-line="368" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/defs.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
+        <state relative-caret-position="275">
           <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/assimp/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/build.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="195" column="14" selection-start-line="195" selection-end-line="195" selection-end-column="14" />
+        <state relative-caret-position="371">
+          <caret line="145" column="27" lean-forward="true" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="e#54#68#0" expanded="true" />
+            <element signature="e#182#202#0" expanded="true" />
+            <element signature="e#564#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="e#91#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <element signature="e#107#131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

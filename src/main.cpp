@@ -36,8 +36,9 @@ int main(int argc, char** argv)
 
     // Load model
     {
-        // "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx"
-        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
+        // /Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx
+        // D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx
+        auto ids = Assets::LoadModel("knight", R"(/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx)");
         auto e = EntityManager::Instantiate();
         auto mr = EntityManager::AddComponent<MeshRenderer>(e);
         mr->Model = Assets::GetModel(ids[0]);

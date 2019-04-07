@@ -10,7 +10,7 @@
  #include <cxxabi.h> 
 #include <cstdlib> 
 
-static const char * readable_name( const char* mangled_name )
+static std::string readable_name( const char* mangled_name )
 {
     int status ;
     char* temp = __cxxabiv1::__cxa_demangle( mangled_name, nullptr, nullptr, &status ) ;

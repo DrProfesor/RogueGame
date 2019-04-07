@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 3.0 )
 set(APP_TARGET RogueGame)
 project(${APP_TARGET})
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(ASSIMP_BUILD_STATIC_LIB ON)
 
