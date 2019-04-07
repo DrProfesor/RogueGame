@@ -67,15 +67,17 @@ namespace Editor {
             for (auto kp : EntityManager::AllEntities)
             {
                 auto key = kp.first;
-                auto entity = kp.second;
+                Entity entity = kp.second;
 
                 if (ImGui::TreeNode(std::to_string(key).c_str()))
                 {
                     for (auto comp : entity.Components)
                     {
-                        std::cout << typeid(comp).name() << std::endl;
-                        if (ImGui::TreeNode(typeid(comp).name()))
+                        if (ImGui::TreeNode(typeid(*comp).name()))
                         {
+                            EntityManager::ImGuiEditableComponent(comp);
+
+
                             ImGui::TreePop();
                         }
                     }

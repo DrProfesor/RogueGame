@@ -5,18 +5,22 @@
 
 #include <iostream>
 #include <vector>
+#include <bx/math.h>
 
 #include "app/Application.hpp"
-#include "assets/AssetUtils.h"
-#include <bx/math.h>
 
 #include "entity/Entities.h"
 #include "entity/Scene.h"
-#include "dev/Logger.h"
+
+#include "assets/AssetUtils.h"
 #include "assets/Assets.h"
+
 #include "input/Input.h"
-#include "editor/Editor.h"
+
 #include "physics/Physics.h"
+
+#include "editor/Editor.h"
+#include "editor/Logger.h"
 
 using namespace Entities;
 using namespace Editor;
@@ -38,7 +42,7 @@ int main(int argc, char** argv)
     {
         // /Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx
         // D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx
-        auto ids = Assets::LoadModel("knight", R"(/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx)");
+        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
         auto e = EntityManager::Instantiate();
         auto mr = EntityManager::AddComponent<MeshRenderer>(e);
         mr->Model = Assets::GetModel(ids[0]);

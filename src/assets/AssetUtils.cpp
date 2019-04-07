@@ -60,7 +60,7 @@ bx::AllocatorI* Utils::GetDefaultAllocator()
 bgfx::ShaderHandle loadShader(std::string shader)
 {
     //R"(D:\Dev\RogueGame\assets\shaders\)"
-    auto dir = SHADER_DIR;
+    auto dir = R"(D:\Dev\RogueGame\assets\shaders\)";
     std::cout << dir + shader << std::endl;
     return bgfx::createShader(Utils::LoadMemory( (dir + shader).c_str() ));
 }

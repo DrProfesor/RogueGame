@@ -52,6 +52,9 @@ namespace Entities {
 
         template<typename T>
         static T* AddComponent(unsigned int e);
+
+        static void ImGuiEditableComponent(Component* comp);
+
         // end generated
 
 
@@ -65,6 +68,7 @@ namespace Entities {
 
     struct Component {
         Entity Entity;
+        virtual ~Component() = default;
     };
 
     //@component
@@ -82,6 +86,7 @@ namespace Entities {
         vec3 Forward() { return Rotation * vec3{0,0,1}; }
         vec3 Right() { return Rotation * vec3{1,0,0}; }
         vec3 Up() { return Rotation * vec3{0,1,0}; }
+
     };
 
     enum CameraMode

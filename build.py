@@ -30,6 +30,7 @@ for root, dirs, files in os.walk(dir_path + "/src"):
             if inside_component:
                 if depth != current_component_depth: continue
                 if "(" in line: continue
+                if "//" in line: continue
 
                 field = line.strip()
                 field = field.replace(";", "")
@@ -37,7 +38,12 @@ for root, dirs, files in os.walk(dir_path + "/src"):
 
                 if len(field_parts) < 2: continue
 
-                field_data = {"type": field_parts[0], "name": field_parts[1]}
+                type = field_parts[0]
+                type_parts = type.split("::")
+                if len(type_parts) > 1:
+                    type = type_parts[len(type_parts)-1]
+
+                field_data = {"type": type, "name": field_parts[1]}
                 components[current_component].append(field_data)
             if is_component:
                 is_component = False
@@ -138,9 +144,12 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source += line("#include <map>")
     source += line("#include <string>")
     source += line("#include <iostream>")
-    source += line("#include \"../dev/Logger.h\"")
+    source += line("#include \"../editor/Logger.h\"")
+    source += line("#include \"../editor/ImGuiUtils.h\"")
     for inc, v in includes.items():
         source += line("#include \"" + inc + "\"")
+
+    source += line("using namespace Editor;")
 
     source += "" \
 "#ifdef __GNUG__ // GCC\n \
@@ -175,9 +184,8 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += "\n"
     source += line("template<typename T>")
     source += begin_proc("EntityManager::AddComponent", "T*", "Entity e")
-    source += line("auto name = readable_name(typeid(T).name());")
-    source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
-    source += line("auto comparableName = sName.c_str();")
+
+    source += line("e = AllEntities[e.Id];")
 
     first = True
     for comp, comp_data in components.items():
@@ -187,15 +195,16 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strcmp(comparableName, \"" + comp + "\") == 0) {")
+        source += line_indent(_if + " (std::is_same<T, " + comp + ">::value) {")
         source += line("auto nc = new " + comp + "();")
         source += line(comp + "s[e.Id] = nc;")
         source += line("nc->Entity = e;")
         source += line("e.Components.push_back(nc);")
+        source += line("AllEntities[e.Id] = e;")
         source += line("return (T*)nc;")
         source += line_outdent("}")
     source += line_indent("else {")
-    source += line("std::cout << std::string(\"Unhandled component:\") << sName << std::endl;")
+    source += line("std::cout << std::string(\"Unhandled component:\") << typeid(T).name() << std::endl;")
     source += line("return nullptr;")
     source += line_outdent("}")
     source += end_proc()
@@ -207,9 +216,6 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 
     source += line("template<typename T>")
     source += begin_proc("EntityManager::GetComponent", "T*", "Entity e")
-    source += line("auto name = readable_name(typeid(T).name());")
-    source += line("auto sName = name.substr(name.find('::') + 2, name.size() - 1);")
-    source += line("auto comparableName = sName.c_str();")
     first = True
     for comp, comp_data in components.items():
         _if = ""
@@ -218,11 +224,11 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
             first = False
         else:
             _if = "else if"
-        source += line_indent(_if + " (std::strcmp(comparableName, \"" + comp + "\") == 0) {")
+        source += line_indent(_if + " (std::is_same<T, " + comp + ">::value) {")
         source += line("return (T*)" + comp + "s[e.Id];")
         source += line_outdent("}")
     source += line_indent("else {")
-    source += line("std::cout << std::string(\"Unhandled component:\") << sName << std::endl;")
+    source += line("std::cout << std::string(\"Unhandled component:\") << typeid(T).name() << std::endl;")
     source += line("return nullptr;")
     source += line_outdent("}")
     source += end_proc()
@@ -251,6 +257,15 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line_outdent("}")
     source += end_proc()
 
+    source += begin_proc("EntityManager::ImGuiEditableComponent", "void", "Component * comp")
+    for comp, comp_data in components.items():
+        source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
+        source += line_indent("if ("+comp.lower()+") {")
+        for cd in comp_data:
+            source += line("ImGuiUtils::InputField_" + cd["type"] + "(\"" + cd["name"] + "\", &" + comp.lower() + "->" + cd["name"] + ");")
+        source += line_outdent("}")
+    source += end_proc()
+
     for comp, comp_data in components.items():
         source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(unsigned int e);")
         source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(Entity e);")
@@ -263,7 +278,6 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line("//" + comp)
         for cd in comp_data:
             source += line("//" + str(cd))
-
 
     source += "\n\n#endif"
 
