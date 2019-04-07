@@ -1,144 +1,119 @@
-//
-// Created by jwvan on 2019-03-09.
-//
+/*
+The MIT License (MIT)
 
-#ifndef PROGRAMVIEWER_LOGGER_H
-#define PROGRAMVIEWER_LOGGER_H
+Copyright (c) 2016 Andre Leiradella
 
-#include <cstdarg>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+#pragma once
+
 #include <imgui.h>
+#include <stddef.h>
+#include <stdarg.h>
 
-struct AppLog
+// Must be at most 65535
+#ifndef IMGUIAL_LOG_MAX_LINE_SIZE
+#define IMGUIAL_LOG_MAX_LINE_SIZE 1024
+#endif
+
+// Must be at least MAX_LINE_SIZE + 3
+#ifndef IMGUIAL_LOG_MAX_BUFFER_SIZE
+#define IMGUIAL_LOG_MAX_BUFFER_SIZE 65536
+#endif
+
+struct Logger
 {
-    ImGuiTextBuffer     Buf;
-    ImGuiTextFilter     Filter;
-    ImVector<int>       LineOffsets;        // Index to lines offset. We maintain this with AddLog() calls, allowing us to have a random access on lines
-    bool                AutoScroll;
-    bool                ScrollToBottom;
-
-    AppLog()
+    enum Level
     {
-        AutoScroll = true;
-        ScrollToBottom = false;
-        Clear();
+        kDebug = 0,
+        kInfo  = 1,
+        kWarn  = 2,
+        kError = 3
+    };
+
+    enum Flags
+    {
+        kShowFilters = 1 << 0
+    };
+
+    typedef bool ( *IterateFunc )( Level level, const char* line, void *ud );
+
+    inline Logger()
+    {
+        Init();
+        Instance = this;
     }
 
-    void    Clear()
+    virtual ~Logger();
+
+    bool Init( unsigned flags = 0, const char** more_actions = NULL );
+
+    void SetColor( Level level, float r, float g, float b );
+    void SetLabel( Level level, const char* label );
+    void SetCumulativeLabel( const char* label );
+    void SetFilterHeaderLabel( const char* label );
+    void SetFilterLabel( const char* label );
+
+    void VPrintf( Level level, const char* format, va_list args );
+
+    void Debug( const char* format, ... );
+    void Info( const char* format, ... );
+    void Warn( const char* format, ... );
+    void Error( const char* format, ... );
+
+    inline void Clear()
     {
-        Buf.clear();
-        LineOffsets.clear();
-        LineOffsets.push_back(0);
+        m_First = m_Last = 0;
+        m_Avail = IMGUIAL_LOG_MAX_BUFFER_SIZE;
+        m_ScrollToBottom = true;
     }
 
-    void    AddLog(const char* fmt, ...) IM_FMTARGS(2)
+    void Iterate( IterateFunc iterator, bool apply_filters, void* ud );
+
+    void Draw();
+
+    void   Write( const void* data, size_t size );
+    void   Read( void* data, size_t size );
+    size_t Peek( size_t pos, void* data, size_t size );
+
+    inline void Skip( size_t size )
     {
-        int old_size = Buf.size();
-        va_list args;
-        va_start(args, fmt);
-        Buf.appendfv(fmt, args);
-        va_end(args);
-        for (int new_size = Buf.size(); old_size < new_size; old_size++)
-            if (Buf[old_size] == '\n')
-                LineOffsets.push_back(old_size + 1);
-        if (AutoScroll)
-            ScrollToBottom = true;
+        m_First = ( m_First + size ) % IMGUIAL_LOG_MAX_BUFFER_SIZE;
+        m_Avail += size;
     }
 
-    void    Draw(const char* title, bool* p_open = NULL)
-    {
-        if (!ImGui::Begin(title, p_open))
-        {
-            ImGui::End();
-            return;
-        }
+    static Logger* Instance;
 
-        // Options menu
-        if (ImGui::BeginPopup("Options"))
-        {
-            if (ImGui::Checkbox("Auto-scroll", &AutoScroll))
-                if (AutoScroll)
-                    ScrollToBottom = true;
-            ImGui::EndPopup();
-        }
-
-        // Main window
-        if (ImGui::Button("Options"))
-            ImGui::OpenPopup("Options");
-        ImGui::SameLine();
-        bool clear = ImGui::Button("Clear");
-        ImGui::SameLine();
-        bool copy = ImGui::Button("Copy");
-        ImGui::SameLine();
-        Filter.Draw("Filter", -100.0f);
-
-        ImGui::Separator();
-        ImGui::BeginChild("scrolling", ImVec2(0,0), false, ImGuiWindowFlags_HorizontalScrollbar);
-
-        if (clear)
-            Clear();
-        if (copy)
-            ImGui::LogToClipboard();
-
-        ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 0));
-        const char* buf = Buf.begin();
-        const char* buf_end = Buf.end();
-        if (Filter.IsActive())
-        {
-            // In this example we don't use the clipper when Filter is enabled.
-            // This is because we don't have a random access on the result on our filter.
-            // A real application processing logs with ten of thousands of entries may want to store the result of search/filter.
-            // especially if the filtering function is not trivial (e.g. reg-exp).
-            for (int line_no = 0; line_no < LineOffsets.Size; line_no++)
-            {
-                const char* line_start = buf + LineOffsets[line_no];
-                const char* line_end = (line_no + 1 < LineOffsets.Size) ? (buf + LineOffsets[line_no + 1] - 1) : buf_end;
-                if (Filter.PassFilter(line_start, line_end))
-                    ImGui::TextUnformatted(line_start, line_end);
-            }
-        }
-        else
-        {
-            // The simplest and easy way to display the entire buffer:
-            //   ImGui::TextUnformatted(buf_begin, buf_end);
-            // And it'll just work. TextUnformatted() has specialization for large blob of text and will fast-forward to skip non-visible lines.
-            // Here we instead demonstrate using the clipper to only process lines that are within the visible area.
-            // If you have tens of thousands of items and their processing cost is non-negligible, coarse clipping them on your side is recommended.
-            // Using ImGuiListClipper requires A) random access into your data, and B) items all being the  same height,
-            // both of which we can handle since we an array pointing to the beginning of each line of text.
-            // When using the filter (in the block of code above) we don't have random access into the data to display anymore, which is why we don't use the clipper.
-            // Storing or skimming through the search result would make it possible (and would be recommended if you want to search through tens of thousands of entries)
-            ImGuiListClipper clipper;
-            clipper.Begin(LineOffsets.Size);
-            while (clipper.Step())
-            {
-                for (int line_no = clipper.DisplayStart; line_no < clipper.DisplayEnd; line_no++)
-                {
-                    const char* line_start = buf + LineOffsets[line_no];
-                    const char* line_end = (line_no + 1 < LineOffsets.Size) ? (buf + LineOffsets[line_no + 1] - 1) : buf_end;
-                    ImGui::TextUnformatted(line_start, line_end);
-                }
-            }
-            clipper.End();
-        }
-        ImGui::PopStyleVar();
-
-        if (ScrollToBottom)
-            ImGui::SetScrollHereY(1.0f);
-        ScrollToBottom = false;
-        ImGui::EndChild();
-        ImGui::End();
-    }
+    char            m_Buffer[ IMGUIAL_LOG_MAX_BUFFER_SIZE ];
+    size_t          m_Avail;
+    size_t          m_First;
+    size_t          m_Last;
+    unsigned        m_Flags;
+    const char**    m_MoreActions;
+    Level           m_Level;
+    bool            m_Cumulative;
+    ImGuiTextFilter m_Filter;
+    bool            m_ScrollToBottom;
+    ImColor         m_Colors[ 4 ][ 4 ];
+    const char*     m_Labels[ 4 ];
+    const char*     m_CumulativeLabel;
+    const char*     m_FilterHeaderLabel;
+    const char*     m_FilterLabel;
 };
-
-struct Logger {
-    static void Init();
-    static void Log(const char* format, ...);
-    static void LogWarn(const char* format, ...);
-    static void LogError(const char* format, ...);
-
-    static AppLog GetLogObj();
-
-};
-
-
-#endif //PROGRAMVIEWER_LOGGER_H

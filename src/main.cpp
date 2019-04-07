@@ -10,14 +10,17 @@
 #include "assets/AssetUtils.h"
 #include <bx/math.h>
 
-#include "entity/Generated.h"
 #include "entity/Entities.h"
+#include "entity/Scene.h"
 #include "dev/Logger.h"
 #include "assets/Assets.h"
-#include "scene/Scene.h"
-#include "filesystem/FileIO.h"
+#include "input/Input.h"
+#include "editor/Editor.h"
+#include "physics/Physics.h"
 
 using namespace Entities;
+using namespace Editor;
+using namespace Physics;
 
 int main(int argc, char** argv)
 {
@@ -26,51 +29,42 @@ int main(int argc, char** argv)
     Application app;
     app.Init(argc, argv);
 
-    Logger::Init();
+    Logger log;
+    EditorManager editor;
+    SceneManager sceneManager;
+    PhysicsManager physics;
 
-    SceneManager::LoadScene("main.scene");
-    // "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx"
-    auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
-    auto e = Entities::Instantiate();
-    auto mr = Entities::AddComponent<MeshRenderer>(e);
-    mr->Model = Assets::Models[ids[0]];
+    // Load model
+    {
+        // "/Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx"
+        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
+        auto e = EntityManager::Instantiate();
+        auto mr = EntityManager::AddComponent<MeshRenderer>(e);
+        mr->Model = Assets::GetModel(ids[0]);
 
-    auto material = Entities::AddComponent<Material>(e);
-    material->Shader = Utils::LoadShader("cubes");
+        auto material = EntityManager::AddComponent<Material>(e);
+        material->Shader = Utils::LoadShader("cubes");
 
-    auto transform = Entities::AddComponent<Entities::Transform>(e);
-
-    auto camera = Entities::Instantiate();
-    auto c = Entities::AddComponent<Camera>(camera);
-    c->View = 0;
-    Entities::AddComponent<Entities::Transform>(camera);
-
-    const vec3 at  = { 0.0f, 0.0f,   0.0f };
-    const vec3 eye = { 0.0f, 0.0f, -35.0f };
-
-    { //TODO camera stuff here
-        float view[16];
-        bx::mtxLookAt(view, &eye[0], &at[0]);
-
-        float proj[16];
-        bx::mtxProj(proj, 60.0f, float(app.mWidth)/float(app.mHeight), 0.1f, 100.0f, bgfx::getCaps()->homogeneousDepth);
-        bgfx::setViewTransform(0, view, proj);
-
-        // Set view 0 default viewport.
-        bgfx::setViewRect(0, 0, 0, uint16_t(app.mWidth), uint16_t(app.mHeight) );
+        EntityManager::AddComponent<Entities::Transform>(e);
     }
 
-    float lastTime = 0;
-    float dt;
-    float time;
     while (true)
     {
-        time = ( float )glfwGetTime();
-        dt = time - lastTime;
-        lastTime = time;
+        if (!app.Update()) break;
+        editor.Update();
+        physics.Update();
 
-        if (!app.Update(dt)) break;
+        bgfx::setViewFrameBuffer(1, EntityManager::GetComponent<Camera>(app.MainCamera)->FrameBuffer);
+        EntityManager::UpdateEntities();
 
+        // Post update contains the bgfx frame call,
+        // so should happen after everything has been submitted
+        log.Draw();
+        app.PostUpdate();
+    }
+
+    return 0;
+}
 //        bool open = true;
 //        static bool opt_fullscreen_persistant = true;
 //        static ImGuiDockNodeFlags opt_flags = ImGuiDockNodeFlags_None;
@@ -101,24 +95,3 @@ int main(int argc, char** argv)
 //        ImGuiID dockspace_id = ImGui::GetID("MyDockspace");
 //        ImGui::DockSpace(dockspace_id, ImVec2(0.0f, 0.0f), opt_flags);
 //        ImGui::End();
-
-        //bgfx::setViewFrameBuffer(0, app.frame_buffer_handle);
-        Entities::UpdateEntities();
-
-//        if (ImGui::Begin("Scene"))
-//        {
-//            std::cout << &app.frame_buffer_texture << std::endl;
-//            auto size = ImGui::GetContentRegionAvail();
-//            ImGui::Image(&app.frame_buffer_texture, size, ImVec2(0, 1), ImVec2(1, 0));
-//
-//            ImGui::End();
-//        }
-
-        // Post update contains the bgfx frame call,
-        // so should happen after everything has been submitted
-        Logger::GetLogObj().Draw("Log");
-        app.PostUpdate();
-    }
-
-    return 0;
-}

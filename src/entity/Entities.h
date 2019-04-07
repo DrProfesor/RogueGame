@@ -9,101 +9,147 @@
 #include <unordered_map>
 #include <bgfx/bgfx.h>
 #include <glm/vec3.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtx/quaternion.hpp>
+#include <glm/gtc/quaternion.hpp>
 #include "../assets/Assets.h"
 
 using namespace bgfx;
 using namespace glm;
 
+namespace Entities {
+    struct Component;
+}
+
 struct Entity {
     unsigned int Id;
+    std::vector<Entities::Component*> Components;
 };
 
 namespace Entities {
 
-    template<typename T>
-    T* GetComponent(Entity e);
+    struct MeshRenderer;
+    struct Transform;
 
-    template<typename T>
-    T* AddComponent(Entity e);
+    struct EntityManager {
+        static std::unordered_map<unsigned int, Entity> AllEntities;
+        static unsigned int NextEntity;
 
-    template<typename T>
-    T* GetComponent(unsigned int e);
+        static Entity Instantiate();
+        static bool IsAlive(Entity e);
+        static void Destroy(Entity entity);
+        static void UpdateEntities();
 
-    template<typename T>
-    T* AddComponent(unsigned int e);
+        // generated functions
+        template<typename T>
+        static T* GetComponent(Entity e);
 
-    //@component
-    struct Camera {
-        int View;
+        template<typename T>
+        static T* AddComponent(Entity e);
+
+        template<typename T>
+        static T* GetComponent(unsigned int e);
+
+        template<typename T>
+        static T* AddComponent(unsigned int e);
+        // end generated
+
+
+        //@component_update(RENDER, MeshRenderer)
+        static void Update_MeshRender(unsigned int e, MeshRenderer* mesh);
+
+        //@component_update(UPDATE, Transform)
+        static void Update_Transform(unsigned int e, Entities::Transform* transform);
+    };
+
+
+    struct Component {
+        Entity Entity;
     };
 
     //@component
-    struct Transform {
+    struct Transform : Component {
         vec3 Position;
+        quat Rotation;
         vec3 Scale;
+
+        Transform() {
+            Position = vec3(0.0f, 0.0f, 0.0f);
+            Rotation = quat();
+            Scale = vec3(1.0f, 1.0f, 1.0f);
+        }
+
+        vec3 Forward() { return Rotation * vec3{0,0,1}; }
+        vec3 Right() { return Rotation * vec3{1,0,0}; }
+        vec3 Up() { return Rotation * vec3{0,1,0}; }
+    };
+
+    enum CameraMode
+    {
+        PERSPECTIVE,
+        ORTHOGRAPHIC
     };
 
     //@component
-    struct MeshRenderer {
+    struct Camera : Component {
+        ViewId View;
+        int Width = 1920;
+        int Height = 1080;
+
+        FrameBufferHandle FrameBuffer;
+        TextureHandle TextureHandle;
+
+        CameraMode Mode = PERSPECTIVE;
+        // persp
+        float FieldOfView = 60.0f;
+        float Near = 0.1f;
+        float Far = 100.0f;
+
+        void SetViewTransform()
+        {
+            auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Entity);
+            //const vec3 at  = { cameraTransform->Transform.Position.x, cameraTransform->Transform.Position.y, cameraTransform->Transform.Position.z };
+            //const vec3 eye = cameraTransform->Transform.Position + cameraTransform->Forward();
+
+            auto fwd = cameraTransform->Forward() + cameraTransform->Position;
+            auto up = cameraTransform->Up();
+
+            float view[16];
+            bx::mtxLookAt(view, &cameraTransform->Position.x, &fwd.x, &up.x);
+
+            float proj[16];
+            switch (Mode)
+            {
+                case PERSPECTIVE:
+                    bx::mtxProj(proj, FieldOfView, float(Width)/float(Height), Near, Far, bgfx::getCaps()->homogeneousDepth);
+                    break;
+                case ORTHOGRAPHIC:
+                    //TODO ortho
+                    bx::mtxOrtho(proj, 0,0,0,0,0,0,0,false);
+                    break;
+            }
+
+            bgfx::setViewTransform(View, view, proj);
+        }
+
+        void SetViewRect()
+        {
+            bgfx::setViewRect(View, 0, 0, uint16_t(Width), uint16_t(Height) );
+        }
+    };
+
+    //@component
+    struct MeshRenderer : Component {
         ModelHandle Model;
     };
 
     //@component
-    struct Material {
+    struct Material : Component {
         bgfx::ProgramHandle Shader;
         bgfx::TextureHandle Texture;
         bgfx::UniformHandle Uniforms;
     };
-
-    std::unordered_map<unsigned int, Entity> AllEntities;
-    unsigned int NextEntity;
-
-    Entity Instantiate()
-    {
-        auto ne = Entity{ NextEntity };
-
-        AllEntities[NextEntity] = ne;
-        NextEntity++;
-
-        return ne;
-    }
-
-    bool IsAlive(Entity e)
-    {
-        return AllEntities.find(e.Id) != AllEntities.end();
-    }
-
-    void Destroy(Entity entity)
-    {
-        AllEntities.erase(entity.Id);
-    }
-
-    //@component_update(RENDER, MeshRenderer)
-    void Update_MeshRender(unsigned int e, Entities::MeshRenderer* mesh)
-    {
-        auto material = Entities::GetComponent<Entities::Material>(e);
-        Entities::GetComponent<Entities::Transform>(e);
-
-        // set transform
-
-        float mtx[16];
-        bx::mtxIdentity(&mtx[0]);
-        bgfx::setTransform(mtx);
-
-        bgfx::setVertexBuffer(0, mesh->Model.VBO);
-        bgfx::setIndexBuffer(mesh->Model.IBO);
-
-        //bgfx::setTexture(0, material->Uniforms, material->Texture);
-        bgfx::setState(0
-                       | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
-                       | BGFX_STATE_WRITE_Z | BGFX_STATE_DEPTH_TEST_LESS
-                       | BGFX_STATE_MSAA);
-
-        bgfx::submit(0, material->Shader);
-    }
 };
-
-
 
 
 #endif //ROGUEGAME_ENTITYMANAGER_H
