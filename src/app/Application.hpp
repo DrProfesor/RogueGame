@@ -62,7 +62,7 @@ namespace app
 			bx::AllocatorI* allocator = NULL
 		);
 
-		bool Update(float dt);
+		bool Update();
 		void PostUpdate();
 		void Shutdown();
 

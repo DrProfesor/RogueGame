@@ -25,6 +25,7 @@
 #include "bigg_shaders.hpp"
 #include "bigg_imgui.hpp"
 #include "../input/Input.h"
+#include "../physics/Time.h"
 #include <imgui.h>
 
 using namespace app;
@@ -113,7 +114,7 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
     {// init the main camera
         MainCamera = EntityManager::Instantiate();
         auto c = EntityManager::AddComponent<Camera>(MainCamera);
-        EntityManager::AddComponent<Entities::TransformComponent>(MainCamera);
+        EntityManager::AddComponent<Entities::Transform>(MainCamera);
         c->View = 1;
         c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
         c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
@@ -122,18 +123,19 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	return 0;
 }
 
-bool Application::Update(float dt)
+bool Application::Update()
 {
 	if (glfwWindowShouldClose( mWindow )) return false;
 
 	// Events
 	glfwPollEvents();
-	imguiEvents( dt );
+	imguiEvents( Physics::Time::deltaTime );
 
 	// Begin frame
 	bgfx::touch(0);
     bgfx::touch(1);
 	ImGui::NewFrame();
+
 
 	return true;
 }

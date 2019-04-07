@@ -17,25 +17,27 @@
 using namespace bgfx;
 using namespace glm;
 
+namespace Entities {
+    struct Component;
+}
+
 struct Entity {
     unsigned int Id;
+    std::vector<Entities::Component*> Components;
 };
 
 namespace Entities {
 
     struct MeshRenderer;
-    struct TransformComponent;
+    struct Transform;
 
     struct EntityManager {
         static std::unordered_map<unsigned int, Entity> AllEntities;
         static unsigned int NextEntity;
 
         static Entity Instantiate();
-
         static bool IsAlive(Entity e);
-
         static void Destroy(Entity entity);
-
         static void UpdateEntities();
 
         // generated functions
@@ -56,8 +58,8 @@ namespace Entities {
         //@component_update(RENDER, MeshRenderer)
         static void Update_MeshRender(unsigned int e, MeshRenderer* mesh);
 
-        //@component_update(UPDATE, TransformComponent)
-        static void Update_Transform(unsigned int e, TransformComponent* transform);
+        //@component_update(UPDATE, Transform)
+        static void Update_Transform(unsigned int e, Entities::Transform* transform);
     };
 
 
@@ -66,67 +68,20 @@ namespace Entities {
     };
 
     //@component
-    struct TransformComponent : Component {
+    struct Transform : Component {
         vec3 Position;
         quat Rotation;
         vec3 Scale;
 
-        TransformComponent() {
+        Transform() {
             Position = vec3(0.0f, 0.0f, 0.0f);
             Rotation = quat();
             Scale = vec3(1.0f, 1.0f, 1.0f);
         }
 
-        vec3 Forward()
-        {
-            return Rotation * vec3{0,0,1};
-//            auto x = Rotation.x;
-//            auto y = Rotation.y;
-//            auto z = Rotation.z;
-//            auto w = Rotation.w;
-//            vec3 ret;
-//            ret.x = 2 * (x * z + w * y);
-//            ret.y = 2 * (y * z - w * x);
-//            ret.z = 1 - 2 * (x * x + y * y);
-//
-//            ret = glm::normalize(ret);
-//
-//            return ret;
-        }
-
-        vec3 Right()
-        {
-            return Rotation * vec3{1,0,0};
-//            auto x = Rotation.x;
-//            auto y = Rotation.y;
-//            auto z = Rotation.z;
-//            auto w = Rotation.w;
-//            vec3 ret;
-//            ret.x = 1 - 2 * (y * y + z * z);
-//            ret.y = 2 * (x * y + w * z);
-//            ret.z = 2 * (x * z - w * y);
-//
-//            ret = glm::normalize(ret);
-//
-//            return ret;
-        }
-
-        vec3 Up()
-        {
-            return Rotation * vec3{0,1,0};
-//            auto x = Rotation.x;
-//            auto y = Rotation.y;
-//            auto z = Rotation.z;
-//            auto w = Rotation.w;
-//            vec3 ret;
-//            ret.x = 2 * (x * y - w * z);
-//            ret.y = 1 - 2 * (x * x + z * z);
-//            ret.z = 2 * (y * z + w * x);
-//
-//            ret = glm::normalize(ret);
-//
-//            return ret;
-        }
+        vec3 Forward() { return Rotation * vec3{0,0,1}; }
+        vec3 Right() { return Rotation * vec3{1,0,0}; }
+        vec3 Up() { return Rotation * vec3{0,1,0}; }
     };
 
     enum CameraMode
@@ -152,7 +107,7 @@ namespace Entities {
 
         void SetViewTransform()
         {
-            auto cameraTransform = EntityManager::GetComponent<Entities::TransformComponent>(Entity);
+            auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Entity);
             //const vec3 at  = { cameraTransform->Transform.Position.x, cameraTransform->Transform.Position.y, cameraTransform->Transform.Position.z };
             //const vec3 eye = cameraTransform->Transform.Position + cameraTransform->Forward();
 
@@ -194,12 +149,7 @@ namespace Entities {
         bgfx::TextureHandle Texture;
         bgfx::UniformHandle Uniforms;
     };
-
-
-
 };
-
-
 
 
 #endif //ROGUEGAME_ENTITYMANAGER_H

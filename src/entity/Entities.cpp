@@ -28,7 +28,7 @@ namespace Entities {
 
     void EntityManager::Update_MeshRender(unsigned int e, MeshRenderer* mesh) {
         auto material = EntityManager::GetComponent<Material>(e);
-        EntityManager::GetComponent<TransformComponent>(e);
+        EntityManager::GetComponent<Transform>(e);
 
         // set transform
 
@@ -48,7 +48,5 @@ namespace Entities {
         bgfx::submit(1, material->Shader);
     }
 
-    void EntityManager::Update_Transform(unsigned int e, TransformComponent* transform) {
-
-    }
+    void EntityManager::Update_Transform(unsigned int e, Entities::Transform* transform) { }
 }

@@ -184,6 +184,18 @@ static int ConvertKeyCode(KeyCode kc)
         case DOWN_ARROW:  return GLFW_KEY_DOWN;
         case RIGHT_ARROW: return GLFW_KEY_RIGHT;
         case LEFT_ARROW:  return GLFW_KEY_LEFT;
+        case F1: return GLFW_KEY_F1;
+        case F2: return GLFW_KEY_F2;
+        case F3: return GLFW_KEY_F3;
+        case F4: return GLFW_KEY_F4;
+        case F5: return GLFW_KEY_F5;
+        case F6: return GLFW_KEY_F6;
+        case F7: return GLFW_KEY_F7;
+        case F8: return GLFW_KEY_F8;
+        case F9: return GLFW_KEY_F9;
+        case F10: return GLFW_KEY_F10;
+        case F11: return GLFW_KEY_F11;
+        case F12: return GLFW_KEY_F12;
     }
     return 0;
 }

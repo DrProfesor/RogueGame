@@ -15,7 +15,8 @@ namespace Input {
 
     enum KeyCode {
         A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
-        LEFT_SHIFT, RIGHT_SHIFT, LEFT_CTRL, RIGHT_CTRL, TAB, ESC, ENTER, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW
+        LEFT_SHIFT, RIGHT_SHIFT, LEFT_CTRL, RIGHT_CTRL, TAB, ESC, ENTER, UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW,
+        F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12,
     };
 
     enum Button {

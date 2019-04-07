@@ -14,7 +14,7 @@ namespace Editor {
     struct SceneWindow {
 
         SceneWindow();
-        void Update(float dt);
+        void Update();
 
         vec2 last_cursor_pos;
 

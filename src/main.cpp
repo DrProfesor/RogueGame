@@ -11,15 +11,16 @@
 #include <bx/math.h>
 
 #include "entity/Entities.h"
+#include "entity/Scene.h"
 #include "dev/Logger.h"
 #include "assets/Assets.h"
-#include "scene/Scene.h"
 #include "input/Input.h"
-
-#include "editor/SceneWindow.h"
+#include "editor/Editor.h"
+#include "physics/Physics.h"
 
 using namespace Entities;
 using namespace Editor;
+using namespace Physics;
 
 int main(int argc, char** argv)
 {
@@ -29,10 +30,9 @@ int main(int argc, char** argv)
     app.Init(argc, argv);
 
     Logger log;
-
-    SceneManager::LoadScene("main.scene");
-
-    SceneWindow sceneWindow = SceneWindow();
+    EditorManager editor;
+    SceneManager sceneManager;
+    PhysicsManager physics;
 
     // Load model
     {
@@ -45,20 +45,14 @@ int main(int argc, char** argv)
         auto material = EntityManager::AddComponent<Material>(e);
         material->Shader = Utils::LoadShader("cubes");
 
-        EntityManager::AddComponent<Entities::TransformComponent>(e);
+        EntityManager::AddComponent<Entities::Transform>(e);
     }
 
-    float lastTime = 0;
-    float dt;
-    float time;
     while (true)
     {
-        time = ( float )glfwGetTime();
-        dt = time - lastTime;
-        lastTime = time;
-
-        if (!app.Update(dt)) break;
-        sceneWindow.Update(dt);
+        if (!app.Update()) break;
+        editor.Update();
+        physics.Update();
 
         bgfx::setViewFrameBuffer(1, EntityManager::GetComponent<Camera>(app.MainCamera)->FrameBuffer);
         EntityManager::UpdateEntities();

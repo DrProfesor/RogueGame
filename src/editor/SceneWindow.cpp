@@ -3,8 +3,11 @@
 //
 
 #include "SceneWindow.h"
+#include "ImGuizmo.h"
+#include "../physics/Time.h"
 
 using namespace Entities;
+using namespace Physics;
 using namespace app;
 
 namespace Editor {
@@ -14,10 +17,11 @@ namespace Editor {
         last_cursor_pos = vec2{};
     }
 
-    void SceneWindow::Update(float dt)
+    void SceneWindow::Update()
     {
         auto camera = EntityManager::GetComponent<Entities::Camera>(Application::Instance->MainCamera);
-        auto cameraTransform = EntityManager::GetComponent<Entities::TransformComponent>(Application::Instance->MainCamera);
+        auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Application::Instance->MainCamera);
+        float dt = Time::deltaTime;
         if (Input::GetKey(Input::KeyCode::W))
         {
             cameraTransform->Position += cameraTransform->Forward() * dt * 10.0f;
@@ -43,16 +47,43 @@ namespace Editor {
             cameraTransform->Position -= cameraTransform->Up() * dt * 10.0f;
         }
 
+        if (Input::GetButton(Input::Button::RIGHT_MOUSE))
+        {
+            auto current = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
+            auto delta = vec2{current.x - last_cursor_pos.x, current.y - last_cursor_pos.y} * dt;
+
+            auto qx = glm::angleAxis(-delta.x, vec3{0,1,0});
+            auto qy = glm::angleAxis(delta.y, cameraTransform->Right());
+            cameraTransform->Rotation = qy * qx * cameraTransform->Rotation;
+
+        }
+        last_cursor_pos = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
+
         camera->SetViewTransform();
         camera->SetViewRect();
 
-        if (ImGui::Begin("CameraDebug"))
+        if (ImGui::Begin("Scene Hierarchy"))
         {
-            ImGui::Text("Position: %f %f %f", cameraTransform->Position.x, cameraTransform->Position.y, cameraTransform->Position.z);
-            ImGui::Text("Forward: %f %f %f", cameraTransform->Forward().x, cameraTransform->Forward().y, cameraTransform->Forward().z);
-            ImGui::Text("Up: %f %f %f", cameraTransform->Up().x, cameraTransform->Up().y, cameraTransform->Up().z);
-            ImGui::Text("Right: %f %f %f", cameraTransform->Right().x, cameraTransform->Right().y, cameraTransform->Right().z);
-            ImGui::Text("Roatation: %f %f %f %f", cameraTransform->Rotation.x, cameraTransform->Rotation.y, cameraTransform->Rotation.z, cameraTransform->Rotation.w);
+            for (auto kp : EntityManager::AllEntities)
+            {
+                auto key = kp.first;
+                auto entity = kp.second;
+
+                if (ImGui::TreeNode(std::to_string(key).c_str()))
+                {
+                    for (auto comp : entity.Components)
+                    {
+                        std::cout << typeid(comp).name() << std::endl;
+                        if (ImGui::TreeNode(typeid(comp).name()))
+                        {
+                            ImGui::TreePop();
+                        }
+                    }
+
+                    ImGui::TreePop();
+                }
+
+            }
         }
         ImGui::End();
 
@@ -67,19 +98,6 @@ namespace Editor {
             texture.s.flags  = 0x01;
 
             ImGui::Image(texture.ptr, size, ImVec2(1, 0), ImVec2(0, 1));
-
-            if (Input::GetButton(Input::Button::RIGHT_MOUSE))
-            {
-                auto current = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
-                auto delta = vec2{current.x - last_cursor_pos.x, current.y - last_cursor_pos.y} * dt;
-
-                auto qx = glm::angleAxis(-delta.x, vec3{0,1,0});
-                auto qy = glm::angleAxis(delta.y, cameraTransform->Right());
-                cameraTransform->Rotation = qy * qx * cameraTransform->Rotation;
-
-            }
-            last_cursor_pos = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
-
         }
         ImGui::End();
     }

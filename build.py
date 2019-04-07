@@ -191,6 +191,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line("auto nc = new " + comp + "();")
         source += line(comp + "s[e.Id] = nc;")
         source += line("nc->Entity = e;")
+        source += line("e.Components.push_back(nc);")
         source += line("return (T*)nc;")
         source += line_outdent("}")
     source += line_indent("else {")

@@ -30,7 +30,7 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 #endif // __GNUG__
 
 namespace Entities {
-	static std::map<unsigned int, TransformComponent*> TransformComponents;
+	static std::map<unsigned int, Transform*> Transforms;
 	static std::map<unsigned int, Camera*> Cameras;
 	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
 	static std::map<unsigned int, Material*> Materials;
@@ -40,28 +40,32 @@ namespace Entities {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "TransformComponent") == 0) {
-			auto nc = new TransformComponent();
-			TransformComponents[e.Id] = nc;
+		if (std::strcmp(comparableName, "Transform") == 0) {
+			auto nc = new Transform();
+			Transforms[e.Id] = nc;
 			nc->Entity = e;
+			e.Components.push_back(nc);
 			return (T*)nc;
 		}
 		else if (std::strcmp(comparableName, "Camera") == 0) {
 			auto nc = new Camera();
 			Cameras[e.Id] = nc;
 			nc->Entity = e;
+			e.Components.push_back(nc);
 			return (T*)nc;
 		}
 		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			auto nc = new MeshRenderer();
 			MeshRenderers[e.Id] = nc;
 			nc->Entity = e;
+			e.Components.push_back(nc);
 			return (T*)nc;
 		}
 		else if (std::strcmp(comparableName, "Material") == 0) {
 			auto nc = new Material();
 			Materials[e.Id] = nc;
 			nc->Entity = e;
+			e.Components.push_back(nc);
 			return (T*)nc;
 		}
 		else {
@@ -80,8 +84,8 @@ namespace Entities {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "TransformComponent") == 0) {
-			return (T*)TransformComponents[e.Id];
+		if (std::strcmp(comparableName, "Transform") == 0) {
+			return (T*)Transforms[e.Id];
 		}
 		else if (std::strcmp(comparableName, "Camera") == 0) {
 			return (T*)Cameras[e.Id];
@@ -104,7 +108,7 @@ namespace Entities {
 	}
 
 	void EntityManager::UpdateEntities() {
-		for (auto kp : TransformComponents) {
+		for (auto kp : Transforms) {
 			Update_Transform(kp.first, kp.second);
 		}
 		for (auto kp : MeshRenderers) {
@@ -112,10 +116,10 @@ namespace Entities {
 		}
 	}
 
-	template TransformComponent* EntityManager::GetComponent<TransformComponent>(unsigned int e);
-	template TransformComponent* EntityManager::GetComponent<TransformComponent>(Entity e);
-	template TransformComponent* EntityManager::AddComponent<TransformComponent>(unsigned int e);
-	template TransformComponent* EntityManager::AddComponent<TransformComponent>(Entity e);
+	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::GetComponent<Transform>(Entity e);
+	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::AddComponent<Transform>(Entity e);
 	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
 	template Camera* EntityManager::GetComponent<Camera>(Entity e);
 	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
@@ -129,7 +133,7 @@ namespace Entities {
 	template Material* EntityManager::AddComponent<Material>(unsigned int e);
 	template Material* EntityManager::AddComponent<Material>(Entity e);
 
-}	//TransformComponent
+}	//Transform
 	//{'type': 'vec3', 'name': 'Position'}
 	//{'type': 'quat', 'name': 'Rotation'}
 	//{'type': 'vec3', 'name': 'Scale'}
