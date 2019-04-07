@@ -30,19 +30,19 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
 #endif // __GNUG__
 
 namespace Entities {
-	static std::map<unsigned int, Transform*> Transforms;
-	static std::map<unsigned int, Camera*> Cameras;
-	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
 	static std::map<unsigned int, Material*> Materials;
+	static std::map<unsigned int, Camera*> Cameras;
+	static std::map<unsigned int, Transform*> Transforms;
+	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
 
 	template<typename T>
 	T* EntityManager::AddComponent(Entity e) {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "Transform") == 0) {
-			auto nc = new Transform();
-			Transforms[e.Id] = nc;
+		if (std::strcmp(comparableName, "Material") == 0) {
+			auto nc = new Material();
+			Materials[e.Id] = nc;
 			nc->Entity = e;
 			e.Components.push_back(nc);
 			return (T*)nc;
@@ -54,16 +54,16 @@ namespace Entities {
 			e.Components.push_back(nc);
 			return (T*)nc;
 		}
-		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
-			auto nc = new MeshRenderer();
-			MeshRenderers[e.Id] = nc;
+		else if (std::strcmp(comparableName, "Transform") == 0) {
+			auto nc = new Transform();
+			Transforms[e.Id] = nc;
 			nc->Entity = e;
 			e.Components.push_back(nc);
 			return (T*)nc;
 		}
-		else if (std::strcmp(comparableName, "Material") == 0) {
-			auto nc = new Material();
-			Materials[e.Id] = nc;
+		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
+			auto nc = new MeshRenderer();
+			MeshRenderers[e.Id] = nc;
 			nc->Entity = e;
 			e.Components.push_back(nc);
 			return (T*)nc;
@@ -84,17 +84,17 @@ namespace Entities {
 		auto name = readable_name(typeid(T).name());
 		auto sName = name.substr(name.find('::') + 2, name.size() - 1);
 		auto comparableName = sName.c_str();
-		if (std::strcmp(comparableName, "Transform") == 0) {
-			return (T*)Transforms[e.Id];
+		if (std::strcmp(comparableName, "Material") == 0) {
+			return (T*)Materials[e.Id];
 		}
 		else if (std::strcmp(comparableName, "Camera") == 0) {
 			return (T*)Cameras[e.Id];
 		}
+		else if (std::strcmp(comparableName, "Transform") == 0) {
+			return (T*)Transforms[e.Id];
+		}
 		else if (std::strcmp(comparableName, "MeshRenderer") == 0) {
 			return (T*)MeshRenderers[e.Id];
-		}
-		else if (std::strcmp(comparableName, "Material") == 0) {
-			return (T*)Materials[e.Id];
 		}
 		else {
 			std::cout << std::string("Unhandled component:") << sName << std::endl;
@@ -116,27 +116,27 @@ namespace Entities {
 		}
 	}
 
-	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
-	template Transform* EntityManager::GetComponent<Transform>(Entity e);
-	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
-	template Transform* EntityManager::AddComponent<Transform>(Entity e);
-	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
-	template Camera* EntityManager::GetComponent<Camera>(Entity e);
-	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
-	template Camera* EntityManager::AddComponent<Camera>(Entity e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
 	template Material* EntityManager::GetComponent<Material>(unsigned int e);
 	template Material* EntityManager::GetComponent<Material>(Entity e);
 	template Material* EntityManager::AddComponent<Material>(unsigned int e);
 	template Material* EntityManager::AddComponent<Material>(Entity e);
+	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::GetComponent<Camera>(Entity e);
+	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::AddComponent<Camera>(Entity e);
+	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::GetComponent<Transform>(Entity e);
+	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::AddComponent<Transform>(Entity e);
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
 
-}	//Transform
-	//{'type': 'vec3', 'name': 'Position'}
-	//{'type': 'quat', 'name': 'Rotation'}
-	//{'type': 'vec3', 'name': 'Scale'}
+}	//Material
+	//{'type': 'bgfx::ProgramHandle', 'name': 'Shader'}
+	//{'type': 'bgfx::TextureHandle', 'name': 'Texture'}
+	//{'type': 'bgfx::UniformHandle', 'name': 'Uniforms'}
 	//Camera
 	//{'type': 'ViewId', 'name': 'View'}
 	//{'type': 'int', 'name': 'Width'}
@@ -148,12 +148,12 @@ namespace Entities {
 	//{'type': 'float', 'name': 'FieldOfView'}
 	//{'type': 'float', 'name': 'Near'}
 	//{'type': 'float', 'name': 'Far'}
+	//Transform
+	//{'type': 'vec3', 'name': 'Position'}
+	//{'type': 'quat', 'name': 'Rotation'}
+	//{'type': 'vec3', 'name': 'Scale'}
 	//MeshRenderer
 	//{'type': 'ModelHandle', 'name': 'Model'}
-	//Material
-	//{'type': 'bgfx::ProgramHandle', 'name': 'Shader'}
-	//{'type': 'bgfx::TextureHandle', 'name': 'Texture'}
-	//{'type': 'bgfx::UniformHandle', 'name': 'Uniforms'}
 
 
 #endif
