@@ -113,22 +113,26 @@ namespace Entities {
 
     void to_json(json &j, const MeshRenderer &val) {
         j = json {
-            {"Model", "Create"}
+            {"Model", "Create"},
+            {"ModelPath", val.ModelPath}
         };
     }
 
     void from_json(const json &j, MeshRenderer &val) {
-        val.Model = Assets::GetModel(Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)")[0]);
+        j.at("ModelPath").get_to<std::string>(val.ModelPath);
+        val.Model = Assets::GetModel(Assets::LoadModel("knight", val.ModelPath.c_str())[0]);
     }
 
     void to_json(json &j, const Material &val) {
         j = json {
-                {"Model", "Create"}
+            {"Shader", "Create"},
+            {"ShaderId", val.ShaderId}
         };
     }
 
     void from_json(const json &j, Material &val) {
-        val.Shader = Utils::LoadShader("cubes");
+        j.at("ShaderId").get_to<std::string>(val.ShaderId);
+        val.Shader = Utils::LoadShader(val.ShaderId);
     }
 }
 

@@ -39,7 +39,7 @@ int main(int argc, char** argv)
 
     sceneManager.LoadScene("main");
 
-//    // Load model
+    // Load model
 //    {
 //        // /Users/jake/Documents/Dev/RogueGame/assets/models/Knight2/maria_prop_j_j_ong.fbx
 //        // D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx
@@ -47,16 +47,18 @@ int main(int argc, char** argv)
 //        auto e = EntityManager::Instantiate();
 //        auto mr = EntityManager::AddComponent<MeshRenderer>(e);
 //        mr->Model = Assets::GetModel(ids[0]);
+//        mr->ModelPath = R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)";
 //
 //        auto material = EntityManager::AddComponent<Material>(e);
 //        material->Shader = Utils::LoadShader("cubes");
+//        material->ShaderId = "cubes";
 //
 //        EntityManager::AddComponent<Entities::Transform>(e);
 //    }
 
     app.MainCamera = EntityManager::AllEntities[0];
 
-    //sceneManager.SaveScene("main");
+    sceneManager.SaveScene("main");
 
     while (true)
     {
