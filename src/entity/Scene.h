@@ -6,6 +6,7 @@
 #define ROGUEGAME_SCENE_H
 
 #include <string>
+#include <filesystem>
 #include <vector>
 #include "Entities.h"
 
@@ -20,7 +21,8 @@ namespace Entities {
 
     struct SceneManager {
         SceneManager();
-        void LoadScene(std::string sceneName);
+        bool LoadScene(std::string sceneName);
+        void SaveScene(std::string sceneName);
         void UnloadScene(std::string sceneName);
     };
 }

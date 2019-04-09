@@ -15,7 +15,7 @@
 using namespace glm;
 using namespace bgfx;
 
-namespace Editor {
+namespace Utils {
     struct ImGuiUtils {
 
         static void InputField_float(const char* name, float * val)

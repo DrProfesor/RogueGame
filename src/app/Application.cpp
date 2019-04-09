@@ -111,14 +111,14 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	// Initialize the application
 	Reset();
 
-    {// init the main camera
-        MainCamera = EntityManager::Instantiate();
-        auto c = EntityManager::AddComponent<Camera>(MainCamera);
-        EntityManager::AddComponent<Entities::Transform>(MainCamera);
-        c->View = 1;
-        c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
-        c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
-    }
+//    {// init the main camera
+//        MainCamera = EntityManager::Instantiate();
+//        auto c = EntityManager::AddComponent<Camera>(MainCamera);
+//        EntityManager::AddComponent<Entities::Transform>(MainCamera);
+//        c->View = 1;
+//        c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
+//        c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
+//    }
 
 	return 0;
 }

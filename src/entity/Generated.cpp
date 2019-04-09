@@ -1,35 +1,15 @@
 #ifndef ROGUEGAME_CAMERA_H
 #define ROGUEGAME_CAMERA_H
+
 #include <map>
 #include <string>
 #include <iostream>
-#include "../editor/Logger.h"
-#include "../editor/ImGuiUtils.h"
+#include "../utils/ImGuiUtils.h"
+#include "../utils/Json.h"
+#include "../utils/JsonExtensions.h"
 #include "Entities.h"
-using namespace Editor;
-#ifdef __GNUG__ // GCC
- 
- #include <cxxabi.h> 
-#include <cstdlib> 
 
-static std::string readable_name( const char* mangled_name )
-{
-    int status ;
-    char* temp = __cxxabiv1::__cxa_demangle( mangled_name, nullptr, nullptr, &status ) ;
-    if(temp)
-    {
-        std::string result(temp) ;
-        std::free(temp) ;
-        return result.c_str() ;
-    }
-    else return mangled_name ;
-}
-
-#else // not GCC
-
-inline std::string readable_name( const char* mangled_name ) { return mangled_name ; }
-
-#endif // __GNUG__
+using namespace Utils;
 
 namespace Entities {
 	static std::map<unsigned int, Transform*> Transforms;
@@ -117,6 +97,58 @@ namespace Entities {
 		}
 	}
 
+	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::GetComponent<Transform>(Entity e);
+	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
+	template Transform* EntityManager::AddComponent<Transform>(Entity e);
+	template <> inline void EntityManager::AddComponent(Entity e, Transform & comp) {
+		e = AllEntities[e.Id];
+		auto nc = new Transform(comp);
+		Transforms[e.Id] = nc;
+		nc->Entity = e;
+		e.Components.push_back(nc);
+		AllEntities[e.Id] = e;
+	}
+
+	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::GetComponent<Camera>(Entity e);
+	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
+	template Camera* EntityManager::AddComponent<Camera>(Entity e);
+	template <> inline void EntityManager::AddComponent(Entity e, Camera & comp) {
+		e = AllEntities[e.Id];
+		auto nc = new Camera(comp);
+		Cameras[e.Id] = nc;
+		nc->Entity = e;
+		e.Components.push_back(nc);
+		AllEntities[e.Id] = e;
+	}
+
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
+	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
+	template <> inline void EntityManager::AddComponent(Entity e, MeshRenderer & comp) {
+		e = AllEntities[e.Id];
+		auto nc = new MeshRenderer(comp);
+		MeshRenderers[e.Id] = nc;
+		nc->Entity = e;
+		e.Components.push_back(nc);
+		AllEntities[e.Id] = e;
+	}
+
+	template Material* EntityManager::GetComponent<Material>(unsigned int e);
+	template Material* EntityManager::GetComponent<Material>(Entity e);
+	template Material* EntityManager::AddComponent<Material>(unsigned int e);
+	template Material* EntityManager::AddComponent<Material>(Entity e);
+	template <> inline void EntityManager::AddComponent(Entity e, Material & comp) {
+		e = AllEntities[e.Id];
+		auto nc = new Material(comp);
+		Materials[e.Id] = nc;
+		nc->Entity = e;
+		e.Components.push_back(nc);
+		AllEntities[e.Id] = e;
+	}
+
 	void EntityManager::ImGuiEditableComponent(Component * comp) {
 		auto transform = dynamic_cast<Transform*>(comp);
 		if (transform) {
@@ -148,22 +180,48 @@ namespace Entities {
 		}
 	}
 
-	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
-	template Transform* EntityManager::GetComponent<Transform>(Entity e);
-	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
-	template Transform* EntityManager::AddComponent<Transform>(Entity e);
-	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
-	template Camera* EntityManager::GetComponent<Camera>(Entity e);
-	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
-	template Camera* EntityManager::AddComponent<Camera>(Entity e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
-	template Material* EntityManager::GetComponent<Material>(unsigned int e);
-	template Material* EntityManager::GetComponent<Material>(Entity e);
-	template Material* EntityManager::AddComponent<Material>(unsigned int e);
-	template Material* EntityManager::AddComponent<Material>(Entity e);
+	void EntityManager::CreateEntityFromSerialized(std::string input) {
+		auto json = nlohmann::json::parse(input);
+		auto entity = Instantiate();
+		if (json.contains("Transform")) {
+			auto newComp = json.at("Transform").get<Transform>();
+			AddComponent(entity, newComp);
+		}
+		if (json.contains("Camera")) {
+			auto newComp = json.at("Camera").get<Camera>();
+			AddComponent(entity, newComp);
+		}
+		if (json.contains("MeshRenderer")) {
+			auto newComp = json.at("MeshRenderer").get<MeshRenderer>();
+			AddComponent(entity, newComp);
+		}
+		if (json.contains("Material")) {
+			auto newComp = json.at("Material").get<Material>();
+			AddComponent(entity, newComp);
+		}
+	}
+
+	std::string EntityManager::SerializeEntity(Entity e) {
+		nlohmann::json json;
+		auto transformIt = Transforms.find(e.Id);
+		if (transformIt != Transforms.end()) {
+			json["Transform"] = *Transforms[e.Id];
+		}
+		auto cameraIt = Cameras.find(e.Id);
+		if (cameraIt != Cameras.end()) {
+			json["Camera"] = *Cameras[e.Id];
+		}
+		auto meshrendererIt = MeshRenderers.find(e.Id);
+		if (meshrendererIt != MeshRenderers.end()) {
+			json["MeshRenderer"] = *MeshRenderers[e.Id];
+		}
+		auto materialIt = Materials.find(e.Id);
+		if (materialIt != Materials.end()) {
+			json["Material"] = *Materials[e.Id];
+		}
+		return json.dump();
+	}
+
 
 }	//Transform
 	//{'type': 'vec3', 'name': 'Position'}

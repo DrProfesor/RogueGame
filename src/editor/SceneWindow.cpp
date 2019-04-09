@@ -84,7 +84,6 @@ namespace Editor {
 
                     ImGui::TreePop();
                 }
-
             }
         }
         ImGui::End();
@@ -101,6 +100,7 @@ namespace Editor {
 
             ImGui::Image(texture.ptr, size, ImVec2(1, 0), ImVec2(0, 1));
         }
+
         ImGui::End();
     }
 

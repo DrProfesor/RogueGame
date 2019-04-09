@@ -139,42 +139,19 @@ def line_outdent(*args):
 
 
 with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
-    source = "#ifndef ROGUEGAME_CAMERA_H\n#define ROGUEGAME_CAMERA_H\n"
-
+    source = "#ifndef ROGUEGAME_CAMERA_H\n#define ROGUEGAME_CAMERA_H\n\n"
     source += line("#include <map>")
     source += line("#include <string>")
     source += line("#include <iostream>")
-    source += line("#include \"../editor/Logger.h\"")
-    source += line("#include \"../editor/ImGuiUtils.h\"")
+    source += line("#include \"../utils/ImGuiUtils.h\"")
+    source += line("#include \"../utils/Json.h\"")
+    source += line("#include \"../utils/JsonExtensions.h\"")
     for inc, v in includes.items():
         source += line("#include \"" + inc + "\"")
 
-    source += line("using namespace Editor;")
-
-    source += "" \
-"#ifdef __GNUG__ // GCC\n \
-\n \
-#include <cxxabi.h> \n\
-#include <cstdlib> \n\
-\n\
-static std::string readable_name( const char* mangled_name )\n\
-{\n\
-    int status ;\n\
-    char* temp = __cxxabiv1::__cxa_demangle( mangled_name, nullptr, nullptr, &status ) ;\n\
-    if(temp)\n\
-    {\n\
-        std::string result(temp) ;\n\
-        std::free(temp) ;\n\
-        return result.c_str() ;\n\
-    }\n\
-    else return mangled_name ;\n\
-}\n\
-\n\
-#else // not GCC\n\
-\n\
-inline std::string readable_name( const char* mangled_name ) { return mangled_name ; }\n\
-\n\
-#endif // __GNUG__\n\n"
+    source += line("")
+    source += line("using namespace Utils;")
+    source += line("")
 
     source += line_indent("namespace Entities {")
 
@@ -186,7 +163,6 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
     source += begin_proc("EntityManager::AddComponent", "T*", "Entity e")
 
     source += line("e = AllEntities[e.Id];")
-
     first = True
     for comp, comp_data in components.items():
         _if = ""
@@ -257,6 +233,21 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line_outdent("}")
     source += end_proc()
 
+    for comp, comp_data in components.items():
+        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(unsigned int e);")
+        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(Entity e);")
+        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(unsigned int e);")
+        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(Entity e);")
+
+        source += line_indent("template <> inline void EntityManager::AddComponent(Entity e, " + comp + " & comp) {")
+        source += line("e = AllEntities[e.Id];")
+        source += line("auto nc = new " + comp + "(comp);")
+        source += line(comp + "s[e.Id] = nc;")
+        source += line("nc->Entity = e;")
+        source += line("e.Components.push_back(nc);")
+        source += line("AllEntities[e.Id] = e;")
+        source += end_proc()
+
     source += begin_proc("EntityManager::ImGuiEditableComponent", "void", "Component * comp")
     for comp, comp_data in components.items():
         source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
@@ -266,11 +257,25 @@ inline std::string readable_name( const char* mangled_name ) { return mangled_na
         source += line_outdent("}")
     source += end_proc()
 
+    source += begin_proc("EntityManager::CreateEntityFromSerialized", "void", "std::string input")
+    source += line("auto json = nlohmann::json::parse(input);")
+    source += line("auto entity = Instantiate();")
     for comp, comp_data in components.items():
-        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(unsigned int e);")
-        source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(Entity e);")
-        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(unsigned int e);")
-        source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(Entity e);")
+        source += line_indent("if (json.contains(\"" + comp + "\")) {")
+        source += line("auto newComp = json.at(\"" + comp + "\").get<" + comp + ">();")
+        source += line("AddComponent(entity, newComp);")
+        source += line_outdent("}")
+    source += end_proc()
+
+    source += begin_proc("EntityManager::SerializeEntity", "std::string", "Entity e")
+    source += line("nlohmann::json json;")
+    for comp, comp_data in components.items():
+        source += line("auto " + comp.lower() + "It = " + comp + "s.find(e.Id);")
+        source += line_indent("if (" + comp.lower() + "It != " + comp + "s.end()) {")
+        source += line("json[\"" + comp + "\"] = *" + comp + "s[e.Id];")
+        source += line_outdent("}")
+    source += line("return json.dump();")
+    source += end_proc()
 
     source += "\n}"
 

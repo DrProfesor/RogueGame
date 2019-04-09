@@ -6,6 +6,7 @@
 #define ROGUEGAME_EDITOR_H
 
 #include "SceneWindow.h"
+#include "Logger.h"
 
 namespace Editor {
     struct EditorManager {
@@ -14,6 +15,7 @@ namespace Editor {
 
         bool IsEditMode;
         SceneWindow sceneWindow;
+        Logger logger;
     };
 }
 

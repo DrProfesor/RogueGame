@@ -48,12 +48,17 @@ namespace Entities {
         static T* AddComponent(Entity e);
 
         template<typename T>
+        static void AddComponent(Entity e, T & comp);
+
+        template<typename T>
         static T* GetComponent(unsigned int e);
 
         template<typename T>
         static T* AddComponent(unsigned int e);
 
         static void ImGuiEditableComponent(Component* comp);
+        static void CreateEntityFromSerialized(std::string input);
+        static std::string SerializeEntity(Entity e);
 
         // end generated
 

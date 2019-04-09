@@ -269,12 +269,7 @@ void Logger::Draw()
         m_Filter.Draw( m_FilterLabel );
     }
 
-    // Do I need an unique id in BeginChild?
-    char id[ 64 ];
-    snprintf( id, sizeof( id ), "console_%p", this );
-    id[ sizeof( id ) - 1 ] = 0;
-
-    ImGui::BeginChild( id, ImVec2( 0, -ImGui::GetItemsLineHeightWithSpacing() ), false, ImGuiWindowFlags_HorizontalScrollbar );
+    ImGui::Begin( "Logger", false, ImVec2( 0, -ImGui::GetItemsLineHeightWithSpacing() ), ImGuiWindowFlags_HorizontalScrollbar );
     ImGui::PushStyleVar( ImGuiStyleVar_ItemSpacing, ImVec2( 4, 1 ) );
 
     struct Iterator
@@ -300,7 +295,7 @@ void Logger::Draw()
     }
 
     ImGui::PopStyleVar();
-    ImGui::EndChild();
+    ImGui::End();
 }
 
 void Logger::Write( const void* data, size_t size )
