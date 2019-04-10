@@ -74,12 +74,12 @@ namespace Entities {
     struct Component {
         Entity Entity;
         virtual ~Component() = default;
-        const char* Name = "Component";
+        virtual const char* Name(){ return "Component"; }
     };
 
     //@component
     struct Transform : Component {
-        const char* Name = "Transform";
+        const char* Name() override { return "Transform"; }
 
         vec3 Position;
         quat Rotation;
@@ -105,7 +105,7 @@ namespace Entities {
 
     //@component
     struct Camera : Component {
-        const char* Name = "Camera";
+        const char* Name() override { return "Camera"; }
 
         ViewId View;
         int Width = 1920;
@@ -155,7 +155,7 @@ namespace Entities {
 
     //@component
     struct MeshRenderer : Component {
-        const char* Name = "MeshRenderer";
+        const char* Name() override { return "MeshRenderer"; }
 
 //        MeshRenderer(std::string modelPath) {
 //            auto ids = Assets::LoadModel("knight", modelPath.c_str());
@@ -169,7 +169,7 @@ namespace Entities {
 
     //@component
     struct Material : Component {
-        const char* Name = "Material";
+        const char* Name() override { return "Material"; }
 
 //        Material(std::string shaderId) {
 //            Shader = Utils::LoadShader("cubes");

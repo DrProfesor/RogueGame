@@ -11,8 +11,6 @@ namespace Entities {
 
     std::map<std::string, Scene> LoadedScenes = {};
 
-    SceneManager::SceneManager() {}
-
     bool SceneManager::LoadScene(std::string sceneName)
     {
         fs::path path = std::filesystem::current_path();
@@ -71,10 +69,30 @@ namespace Entities {
             out << str;
             out.close();
         }
+
+        SetDirty(sceneName, false);
     }
 
     void SceneManager::UnloadScene(std::string sceneName)
     {
 
+    }
+
+    void SceneManager::Update()
+    {
+        for (auto kp : LoadedScenes) {
+            auto sceneId = kp.first;
+            auto scene = kp.second;
+            if (scene.Dirty) {
+                SaveScene(sceneId);
+            }
+        }
+    }
+
+    void SceneManager::SetDirty(std::string sceneName, bool state)
+    {
+        auto scene = LoadedScenes[sceneName];
+        scene.Dirty = state;
+        LoadedScenes[sceneName] = scene;
     }
 }

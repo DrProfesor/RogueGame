@@ -31,6 +31,7 @@ for root, dirs, files in os.walk(dir_path + "/src"):
                 if depth != current_component_depth: continue
                 if "(" in line: continue
                 if "//" in line: continue
+                if "static" in line: continue
 
                 field = line.strip()
                 field = field.replace(";", "")

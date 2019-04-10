@@ -34,10 +34,9 @@ int main(int argc, char** argv)
     app.Init(argc, argv);
 
     EditorManager editor;
-    SceneManager sceneManager;
     PhysicsManager physics;
 
-    sceneManager.LoadScene("main");
+    SceneManager::LoadScene("main");
 
     // Load model
 //    {
@@ -58,13 +57,12 @@ int main(int argc, char** argv)
 
     app.MainCamera = EntityManager::AllEntities[0];
 
-    sceneManager.SaveScene("main");
-
     while (true)
     {
         if (!app.Update()) break;
         editor.Update();
         physics.Update();
+        SceneManager::Update();
 
         bgfx::setViewFrameBuffer(1, EntityManager::GetComponent<Camera>(app.MainCamera)->FrameBuffer);
         EntityManager::UpdateEntities();

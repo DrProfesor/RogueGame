@@ -19,6 +19,20 @@ namespace Editor {
         if (!IsEditMode)
             return;
         {
+            if (ImGui::BeginMainMenuBar())
+            {
+                if (ImGui::BeginMenu("File"))
+                {
+                    ImGui::EndMenu();
+                }
+                if (ImGui::BeginMenu("Edit"))
+                {
+                    ImGui::EndMenu();
+                }
+                ImGui::EndMainMenuBar();
+            }
+
+
             bool open = true;
             static bool opt_fullscreen_persistant = true;
             static ImGuiDockNodeFlags opt_flags = ImGuiDockNodeFlags_None;

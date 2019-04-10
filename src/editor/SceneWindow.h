@@ -17,6 +17,7 @@ namespace Editor {
         void Update();
 
         vec2 last_cursor_pos;
+        bool IsSceneHovered;
 
     };
 }

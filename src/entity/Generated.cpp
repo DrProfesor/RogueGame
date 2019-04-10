@@ -170,13 +170,9 @@ namespace Entities {
 		}
 		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
 		if (meshrenderer) {
-			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
-			ImGuiUtils::InputField_ProgramHandle("Shader", &material->Shader);
-			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture);
-			ImGuiUtils::InputField_UniformHandle("Uniforms", &material->Uniforms);
 		}
 	}
 
@@ -238,11 +234,7 @@ namespace Entities {
 	//{'type': 'float', 'name': 'Near'}
 	//{'type': 'float', 'name': 'Far'}
 	//MeshRenderer
-	//{'type': 'ModelHandle', 'name': 'Model'}
 	//Material
-	//{'type': 'ProgramHandle', 'name': 'Shader'}
-	//{'type': 'TextureHandle', 'name': 'Texture'}
-	//{'type': 'UniformHandle', 'name': 'Uniforms'}
 
 
 #endif

@@ -5,6 +5,7 @@
 #include "SceneWindow.h"
 #include "ImGuizmo.h"
 #include "../physics/Time.h"
+#include "../entity/Scene.h"
 
 using namespace Entities;
 using namespace Physics;
@@ -47,7 +48,7 @@ namespace Editor {
             cameraTransform->Position -= cameraTransform->Up() * dt * 10.0f;
         }
 
-        if (Input::GetButton(Input::Button::RIGHT_MOUSE))
+        if (Input::GetButton(Input::Button::RIGHT_MOUSE) && IsSceneHovered)
         {
             auto current = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
             auto delta = vec2{current.x - last_cursor_pos.x, current.y - last_cursor_pos.y} * dt;
@@ -64,20 +65,53 @@ namespace Editor {
 
         if (ImGui::Begin("Scene Hierarchy"))
         {
+            if (ImGui::BeginPopupContextWindow("scene_window_context", 1))
+            {
+                if (ImGui::MenuItem("Add Entity"))
+                {
+                    auto newEntity = EntityManager::Instantiate();
+                    EntityManager::AddComponent<Entities::Transform>(newEntity);
+
+                    SceneManager::SetDirty("main");
+                }
+                ImGui::EndPopup();
+            }
+
             for (auto kp : EntityManager::AllEntities)
             {
                 auto key = kp.first;
                 Entity entity = kp.second;
 
-                if (ImGui::TreeNode(std::to_string(key).c_str()))
+                auto open1 = ImGui::TreeNode(std::to_string(key).c_str());
+                if (ImGui::BeginPopupContextItem())
+                {
+                    // TODO entity context
+                    if (ImGui::MenuItem("Add Component"))
+                    {
+                        // Component dropdown. Generated function?
+                    }
+                    ImGui::EndPopup();
+                }
+
+                if (open1)
                 {
                     for (auto comp : entity.Components)
                     {
-                        if (ImGui::TreeNode(typeid(*comp).name()))
+                        auto open2 = ImGui::TreeNode(comp->Name());
+
+                        if (ImGui::BeginPopupContextItem())
+                        {
+                            // TODO component context
+                            if (ImGui::MenuItem("Remove"))
+                            {
+                                // TODO remove component
+                            }
+                            ImGui::EndPopup();
+                        }
+
+                        if (open2)
                         {
                             EntityManager::ImGuiEditableComponent(comp);
-
-
                             ImGui::TreePop();
                         }
                     }
@@ -97,6 +131,8 @@ namespace Editor {
             union { ImTextureID ptr; struct { uint16_t flags; bgfx::TextureHandle handle; } s; } texture;
             texture.s.handle = camera->TextureHandle;
             texture.s.flags  = 0x01;
+
+            IsSceneHovered = ImGui::IsMouseHoveringWindow();
 
             ImGui::Image(texture.ptr, size, ImVec2(1, 0), ImVec2(0, 1));
         }

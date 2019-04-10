@@ -17,13 +17,15 @@ namespace Entities {
         std::string SceneName;
 
         std::vector<Entity> Entities;
+        bool Dirty;
     };
 
     struct SceneManager {
-        SceneManager();
-        bool LoadScene(std::string sceneName);
-        void SaveScene(std::string sceneName);
-        void UnloadScene(std::string sceneName);
+        static bool LoadScene(std::string sceneName);
+        static void SaveScene(std::string sceneName);
+        static void UnloadScene(std::string sceneName);
+        static void Update();
+        static void SetDirty(std::string sceneName, bool state = true);
     };
 }
 
