@@ -143,10 +143,12 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source = "#ifndef ROGUEGAME_CAMERA_H\n#define ROGUEGAME_CAMERA_H\n\n"
     source += line("#include <map>")
     source += line("#include <string>")
+    source += line("#include <vector>")
     source += line("#include <iostream>")
     source += line("#include \"../utils/ImGuiUtils.h\"")
     source += line("#include \"../utils/Json.h\"")
     source += line("#include \"../utils/JsonExtensions.h\"")
+    source += line("#include \"../utils/MapUtils.h\"")
     for inc, v in includes.items():
         source += line("#include \"" + inc + "\"")
 
@@ -215,6 +217,16 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source += line("return EntityManager::GetComponent<T>(EntityManager::AllEntities[e]);")
     source += end_proc()
 
+    source += begin_proc("EntityManager::Destroy", "void", "Entity e")
+    for comp, comp_data in components.items():
+        source += line_indent("if (contains(" + comp + "s, e.Id)) {")
+        source += line("auto comp = " + comp + "s[e.Id];")
+        source += line(comp + "s.erase(e.Id);")
+        source += line("delete comp;")
+        source += line_outdent("}")
+    source += line("AllEntities.erase(e.Id);")
+    source += end_proc()
+
     render_procs = {}
     update_procs = {}
     for comp, fd in update_functions.items():
@@ -236,19 +248,16 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
 
     for comp, comp_data in components.items():
         source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(unsigned int e);")
+    for comp, comp_data in components.items():
         source += line("template " + comp + "* EntityManager::GetComponent<"+comp+">(Entity e);")
+    for comp, comp_data in components.items():
         source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(unsigned int e);")
+    for comp, comp_data in components.items():
         source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(Entity e);")
+    for comp, comp_data in components.items():
+        source += line("template <> inline void EntityManager::AddComponent(Entity e, " + comp + " & comp) { e = AllEntities[e.Id]; auto nc = new " + comp + "(comp); " + comp + "s[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } ")
 
-        source += line_indent("template <> inline void EntityManager::AddComponent(Entity e, " + comp + " & comp) {")
-        source += line("e = AllEntities[e.Id];")
-        source += line("auto nc = new " + comp + "(comp);")
-        source += line(comp + "s[e.Id] = nc;")
-        source += line("nc->Entity = e;")
-        source += line("e.Components.push_back(nc);")
-        source += line("AllEntities[e.Id] = e;")
-        source += end_proc()
-
+    source += line("")
     source += begin_proc("EntityManager::ImGuiEditableComponent", "void", "Component * comp")
     for comp, comp_data in components.items():
         source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
@@ -258,7 +267,16 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
         source += line_outdent("}")
     source += end_proc()
 
-    source += begin_proc("EntityManager::CreateEntityFromSerialized", "void", "std::string input")
+    source += begin_proc("EntityManager::ImGuiAddComponentMenuItems", "void", "Entity e")
+    for comp, comp_data in components.items():
+        source += line_indent("if (!contains("+comp+"s, e.Id)) {")
+        source += line_indent("if (ImGui::MenuItem(\"" + comp + "\")) {")
+        source += line("AddComponent<"+comp+">(e);")
+        source += line_outdent("}")
+        source += line_outdent("}")
+    source += end_proc()
+
+    source += begin_proc("EntityManager::CreateEntityFromSerialized", "Entity", "std::string input")
     source += line("auto json = nlohmann::json::parse(input);")
     source += line("auto entity = Instantiate();")
     for comp, comp_data in components.items():
@@ -266,6 +284,7 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
         source += line("auto newComp = json.at(\"" + comp + "\").get<" + comp + ">();")
         source += line("AddComponent(entity, newComp);")
         source += line_outdent("}")
+    source += line("return entity;")
     source += end_proc()
 
     source += begin_proc("EntityManager::SerializeEntity", "std::string", "Entity e")

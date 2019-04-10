@@ -83,12 +83,18 @@ namespace Editor {
                 Entity entity = kp.second;
 
                 auto open1 = ImGui::TreeNode(std::to_string(key).c_str());
-                if (ImGui::BeginPopupContextItem())
+                if (ImGui::BeginPopupContextItem(std::to_string(key).c_str(), 1))
                 {
                     // TODO entity context
-                    if (ImGui::MenuItem("Add Component"))
+
+                    if (ImGui::BeginMenu("Add Component"))
                     {
-                        // Component dropdown. Generated function?
+                        EntityManager::ImGuiAddComponentMenuItems(entity);
+                        ImGui::EndMenu();
+                    }
+                    if (ImGui::MenuItem("Destroy"))
+                    {
+                        // TODO mark destroy
                     }
                     ImGui::EndPopup();
                 }

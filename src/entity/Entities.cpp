@@ -21,11 +21,7 @@ namespace Entities {
     bool EntityManager::IsAlive(Entity e) {
         return AllEntities.find(e.Id) != AllEntities.end();
     }
-
-    void EntityManager::Destroy(Entity entity) {
-        AllEntities.erase(entity.Id);
-    }
-
+    
     void EntityManager::Update_MeshRender(unsigned int e, MeshRenderer* mesh) {
         auto material = EntityManager::GetComponent<Material>(e);
         EntityManager::GetComponent<Transform>(e);

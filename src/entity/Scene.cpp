@@ -41,7 +41,8 @@ namespace Entities {
                 std::cout << "Loaded " << fPath.string() << std::endl;
                 std::cout << str << std::endl;
 
-                EntityManager::CreateEntityFromSerialized(str);
+                auto e = EntityManager::CreateEntityFromSerialized(str);
+                scene.Entities.push_back(e);
             }
         }
 

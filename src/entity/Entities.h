@@ -57,9 +57,9 @@ namespace Entities {
         static T* AddComponent(unsigned int e);
 
         static void ImGuiEditableComponent(Component* comp);
-        static void CreateEntityFromSerialized(std::string input);
+        static void ImGuiAddComponentMenuItems(Entity e);
+        static Entity CreateEntityFromSerialized(std::string input);
         static std::string SerializeEntity(Entity e);
-
         // end generated
 
 
@@ -123,8 +123,6 @@ namespace Entities {
         void SetViewTransform()
         {
             auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Entity);
-            //const vec3 at  = { cameraTransform->Transform.Position.x, cameraTransform->Transform.Position.y, cameraTransform->Transform.Position.z };
-            //const vec3 eye = cameraTransform->Transform.Position + cameraTransform->Forward();
 
             auto fwd = cameraTransform->Forward() + cameraTransform->Position;
             auto up = cameraTransform->Up();
@@ -157,12 +155,6 @@ namespace Entities {
     struct MeshRenderer : Component {
         const char* Name() override { return "MeshRenderer"; }
 
-//        MeshRenderer(std::string modelPath) {
-//            auto ids = Assets::LoadModel("knight", modelPath.c_str());
-//            Model = Assets::GetModel(ids[0]);
-//            ModelPath = modelPath;
-//        }
-
         std::string ModelPath;
         ModelHandle Model;
     };
@@ -170,11 +162,6 @@ namespace Entities {
     //@component
     struct Material : Component {
         const char* Name() override { return "Material"; }
-
-//        Material(std::string shaderId) {
-//            Shader = Utils::LoadShader("cubes");
-//            ShaderId = shaderId;
-//        }
 
         std::string ShaderId;
         bgfx::ProgramHandle Shader;
