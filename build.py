@@ -22,6 +22,7 @@ for root, dirs, files in os.walk(dir_path + "/src"):
         update_comp = ""
 
         for line in f:
+            if "()" in line: continue
             if "}" in line:
                 inside_component = False
                 depth -= 1
@@ -39,12 +40,12 @@ for root, dirs, files in os.walk(dir_path + "/src"):
 
                 if len(field_parts) < 2: continue
 
-                type = field_parts[0]
-                type_parts = type.split("::")
+                t = field_parts[0]
+                type_parts = t.split("::")
                 if len(type_parts) > 1:
-                    type = type_parts[len(type_parts)-1]
+                    t = type_parts[len(type_parts)-1]
 
-                field_data = {"type": type, "name": field_parts[1]}
+                field_data = {"type": t, "name": field_parts[1]}
                 components[current_component].append(field_data)
             if is_component:
                 is_component = False
@@ -260,6 +261,7 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source += line("")
     source += begin_proc("EntityManager::ImGuiEditableComponent", "void", "Component * comp")
     for comp, comp_data in components.items():
+        print(comp_data)
         source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
         source += line_indent("if ("+comp.lower()+") {")
         for cd in comp_data:

@@ -31,15 +31,12 @@ namespace Entities {
         {
             auto fPath = entry.path();
 
-            std::cout << fPath.extension() << std::endl;
-
             if (fPath.extension().string().compare(".e") == 0)
             {
                 std::ifstream in(fPath.string());
                 std::string str((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
 
                 std::cout << "Loaded " << fPath.string() << std::endl;
-                std::cout << str << std::endl;
 
                 auto e = EntityManager::CreateEntityFromSerialized(str);
                 scene.Entities.push_back(e);
@@ -55,6 +52,9 @@ namespace Entities {
         fs::path path = std::filesystem::current_path();
         path += "/assets/scene/";
         path += sceneName.c_str();
+
+        fs::directory_iterator dir(path);
+        for (auto entry : dir) fs::remove(entry);
 
         for (auto kp : EntityManager::AllEntities) {
             auto str = EntityManager::SerializeEntity(kp.second);

@@ -43,6 +43,13 @@ namespace Utils {
             ImGui::InputInt(name, (int*)val);
         }
 
+        static void InputField_string(const char* name, std::string * val)
+        {
+            char* v = (char*) val->c_str();
+            ImGui::InputText(name, v, val->size());
+            *val = v;
+        }
+
         static void InputField_FrameBufferHandle(const char* name, FrameBufferHandle * val)
         {
 

@@ -12,6 +12,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/quaternion.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 #include "../assets/Assets.h"
 
 using namespace bgfx;
@@ -95,6 +96,17 @@ namespace Entities {
         vec3 Right() { return Rotation * vec3{1,0,0}; }
         vec3 Up() { return Rotation * vec3{0,1,0}; }
 
+        glm::mat4 GetMatrix()
+        {
+            glm::mat4 mtx(1.0f);
+
+            mtx = glm::translate(mtx, Position);
+            mtx = mtx * glm::toMat4(Rotation);
+            mtx = glm::scale(mtx, Scale);
+
+            return mtx;
+        }
+
     };
 
     enum CameraMode
@@ -164,6 +176,7 @@ namespace Entities {
         const char* Name() override { return "Material"; }
 
         std::string ShaderId;
+        std::string TextureId;
         bgfx::ProgramHandle Shader;
         bgfx::TextureHandle Texture;
         bgfx::UniformHandle Uniforms;

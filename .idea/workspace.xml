@@ -46,14 +46,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/MapUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/shaders/bump/varying.def.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders/fs_cubes.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/cubes/fs_cubes.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders/varying.def.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/cubes/varying.def.sc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders/vs_cubes.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/cubes/vs_cubes.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Assets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Assets.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Entities.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Generated.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Generated.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Scene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/JsonExtensions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/JsonExtensions.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/deps/assimp/cmake-build-debug/" />
@@ -63,69 +73,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main.cpp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="969">
-                    <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <splitter split-orientation="horizontal" split-proportion="0.5">
-            <split-first>
-              <leaf>
-                <file leaf-file-name="Entities.h" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="697">
-                        <caret line="59" column="46" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="46" />
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-first>
-            <split-second>
-              <leaf>
-                <file leaf-file-name="Generated.cpp" pinned="false" current-in-tab="true">
-                  <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
-                    <provider selected="true" editor-type-id="text-editor">
-                      <state relative-caret-position="578">
-                        <caret line="181" column="9" lean-forward="true" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
-                        <folding>
-                          <element signature="e#550#562#0" expanded="true" />
-                          <element signature="e#1563#1575#0" expanded="true" />
-                          <element signature="e#1711#1723#0" expanded="true" />
-                          <element signature="e#2228#2240#0" expanded="true" />
-                          <element signature="e#4288#4290#0" expanded="true" />
-                          <element signature="e#4518#4520#0" expanded="true" />
-                          <element signature="e#4739#4741#0" expanded="true" />
-                          <element signature="e#4978#4980#0" expanded="true" />
-                        </folding>
-                      </state>
-                    </provider>
-                  </entry>
-                </file>
-              </leaf>
-            </split-second>
-          </splitter>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
@@ -187,32 +134,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SceneWindow.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
-              <folding>
-                <element signature="e#42#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imgui_demo.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/imgui/imgui_demo.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="3187" column="9" lean-forward="true" selection-start-line="3187" selection-start-column="9" selection-end-line="3187" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Entities.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/Entities.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+            <state relative-caret-position="663">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -220,8 +155,8 @@
       <file leaf-file-name="Scene.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+            <state relative-caret-position="391">
+              <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
               <folding>
                 <element signature="e#42#60#0" expanded="true" />
               </folding>
@@ -229,29 +164,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scene.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Scene.h">
+      <file leaf-file-name="vs_bump.sc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state>
+              <caret column="27" selection-start-column="19" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.py">
+      <file leaf-file-name="fs_bump.sc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="272" column="73" lean-forward="true" selection-start-line="272" selection-start-column="73" selection-end-line="272" selection-end-column="73" />
+            <state relative-caret-position="153">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entities.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+      <file leaf-file-name="JsonExtensions.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="67" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="67" />
+            <state relative-caret-position="828">
+              <caret line="125" column="18" lean-forward="true" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assets.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="38" />
+              <folding>
+                <element signature="e#42#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetUtils.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -267,11 +223,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Update_Transform</find>
-      <find>addComponen</find>
-      <find>type</find>
-      <find>config</find>
-      <find>def</find>
       <find>CMAKE_CURRENT_BINARY_DIR</find>
       <find>ASSIMP_BUILD_MINIZIP</find>
       <find>cubes&quot;</find>
@@ -296,7 +247,12 @@
       <find>ImGuiTreeNodeFlags</find>
       <find>create</find>
       <find>menu</find>
+      <find>ty</find>
       <find>main menu</find>
+      <find>s_texNormal</find>
+      <find>s_texColor</find>
+      <find>view</find>
+      <find>a_normal</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Dev\RogueGame\src</dir>
@@ -309,7 +265,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/code/Importer.cpp" />
         <option value="$PROJECT_DIR$/src/app/imgui/imgui.h" />
         <option value="$PROJECT_DIR$/src/app/imgui/imgui.cpp" />
@@ -326,8 +281,6 @@
         <option value="$PROJECT_DIR$/src/math/Quaternion.cpp" />
         <option value="$PROJECT_DIR$/src/math/Transform.h" />
         <option value="$PROJECT_DIR$/src/math/Transform.cpp" />
-        <option value="$PROJECT_DIR$/src/assets/Assets.h" />
-        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
         <option value="$PROJECT_DIR$/src/input/Input.h" />
         <option value="$PROJECT_DIR$/src/input/Input.cpp" />
         <option value="$PROJECT_DIR$/src/scene/Scene.h" />
@@ -336,37 +289,40 @@
         <option value="$PROJECT_DIR$/src/physics/Time.h" />
         <option value="$PROJECT_DIR$/src/physics/Time.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/assets/AssetUtils.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.hpp" />
         <option value="$PROJECT_DIR$/src/editor/ImGuiUtils.h" />
         <option value="$PROJECT_DIR$/src/editor/Editor.h" />
         <option value="$PROJECT_DIR$/src/editor/Logger.cpp" />
-        <option value="$PROJECT_DIR$/src/utils/ImGuiUtils.h" />
         <option value="$PROJECT_DIR$/src/utils/SerializationUtils.h" />
         <option value="$PROJECT_DIR$/src/app/FileSystem.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/utils/Json.h" />
-        <option value="$PROJECT_DIR$/src/entity/Generated.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.cpp" />
-        <option value="$PROJECT_DIR$/src/utils/JsonExtensions.h" />
         <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/entity/Scene.h" />
-        <option value="$PROJECT_DIR$/src/entity/Scene.cpp" />
         <option value="$PROJECT_DIR$/src/utils/MapUtils.h" />
-        <option value="$PROJECT_DIR$/src/entity/Entities.cpp" />
-        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
-        <option value="$PROJECT_DIR$/build.py" />
         <option value="$PROJECT_DIR$/deps/imgui/imgui_demo.cpp" />
+        <option value="$PROJECT_DIR$/build.py" />
+        <option value="$PROJECT_DIR$/src/utils/ImGuiUtils.h" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.cpp" />
+        <option value="$PROJECT_DIR$/src/assets/Assets.h" />
+        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
+        <option value="$PROJECT_DIR$/src/entity/Generated.cpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
+        <option value="$PROJECT_DIR$/src/entity/Entities.cpp" />
+        <option value="$PROJECT_DIR$/src/entity/Scene.cpp" />
+        <option value="$PROJECT_DIR$/src/assets/AssetUtils.cpp" />
+        <option value="$PROJECT_DIR$/src/utils/JsonExtensions.h" />
+        <option value="$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="377" />
-    <option name="y" value="-14" />
+    <option name="x" value="-559" />
+    <option name="y" value="-16" />
     <option name="width" value="2560" />
     <option name="height" value="1440" />
   </component>
@@ -391,18 +347,62 @@
             <path>
               <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
+              <item name="bump" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="shaders" type="462c0819:PsiDirectoryNode" />
+              <item name="cubes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="deps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
+              <item name="bgfx" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="06-bump" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
               <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
@@ -454,18 +454,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="imgui_dem&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;imgui_demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;ImGui_Demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
+    <property name="SearchEverywhereHistoryKey" value="scen&#9;FILE&#9;file://D:/Dev/RogueGame/src/entity/Scene.cpp&#10;imgui_dem&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;imgui_demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;ImGui_Demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\RogueGame\assets\shaders\bump" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\RogueGame\assets\shaders\cubes" />
       <recent name="D:\Dev\RogueGame\src\utils" />
       <recent name="D:\Dev\RogueGame\src\editor" />
       <recent name="$PROJECT_DIR$/assets/shaders" />
       <recent name="$PROJECT_DIR$/src/render" />
-      <recent name="D:\Dev\RogueGame\src\bigg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -602,7 +605,7 @@
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2490392" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969254" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,57 +621,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/bigg_imgui.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="128" selection-start-line="128" selection-end-line="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Generated.h" />
-    <entry file="file://$PROJECT_DIR$/src/input/Input.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scene/Scene.h" />
-    <entry file="file://$PROJECT_DIR$/src/physics/Physics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Time.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Time.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Physics.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx_p.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -732,27 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.14.26428/include/unordered_map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -803,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Json.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -818,13 +742,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/SerializationUtils.h" />
-    <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1235">
-          <caret line="132" column="50" lean-forward="true" selection-start-line="132" selection-start-column="50" selection-end-line="132" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/imgui/imgui_widgets.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -881,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="64" column="31" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/MapUtils.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -906,34 +816,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
+    <entry file="file://$PROJECT_DIR$/build.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        <state relative-caret-position="259">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Logger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
           <folding>
-            <element signature="e#42#60#0" expanded="true" />
+            <element signature="e#42#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+    <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="67" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="67" />
+        <state relative-caret-position="714">
+          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.py">
+    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui_demo.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="272" column="73" lean-forward="true" selection-start-line="272" selection-start-column="73" selection-end-line="272" selection-end-column="73" />
+        <state relative-caret-position="724">
+          <caret line="3187" column="9" selection-start-line="3187" selection-start-column="9" selection-end-line="3187" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="181" column="9" lean-forward="true" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
+        <state relative-caret-position="360">
+          <caret line="121" column="28" lean-forward="true" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
           <folding>
             <element signature="e#550#562#0" expanded="true" />
             <element signature="e#1563#1575#0" expanded="true" />
@@ -947,27 +885,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="138" column="43" selection-start-line="138" selection-start-column="43" selection-end-line="138" selection-end-column="43" />
+          <folding>
+            <element signature="e#107#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shaders/cubes/varying.def.sc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shaders/cubes/vs_cubes.sc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shaders/cubes/fs_cubes.sc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/bigg_assets.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/bigg_shaders.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="38" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="125" column="18" lean-forward="true" selection-start-line="125" selection-start-column="18" selection-end-line="125" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Entities.cpp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui_demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="3187" column="9" lean-forward="true" selection-start-line="3187" selection-start-column="9" selection-end-line="3187" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
           <folding>
-            <element signature="e#42#66#0" expanded="true" />
+            <element signature="e#42#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
         </state>
       </provider>
     </entry>

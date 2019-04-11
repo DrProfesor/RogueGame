@@ -21,23 +21,18 @@ namespace Entities {
     bool EntityManager::IsAlive(Entity e) {
         return AllEntities.find(e.Id) != AllEntities.end();
     }
-    
+
     void EntityManager::Update_MeshRender(unsigned int e, MeshRenderer* mesh) {
         auto material = EntityManager::GetComponent<Material>(e);
-        EntityManager::GetComponent<Transform>(e);
+        auto transform = EntityManager::GetComponent<Transform>(e);
 
-        // set transform
-
-        float mtx[16];
-        bx::mtxIdentity(&mtx[0]);
-        bgfx::setTransform(mtx);
+        bgfx::setTransform(&transform->GetMatrix()[0]);
 
         bgfx::setVertexBuffer(0, mesh->Model.VBO);
         bgfx::setIndexBuffer(mesh->Model.IBO);
 
-        //bgfx::setTexture(0, material->Uniforms, material->Texture);
-        bgfx::setState(0
-                       | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
+        bgfx::setTexture(0, material->Uniforms, material->Texture);
+        bgfx::setState(0 | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
                        | BGFX_STATE_WRITE_Z | BGFX_STATE_DEPTH_TEST_LESS
                        | BGFX_STATE_MSAA);
 

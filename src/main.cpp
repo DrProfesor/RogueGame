@@ -35,8 +35,30 @@ int main(int argc, char** argv)
 
     EditorManager editor;
     PhysicsManager physics;
+    Utils::Init();
+    {
+        Assets::LoadTexture("grass", R"(D:\Dev\RogueGame\assets\textures\Plane_Grass_01.png)");
+    }
 
     SceneManager::LoadScene("main");
+
+//    {
+//        std::cout << "Load model" << std::endl;
+//        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Terrain\PBOX22_Grass_01.FBX)");
+//        std::cout << "Load texture" << std::endl;
+//
+//        auto e = EntityManager::Instantiate();
+//        EntityManager::AddComponent<Entities::Transform>(e);
+//        auto mr = EntityManager::AddComponent<MeshRenderer>(e);
+//        mr->Model = Assets::GetModel(ids[0]);
+//        mr->ModelPath = R"(D:\Dev\RogueGame\assets\models\Terrain\PBOX22_Grass_01.FBX)";
+//
+//        auto material = EntityManager::AddComponent<Material>(e);
+//        material->Shader = Utils::LoadShader("cubes");
+//        material->ShaderId = "cubes";
+//        material->Texture = Assets::GetTexture("grass");
+//        material->TextureId = "grass";
+//    }
 
     // Load model
 //    {

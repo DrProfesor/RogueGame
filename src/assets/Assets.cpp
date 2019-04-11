@@ -3,6 +3,7 @@
 //
 
 #include "Assets.h"
+#include "../editor/Logger.h"
 
 std::map<std::string, TextureHandle> Textures = {};
 std::map<std::string, ProgramHandle> Shaders = {};
@@ -16,7 +17,13 @@ ModelHandle Assets::GetModel(std::string id)
 void Assets::LoadTexture(const std::string textureId, const std::string texturePath)
 {
     auto tex = Utils::LoadTexture(texturePath.c_str());
+    std::cout << tex.idx << std::endl;
     Textures[textureId] = tex;
+}
+
+TextureHandle Assets::GetTexture(std::string textureId)
+{
+    return Textures[textureId];
 }
 
 void Assets::LoadShader(const std::string programId)
@@ -59,20 +66,18 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
             vertices[i].nor = glm::vec3(norm.x, norm.y, norm.z);
 
             //auto col = mesh->mColors[0][i];
-            vertices[i].col1 = glm::vec4(0.5, 0, 0.5, 1);
-            vertices[i].col2 = glm::vec4(0.5, 0, 0.5, 1);
+//            vertices[i].col1 = glm::vec4(0.5, 0, 0.5, 1);
+//            vertices[i].col2 = glm::vec4(0.5, 0, 0.5, 1);
 
-//                if (mesh->mColors[0])
-//                {
-//                    auto colour = mesh->mColors[0][i];
-//                    vertices[i].col1 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
-//                }
-//
-//                if (mesh->mColors[1])
-//                {
-//                    auto colour = mesh->mColors[1][i];
-//                    vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
-//                }
+
+            vertices[i].col1 = glm::vec4(1,1,1,1);
+            vertices[i].col2 = glm::vec4(1,1,1,1);
+
+            if (mesh->mColors[1])
+            {
+                auto colour = mesh->mColors[1][i];
+                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+            }
 
             if (mesh->mTextureCoords[0])
             {

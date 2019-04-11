@@ -113,7 +113,6 @@ namespace Entities {
 
     void to_json(json &j, const MeshRenderer &val) {
         j = json {
-            {"Model", "Create"},
             {"ModelPath", val.ModelPath}
         };
     }
@@ -125,14 +124,20 @@ namespace Entities {
 
     void to_json(json &j, const Material &val) {
         j = json {
-            {"Shader", "Create"},
-            {"ShaderId", val.ShaderId}
+            {"ShaderId", val.ShaderId},
+            {"TextureId", val.TextureId},
         };
     }
 
     void from_json(const json &j, Material &val) {
         j.at("ShaderId").get_to<std::string>(val.ShaderId);
         val.Shader = Utils::LoadShader(val.ShaderId);
+
+        j.at("TextureId").get_to<std::string>(val.TextureId);
+        val.Texture = Assets::GetTexture(val.TextureId);
+        std::cout << val.Texture.idx << std::endl;
+
+        val.Uniforms = bgfx::createUniform("s_texColor",  bgfx::UniformType::Int1);
     }
 }
 

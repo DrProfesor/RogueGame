@@ -147,15 +147,33 @@ namespace Entities {
 	void EntityManager::ImGuiEditableComponent(Component * comp) {
 		auto transform = dynamic_cast<Transform*>(comp);
 		if (transform) {
+			ImGuiUtils::InputField_vec3("Position", &transform->Position);
+			ImGuiUtils::InputField_quat("Rotation", &transform->Rotation);
+			ImGuiUtils::InputField_vec3("Scale", &transform->Scale);
 		}
 		auto camera = dynamic_cast<Camera*>(comp);
 		if (camera) {
+			ImGuiUtils::InputField_ViewId("View", &camera->View);
+			ImGuiUtils::InputField_int("Width", &camera->Width);
+			ImGuiUtils::InputField_int("Height", &camera->Height);
+			ImGuiUtils::InputField_FrameBufferHandle("FrameBuffer", &camera->FrameBuffer);
+			ImGuiUtils::InputField_TextureHandle("TextureHandle", &camera->TextureHandle);
+			ImGuiUtils::InputField_CameraMode("Mode", &camera->Mode);
+			ImGuiUtils::InputField_float("FieldOfView", &camera->FieldOfView);
+			ImGuiUtils::InputField_float("Near", &camera->Near);
+			ImGuiUtils::InputField_float("Far", &camera->Far);
 		}
 		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
 		if (meshrenderer) {
+			ImGuiUtils::InputField_string("ModelPath", &meshrenderer->ModelPath);
+			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
+			ImGuiUtils::InputField_string("ShaderId", &material->ShaderId);
+			ImGuiUtils::InputField_ProgramHandle("Shader", &material->Shader);
+			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture);
+			ImGuiUtils::InputField_UniformHandle("Uniforms", &material->Uniforms);
 		}
 	}
 
@@ -227,9 +245,27 @@ namespace Entities {
 
 
 }	//Transform
+	//{'type': 'vec3', 'name': 'Position'}
+	//{'type': 'quat', 'name': 'Rotation'}
+	//{'type': 'vec3', 'name': 'Scale'}
 	//Camera
+	//{'type': 'ViewId', 'name': 'View'}
+	//{'type': 'int', 'name': 'Width'}
+	//{'type': 'int', 'name': 'Height'}
+	//{'type': 'FrameBufferHandle', 'name': 'FrameBuffer'}
+	//{'type': 'TextureHandle', 'name': 'TextureHandle'}
+	//{'type': 'CameraMode', 'name': 'Mode'}
+	//{'type': 'float', 'name': 'FieldOfView'}
+	//{'type': 'float', 'name': 'Near'}
+	//{'type': 'float', 'name': 'Far'}
 	//MeshRenderer
+	//{'type': 'string', 'name': 'ModelPath'}
+	//{'type': 'ModelHandle', 'name': 'Model'}
 	//Material
+	//{'type': 'string', 'name': 'ShaderId'}
+	//{'type': 'ProgramHandle', 'name': 'Shader'}
+	//{'type': 'TextureHandle', 'name': 'Texture'}
+	//{'type': 'UniformHandle', 'name': 'Uniforms'}
 
 
 #endif

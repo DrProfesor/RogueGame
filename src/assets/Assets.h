@@ -38,6 +38,7 @@ struct Vertex
 
 namespace Assets {
     void LoadTexture(const std::string textureId, const std::string texturePath);
+    TextureHandle GetTexture(std::string textureId);
 
     void LoadShader(const std::string programId);
 
