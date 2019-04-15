@@ -10,12 +10,12 @@
 
 namespace Editor {
     struct EditorManager {
-        EditorManager();
-        void Update();
+        static void Init();
+        static void Update();
 
-        bool IsEditMode;
-        SceneWindow sceneWindow;
-        Logger logger;
+        static bool IsEditMode;
+        static SceneWindow sceneWindow;
+        static Logger logger;
     };
 }
 

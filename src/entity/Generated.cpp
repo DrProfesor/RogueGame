@@ -9,7 +9,6 @@
 #include "../utils/Json.h"
 #include "../utils/JsonExtensions.h"
 #include "../utils/MapUtils.h"
-#include "Entities.h"
 
 using namespace Utils;
 
@@ -115,12 +114,6 @@ namespace Entities {
 	}
 
 	void EntityManager::UpdateEntities() {
-		for (auto kp : Transforms) {
-			Update_Transform(kp.first, kp.second);
-		}
-		for (auto kp : MeshRenderers) {
-			Update_MeshRender(kp.first, kp.second);
-		}
 	}
 
 	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
@@ -143,37 +136,43 @@ namespace Entities {
 	template <> inline void EntityManager::AddComponent(Entity e, Camera & comp) { e = AllEntities[e.Id]; auto nc = new Camera(comp); Cameras[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, MeshRenderer & comp) { e = AllEntities[e.Id]; auto nc = new MeshRenderer(comp); MeshRenderers[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Material & comp) { e = AllEntities[e.Id]; auto nc = new Material(comp); Materials[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
+	template <> std::map<unsigned int, Transform*> EntityManager::GetComponents() { return Transforms; }
+	template <> std::map<unsigned int, Camera*> EntityManager::GetComponents() { return Cameras; }
+	template <> std::map<unsigned int, MeshRenderer*> EntityManager::GetComponents() { return MeshRenderers; }
+	template <> std::map<unsigned int, Material*> EntityManager::GetComponents() { return Materials; }
 	
 	void EntityManager::ImGuiEditableComponent(Component * comp) {
 		auto transform = dynamic_cast<Transform*>(comp);
 		if (transform) {
-			ImGuiUtils::InputField_vec3("Position", &transform->Position);
-			ImGuiUtils::InputField_quat("Rotation", &transform->Rotation);
-			ImGuiUtils::InputField_vec3("Scale", &transform->Scale);
+			ImGuiUtils::InputField_vec3("Position", &transform->Position, comp->Entity);
+			ImGuiUtils::InputField_quat("Rotation", &transform->Rotation, comp->Entity);
+			ImGuiUtils::InputField_vec3("Scale", &transform->Scale, comp->Entity);
 		}
 		auto camera = dynamic_cast<Camera*>(comp);
 		if (camera) {
-			ImGuiUtils::InputField_ViewId("View", &camera->View);
-			ImGuiUtils::InputField_int("Width", &camera->Width);
-			ImGuiUtils::InputField_int("Height", &camera->Height);
-			ImGuiUtils::InputField_FrameBufferHandle("FrameBuffer", &camera->FrameBuffer);
-			ImGuiUtils::InputField_TextureHandle("TextureHandle", &camera->TextureHandle);
-			ImGuiUtils::InputField_CameraMode("Mode", &camera->Mode);
-			ImGuiUtils::InputField_float("FieldOfView", &camera->FieldOfView);
-			ImGuiUtils::InputField_float("Near", &camera->Near);
-			ImGuiUtils::InputField_float("Far", &camera->Far);
+			ImGuiUtils::InputField_ViewId("View", &camera->View, comp->Entity);
+			ImGuiUtils::InputField_int("Width", &camera->Width, comp->Entity);
+			ImGuiUtils::InputField_int("Height", &camera->Height, comp->Entity);
+			ImGuiUtils::InputField_FrameBufferHandle("FrameBuffer", &camera->FrameBuffer, comp->Entity);
+			ImGuiUtils::InputField_TextureHandle("TextureHandle", &camera->TextureHandle, comp->Entity);
+			ImGuiUtils::InputField_CameraMode("Mode", &camera->Mode, comp->Entity);
+			ImGuiUtils::InputField_float("FieldOfView", &camera->FieldOfView, comp->Entity);
+			ImGuiUtils::InputField_float("Near", &camera->Near, comp->Entity);
+			ImGuiUtils::InputField_float("Far", &camera->Far, comp->Entity);
 		}
 		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
 		if (meshrenderer) {
-			ImGuiUtils::InputField_string("ModelPath", &meshrenderer->ModelPath);
-			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model);
+			ImGuiUtils::InputField_string("ModelPath", &meshrenderer->ModelPath, comp->Entity);
+			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model, comp->Entity);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
-			ImGuiUtils::InputField_string("ShaderId", &material->ShaderId);
-			ImGuiUtils::InputField_ProgramHandle("Shader", &material->Shader);
-			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture);
-			ImGuiUtils::InputField_UniformHandle("Uniforms", &material->Uniforms);
+			ImGuiUtils::InputField_vec4("Colour", &material->Colour, comp->Entity);
+			ImGuiUtils::InputField_string("ShaderId", &material->ShaderId, comp->Entity);
+			ImGuiUtils::InputField_ProgramHandle("Shader", &material->Shader, comp->Entity);
+			ImGuiUtils::InputField_string("TextureId", &material->TextureId, comp->Entity);
+			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture, comp->Entity);
+			ImGuiUtils::InputField_UniformHandle("BaseColour", &material->BaseColour, comp->Entity);
 		}
 	}
 
@@ -262,10 +261,12 @@ namespace Entities {
 	//{'type': 'string', 'name': 'ModelPath'}
 	//{'type': 'ModelHandle', 'name': 'Model'}
 	//Material
+	//{'type': 'vec4', 'name': 'Colour'}
 	//{'type': 'string', 'name': 'ShaderId'}
 	//{'type': 'ProgramHandle', 'name': 'Shader'}
+	//{'type': 'string', 'name': 'TextureId'}
 	//{'type': 'TextureHandle', 'name': 'Texture'}
-	//{'type': 'UniformHandle', 'name': 'Uniforms'}
+	//{'type': 'UniformHandle', 'name': 'BaseColour'}
 
 
 #endif

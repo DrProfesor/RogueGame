@@ -41,9 +41,9 @@ namespace Assets {
     TextureHandle GetTexture(std::string textureId);
 
     void LoadShader(const std::string programId);
+    ProgramHandle GetShader(std::string programId);
 
     std::vector<std::string> LoadModel(const std::string modelId, const char* modelPath);
-
     ModelHandle GetModel(std::string id);
 };
 

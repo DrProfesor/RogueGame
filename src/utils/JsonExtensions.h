@@ -29,6 +29,20 @@ namespace glm {
         j.at("z").get_to(val.z);
     }
 
+    void to_json(json &j, const vec4 &val) {
+        j = json{{"x", val.x},
+                 {"y", val.y},
+                 {"z", val.z},
+                 {"w", val.w}};
+    }
+
+    void from_json(const json &j, vec4 &val) {
+        j.at("x").get_to(val.x);
+        j.at("y").get_to(val.y);
+        j.at("z").get_to(val.z);
+        j.at("w").get_to(val.w);
+    }
+
     void to_json(json &j, const quat &val) {
         j = json{{"x", val.x},
                  {"y", val.y},
@@ -126,18 +140,21 @@ namespace Entities {
         j = json {
             {"ShaderId", val.ShaderId},
             {"TextureId", val.TextureId},
+            {"Colour", val.Colour}
         };
     }
 
     void from_json(const json &j, Material &val) {
         j.at("ShaderId").get_to<std::string>(val.ShaderId);
-        val.Shader = Utils::LoadShader(val.ShaderId);
+        val.Shader = Assets::GetShader(val.ShaderId);
 
         j.at("TextureId").get_to<std::string>(val.TextureId);
         val.Texture = Assets::GetTexture(val.TextureId);
         std::cout << val.Texture.idx << std::endl;
 
-        val.Uniforms = bgfx::createUniform("s_texColor",  bgfx::UniformType::Int1);
+        j.at("Colour").get_to<vec4>(val.Colour);
+        val.BaseColour = bgfx::createUniform("u_base_colour",  bgfx::UniformType::Vec4);
+        bgfx::setUniform(val.BaseColour, &val.Colour.x);
     }
 }
 

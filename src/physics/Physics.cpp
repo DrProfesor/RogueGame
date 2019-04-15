@@ -5,7 +5,9 @@
 #include "Physics.h"
 
 namespace Physics{
-    PhysicsManager::PhysicsManager()
+    Time PhysicsManager::time;
+
+    void PhysicsManager::Init()
     {
 
     }

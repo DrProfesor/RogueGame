@@ -6,6 +6,7 @@
 #include "ImGuizmo.h"
 #include "../physics/Time.h"
 #include "../entity/Scene.h"
+#include "../utils/ImGuiUtils.h"
 
 using namespace Entities;
 using namespace Physics;
@@ -130,17 +131,11 @@ namespace Editor {
 
         if (ImGui::Begin("Scene"))
         {
-            auto size = ImGui::GetContentRegionAvail();
-
             ImGui::CaptureMouseFromApp(false);
-
-            union { ImTextureID ptr; struct { uint16_t flags; bgfx::TextureHandle handle; } s; } texture;
-            texture.s.handle = camera->TextureHandle;
-            texture.s.flags  = 0x01;
-
             IsSceneHovered = ImGui::IsMouseHoveringWindow();
 
-            ImGui::Image(texture.ptr, size, ImVec2(1, 0), ImVec2(0, 1));
+            auto size = ImGui::GetContentRegionAvail();
+            Utils::ImGuiUtils::ImGui_Image(camera->TextureHandle, {size.x, size.y});
         }
 
         ImGui::End();

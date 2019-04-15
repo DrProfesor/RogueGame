@@ -31,6 +31,7 @@ namespace Entities {
 
     struct MeshRenderer;
     struct Transform;
+    struct Material;
 
     struct EntityManager {
         static std::unordered_map<unsigned int, Entity> AllEntities;
@@ -55,6 +56,9 @@ namespace Entities {
         static T* GetComponent(unsigned int e);
 
         template<typename T>
+        static std::map<unsigned int, T*> GetComponents();
+
+        template<typename T>
         static T* AddComponent(unsigned int e);
 
         static void ImGuiEditableComponent(Component* comp);
@@ -64,10 +68,10 @@ namespace Entities {
         // end generated
 
 
-        //@component_update(RENDER, MeshRenderer)
+        static void Update_Material(unsigned int e, Material* mesh);
+
         static void Update_MeshRender(unsigned int e, MeshRenderer* mesh);
 
-        //@component_update(UPDATE, Transform)
         static void Update_Transform(unsigned int e, Entities::Transform* transform);
     };
 
@@ -175,11 +179,15 @@ namespace Entities {
     struct Material : Component {
         const char* Name() override { return "Material"; }
 
+        vec4 Colour;
+
         std::string ShaderId;
-        std::string TextureId;
         bgfx::ProgramHandle Shader;
+
+        std::string TextureId;
         bgfx::TextureHandle Texture;
-        bgfx::UniformHandle Uniforms;
+
+        bgfx::UniformHandle BaseColour;
     };
 };
 

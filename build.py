@@ -257,6 +257,8 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
         source += line("template " + comp + "* EntityManager::AddComponent<"+comp+">(Entity e);")
     for comp, comp_data in components.items():
         source += line("template <> inline void EntityManager::AddComponent(Entity e, " + comp + " & comp) { e = AllEntities[e.Id]; auto nc = new " + comp + "(comp); " + comp + "s[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } ")
+    for comp, comp_data in components.items():
+        source += line("template <> std::map<unsigned int, "+comp+"*> EntityManager::GetComponents() { return " + comp + "s; }")
 
     source += line("")
     source += begin_proc("EntityManager::ImGuiEditableComponent", "void", "Component * comp")
@@ -265,7 +267,7 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
         source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
         source += line_indent("if ("+comp.lower()+") {")
         for cd in comp_data:
-            source += line("ImGuiUtils::InputField_" + cd["type"] + "(\"" + cd["name"] + "\", &" + comp.lower() + "->" + cd["name"] + ");")
+            source += line("ImGuiUtils::InputField_" + cd["type"] + "(\"" + cd["name"] + "\", &" + comp.lower() + "->" + cd["name"] + ", comp->Entity);")
         source += line_outdent("}")
     source += end_proc()
 

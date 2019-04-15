@@ -5,7 +5,12 @@
 #include "Editor.h"
 
 namespace Editor {
-    EditorManager::EditorManager()
+
+    bool EditorManager::IsEditMode = true;
+    SceneWindow EditorManager::sceneWindow;
+    Logger EditorManager::logger;
+
+    void EditorManager::Init()
     {
         sceneWindow = SceneWindow();
         logger = Logger();

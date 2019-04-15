@@ -27,7 +27,7 @@ namespace Utils {
     bx::AllocatorI* GetDefaultAllocator();
 
     const bgfx::Memory* LoadMemory(const char* filePath);
-    bgfx::ProgramHandle LoadShader(std::string name);
+    bgfx::ProgramHandle LoadShader(std::string vertPath, std::string fragPath);
     bgfx::TextureHandle LoadTexture(const char* filePath,
             uint32_t _flags = 0x0,
             uint8_t _skip = 0,

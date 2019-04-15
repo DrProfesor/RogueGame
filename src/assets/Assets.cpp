@@ -2,8 +2,16 @@
 // Created by jwvan on 2019-04-04.
 //
 
+#include <filesystem>
 #include "Assets.h"
 #include "../editor/Logger.h"
+
+#define ASSET_DIR "assets/"
+#define MODEL_DIR "assets/models/"
+#define SHADER_DIR "assets/shaders/"
+#define TEXTURE_DIR "assets/textures/"
+
+namespace fs = std::filesystem;
 
 std::map<std::string, TextureHandle> Textures = {};
 std::map<std::string, ProgramHandle> Shaders = {};
@@ -16,8 +24,8 @@ ModelHandle Assets::GetModel(std::string id)
 
 void Assets::LoadTexture(const std::string textureId, const std::string texturePath)
 {
-    auto tex = Utils::LoadTexture(texturePath.c_str());
-    std::cout << tex.idx << std::endl;
+    auto path = TEXTURE_DIR + texturePath;
+    auto tex = Utils::LoadTexture(path.c_str());
     Textures[textureId] = tex;
 }
 
@@ -28,19 +36,28 @@ TextureHandle Assets::GetTexture(std::string textureId)
 
 void Assets::LoadShader(const std::string programId)
 {
-    Shaders[programId] = Utils::LoadShader(programId);
+    fs::path vertPath = std::filesystem::current_path();
+    vertPath += ("/" + std::string(SHADER_DIR) + programId + "/vs_" + programId + ".sc").c_str();
+
+    fs::path fragPath = std::filesystem::current_path();
+    fragPath += ("/" + std::string(SHADER_DIR) + programId + "/fs_" + programId + ".sc").c_str();
+    Shaders[programId] = Utils::LoadShader(vertPath.string(), fragPath.string());
+}
+
+ProgramHandle Assets::GetShader(std::string programId)
+{
+    return Shaders[programId];
 }
 
 std::vector<std::string> Assets::LoadModel(const std::string modelId, const char* modelPath)
 {
     bgfx::VertexDecl ms_decl;
-    ms_decl
-            .begin()
+    ms_decl.begin()
             .add(bgfx::Attrib::Position, 3, bgfx::AttribType::Float)
             .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)
             .add(bgfx::Attrib::Normal, 3, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Color0, 4, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Color1, 4, bgfx::AttribType::Float)
+//            .add(bgfx::Attrib::Color0, 4, bgfx::AttribType::Float)
+//            .add(bgfx::Attrib::Color1, 4, bgfx::AttribType::Float)
             .end();
     Assimp::Importer importer;
     std::cout << modelPath << std::endl;
@@ -65,19 +82,20 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
             auto norm = mesh->mNormals[i];
             vertices[i].nor = glm::vec3(norm.x, norm.y, norm.z);
 
-            //auto col = mesh->mColors[0][i];
-//            vertices[i].col1 = glm::vec4(0.5, 0, 0.5, 1);
-//            vertices[i].col2 = glm::vec4(0.5, 0, 0.5, 1);
-
-
-            vertices[i].col1 = glm::vec4(1,1,1,1);
-            vertices[i].col2 = glm::vec4(1,1,1,1);
-
-            if (mesh->mColors[1])
-            {
-                auto colour = mesh->mColors[1][i];
-                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
-            }
+//            vertices[i].col1 = glm::vec4(0.5f,0.5f,0.5f,1);
+//            vertices[i].col2 = glm::vec4(0.5f,0.5f,0.5f,1);
+//
+//            if (mesh->mColors[0])
+//            {
+//                auto colour = mesh->mColors[0][i];
+//                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+//            }
+//
+//            if (mesh->mColors[1])
+//            {
+//                auto colour = mesh->mColors[1][i];
+//                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+//            }
 
             if (mesh->mTextureCoords[0])
             {

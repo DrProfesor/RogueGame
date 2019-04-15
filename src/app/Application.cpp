@@ -132,11 +132,7 @@ bool Application::Update()
 	imguiEvents( Physics::Time::deltaTime );
 
 	// Begin frame
-	bgfx::touch(0);
-    bgfx::touch(1);
 	ImGui::NewFrame();
-
-
 	return true;
 }
 

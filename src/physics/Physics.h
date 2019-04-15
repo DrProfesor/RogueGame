@@ -9,10 +9,10 @@
 
 namespace Physics {
     struct PhysicsManager {
-        PhysicsManager();
-        void Update();
+        static void Init();
+        static void Update();
 
-        Time time;
+        static Time time;
     };
 }
 

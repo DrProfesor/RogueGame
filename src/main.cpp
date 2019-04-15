@@ -2,7 +2,6 @@
 // Created by jwvan on 2019-03-17.
 //
 
-
 #include <iostream>
 #include <vector>
 #include <bx/math.h>
@@ -16,8 +15,8 @@
 #include "assets/Assets.h"
 
 #include "input/Input.h"
-
 #include "physics/Physics.h"
+#include "rendering/Renderer.h"
 
 #include "editor/Editor.h"
 #include "editor/Logger.h"
@@ -25,6 +24,7 @@
 using namespace Entities;
 using namespace Editor;
 using namespace Physics;
+using namespace Render;
 
 int main(int argc, char** argv)
 {
@@ -33,11 +33,15 @@ int main(int argc, char** argv)
     Application app;
     app.Init(argc, argv);
 
-    EditorManager editor;
-    PhysicsManager physics;
+    PhysicsManager::Init();
+    EditorManager::Init();
     Utils::Init();
-    {
-        Assets::LoadTexture("grass", R"(D:\Dev\RogueGame\assets\textures\Plane_Grass_01.png)");
+    Renderer::Init();
+
+    {// Asset loading
+        Assets::LoadTexture("grass", "Plane_Grass_01.tga");
+        Assets::LoadShader("bump");
+        Assets::LoadShader("cubes");
     }
 
     SceneManager::LoadScene("main");
@@ -81,13 +85,15 @@ int main(int argc, char** argv)
 
     while (true)
     {
-        if (!app.Update()) break;
-        editor.Update();
-        physics.Update();
-        SceneManager::Update();
+        PhysicsManager::Update();
 
-        bgfx::setViewFrameBuffer(1, EntityManager::GetComponent<Camera>(app.MainCamera)->FrameBuffer);
+        if (!app.Update()) break;
+
+        EditorManager::Update();
+        SceneManager::Update();
         EntityManager::UpdateEntities();
+
+        Renderer::Update();
 
         // Post update contains the bgfx frame call,
         // so should happen after everything has been submitted
