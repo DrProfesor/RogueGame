@@ -4,6 +4,7 @@
 
 #include "Renderer.h"
 #include "../entity/Entities.h"
+#include "../editor/Logger.h"
 
 using namespace Entities;
 
@@ -29,6 +30,7 @@ namespace Render {
             {// Update materials
                 for (auto mkp : materials) {
                     // update materials uniforms
+                    bgfx::setUniform(mkp.second->BaseColour, &mkp.second->Colour.x);
                 }
             }
 
@@ -44,7 +46,7 @@ namespace Render {
                     bgfx::setVertexBuffer(0, mesh->Model.VBO);
                     bgfx::setIndexBuffer(mesh->Model.IBO);
 
-                    bgfx::setTexture(0, material->BaseColour, material->Texture);
+                    bgfx::setTexture(0, material->Sampler, material->Texture);
                     bgfx::setState(0 | BGFX_STATE_WRITE_RGB | BGFX_STATE_WRITE_A
                                    | BGFX_STATE_WRITE_Z | BGFX_STATE_DEPTH_TEST_LESS
                                    | BGFX_STATE_MSAA);

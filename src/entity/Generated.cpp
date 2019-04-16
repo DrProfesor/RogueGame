@@ -172,6 +172,7 @@ namespace Entities {
 			ImGuiUtils::InputField_ProgramHandle("Shader", &material->Shader, comp->Entity);
 			ImGuiUtils::InputField_string("TextureId", &material->TextureId, comp->Entity);
 			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture, comp->Entity);
+			ImGuiUtils::InputField_UniformHandle("Sampler", &material->Sampler, comp->Entity);
 			ImGuiUtils::InputField_UniformHandle("BaseColour", &material->BaseColour, comp->Entity);
 		}
 	}
@@ -266,6 +267,7 @@ namespace Entities {
 	//{'type': 'ProgramHandle', 'name': 'Shader'}
 	//{'type': 'string', 'name': 'TextureId'}
 	//{'type': 'TextureHandle', 'name': 'Texture'}
+	//{'type': 'UniformHandle', 'name': 'Sampler'}
 	//{'type': 'UniformHandle', 'name': 'BaseColour'}
 
 

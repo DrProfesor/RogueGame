@@ -155,6 +155,8 @@ namespace Entities {
         j.at("Colour").get_to<vec4>(val.Colour);
         val.BaseColour = bgfx::createUniform("u_base_colour",  bgfx::UniformType::Vec4);
         bgfx::setUniform(val.BaseColour, &val.Colour.x);
+
+        val.Sampler = bgfx::createUniform("s_texColor", bgfx::UniformType::Int1);
     }
 }
 

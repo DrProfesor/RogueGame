@@ -2,40 +2,14 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="RogueGame" targetName="glcpp" />
-      <config projectName="RogueGame" targetName="IrrXML" />
-      <config projectName="RogueGame" targetName="geometryc" />
-      <config projectName="RogueGame" targetName="shaderc" />
-      <config projectName="RogueGame" targetName="glfw" />
-      <config projectName="RogueGame" targetName="zlib" />
-      <config projectName="RogueGame" targetName="glsl-optimizer" />
-      <config projectName="RogueGame" targetName="unit" />
-      <config projectName="RogueGame" targetName="nvtt" />
-      <config projectName="RogueGame" targetName="fcpp" />
-      <config projectName="RogueGame" targetName="iqa" />
-      <config projectName="RogueGame" targetName="pvrtc" />
-      <config projectName="RogueGame" targetName="assimp" />
-      <config projectName="RogueGame" targetName="squish" />
-      <config projectName="RogueGame" targetName="texturev" />
-      <config projectName="RogueGame" targetName="ib-compress" />
-      <config projectName="RogueGame" targetName="imgui" />
-      <config projectName="RogueGame" targetName="assimp_cmd" />
-      <config projectName="RogueGame" targetName="bgfx" />
-      <config projectName="RogueGame" targetName="texturec" />
-      <config projectName="RogueGame" targetName="etc2" />
-      <config projectName="RogueGame" targetName="dear-imgui" />
-      <config projectName="RogueGame" targetName="etc1" />
-      <config projectName="RogueGame" targetName="zlibstatic" />
-      <config projectName="RogueGame" targetName="edtaa3" />
-      <config projectName="RogueGame" targetName="astc" />
-      <config projectName="RogueGame" targetName="bimg" />
-      <config projectName="RogueGame" targetName="glslang" />
-      <config projectName="RogueGame" targetName="RogueGame" />
-      <config projectName="RogueGame" targetName="example-common" />
-      <config projectName="RogueGame" targetName="uninstall" />
-      <config projectName="RogueGame" targetName="mesa" />
-      <config projectName="RogueGame" targetName="bx" />
-      <config projectName="RogueGame" targetName="forsyth-too" />
+      <config projectName="Assimp" targetName="assimp" />
+      <config projectName="Assimp" targetName="assimp_cmd" />
+      <config projectName="Assimp" targetName="zlib" />
+      <config projectName="Assimp" targetName="uninstall" />
+      <config projectName="Assimp" targetName="IrrXML" />
+      <config projectName="Assimp" targetName="zlibstatic" />
+      <config projectName="Assimp" targetName="unit" />
+      <config projectName="Assimp" targetName="UpdateAssimpLibsDebugSymbolsAndDLLs" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -45,35 +19,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/rendering/Renderer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/rendering/Renderer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/bump/varying.def.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/bump/varying.def.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.py" beforeDir="false" afterPath="$PROJECT_DIR$/build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RogueGame/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RogueGame/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/assimp" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/AssetUtils.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/AssetUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/AssetUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Assets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Assets.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/editor/Editor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/editor/Editor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entities.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Generated.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Generated.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/physics/Physics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/Physics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/physics/Physics.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/Physics.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/JsonExtensions.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/JsonExtensions.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/deps/assimp/cmake-build-debug/" />
@@ -89,35 +43,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-              <folding>
-                <element signature="e#43#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1173">
-              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-              <folding>
-                <element signature="e#38#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
+            <state relative-caret-position="493">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
                 <element signature="e#42#63#0" expanded="true" />
               </folding>
@@ -126,67 +56,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h">
+        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="11966" column="31" selection-start-line="11966" selection-start-column="31" selection-end-line="11966" selection-end-column="31" />
-              <folding>
-                <element signature="e#430439#430487#0" expanded="true" />
-                <element signature="e#443653#443718#0" expanded="true" />
-                <element signature="e#446220#446268#0" expanded="true" />
-                <element signature="e#449818#449866#0" expanded="true" />
-                <element signature="e#452060#452108#0" expanded="true" />
-                <element signature="e#456555#456603#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="10404">
+              <caret line="612" column="43" selection-start-line="612" selection-start-column="28" selection-end-line="612" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp">
+        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/shaderc.cmake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="578" selection-start-line="578" selection-end-line="578" />
-              <folding>
-                <element signature="e#1924#1953#0" expanded="true" />
-                <element signature="e#2282#2307#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/assimp/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/bgfx.cmake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="239" column="47" selection-start-line="239" selection-start-column="47" selection-end-line="239" selection-end-column="47" />
+            <state relative-caret-position="884">
+              <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11_1.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+            <state relative-caret-position="969">
+              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11.h">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="14397" column="33" lean-forward="true" selection-start-line="14397" selection-start-column="33" selection-end-line="14397" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/fcpp/fpp.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <folding>
+                <element signature="e#1059#1071#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,22 +118,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nc</find>
-      <find>Entities::Transform</find>
-      <find>AddComponent&lt;</find>
-      <find>AddComponent</find>
-      <find>BeginMenuBar</find>
-      <find>ShowExampleAppMainMenuBar</find>
-      <find>popup</find>
-      <find>ImGuiTreeNodeFlags</find>
-      <find>create</find>
-      <find>menu</find>
-      <find>ty</find>
       <find>main menu</find>
       <find>s_texNormal</find>
       <find>s_texColor</find>
@@ -232,6 +143,17 @@
       <find>compiler</find>
       <find>ming</find>
       <find>mingw</find>
+      <find>compileSh</find>
+      <find>fpp.</find>
+      <find>BGFX_BUILD_TOOLS</find>
+      <find>BX_TRACE</find>
+      <find>shaderc</find>
+      <find>shaderc.cpp</find>
+      <find>BGFX_INSTALL_EXAMPLES</find>
+      <find>include</find>
+      <find>fcpp</find>
+      <find>tool</find>
+      <find>fpp</find>
     </findStrings>
     <dirStrings>
       <dir>D:\Dev\RogueGame\src</dir>
@@ -239,29 +161,11 @@
     </dirStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/deps/bgfx.cmake" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/dev/Logger.h" />
-        <option value="$PROJECT_DIR$/src/dev/Logger.cpp" />
-        <option value="$PROJECT_DIR$/src/entity/Generated.h" />
-        <option value="$PROJECT_DIR$/src/math/Quaternion.h" />
-        <option value="$PROJECT_DIR$/src/math/Quaternion.cpp" />
-        <option value="$PROJECT_DIR$/src/math/Transform.h" />
-        <option value="$PROJECT_DIR$/src/math/Transform.cpp" />
-        <option value="$PROJECT_DIR$/src/input/Input.h" />
-        <option value="$PROJECT_DIR$/src/input/Input.cpp" />
-        <option value="$PROJECT_DIR$/src/scene/Scene.h" />
-        <option value="$PROJECT_DIR$/src/physics/Time.h" />
-        <option value="$PROJECT_DIR$/src/physics/Time.cpp" />
-        <option value="$PROJECT_DIR$/src/app/Application.hpp" />
-        <option value="$PROJECT_DIR$/src/editor/ImGuiUtils.h" />
-        <option value="$PROJECT_DIR$/src/editor/Logger.cpp" />
-        <option value="$PROJECT_DIR$/src/utils/SerializationUtils.h" />
-        <option value="$PROJECT_DIR$/src/app/FileSystem.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/utils/Json.h" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.h" />
         <option value="$PROJECT_DIR$/src/entity/Scene.h" />
@@ -273,34 +177,52 @@
         <option value="$PROJECT_DIR$/src/assets/AssetUtils.h" />
         <option value="$PROJECT_DIR$/src/assets/AssetUtils.cpp" />
         <option value="$PROJECT_DIR$/src/utils/ImGuiUtils.h" />
-        <option value="$PROJECT_DIR$/src/utils/JsonExtensions.h" />
-        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx.cpp" />
         <option value="$PROJECT_DIR$/src/rendering/Renderer.h" />
         <option value="$PROJECT_DIR$/src/entity/Generated.cpp" />
         <option value="$PROJECT_DIR$/build.py" />
-        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
         <option value="$PROJECT_DIR$/src/entity/Entities.cpp" />
-        <option value="$PROJECT_DIR$/src/rendering/Renderer.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.cpp" />
         <option value="$PROJECT_DIR$/src/editor/Editor.h" />
         <option value="$PROJECT_DIR$/src/physics/Physics.h" />
         <option value="$PROJECT_DIR$/assets/shaders/bump/varying.def.sc" />
         <option value="$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc" />
         <option value="$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc" />
-        <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
         <option value="$PROJECT_DIR$/src/physics/Physics.cpp" />
-        <option value="$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc" />
-        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx.cpp" />
+        <option value="$PROJECT_DIR$/src/entity/Entities.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/varying.def.sc" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/vs_bump.sc" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc" />
+        <option value="$PROJECT_DIR$/src/rendering/Renderer.cpp" />
+        <option value="$PROJECT_DIR$/src/utils/JsonExtensions.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/vendor/brtshaderc/brtshaderc.h" />
+        <option value="$PROJECT_DIR$/src/vendor/shaderc/shaderc_spirv.cpp" />
+        <option value="$PROJECT_DIR$/src/vendor/shaderc/shaderc_glsl.cpp" />
+        <option value="$PROJECT_DIR$/src/vendor/shaderc/shaderc_hlsl.cpp" />
+        <option value="$PROJECT_DIR$/src/vendor/shaderc/shaderc.cpp" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/shader_spirv.h" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bx/include/tinystl/string.h" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/brtshaderc.cmake" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools.cmake" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.h" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/brtshaderc.h" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/brtshaderc.cpp" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/bgfx.cmake" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/3rdparty/fcpp.cmake" />
+        <option value="$PROJECT_DIR$/deps/bgfx.cmake/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3021" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="2576" />
     <option name="height" value="1416" />
@@ -312,35 +234,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="deps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="deps" type="462c0819:PsiDirectoryNode" />
-              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
-              <item name="deps" type="462c0819:PsiDirectoryNode" />
-              <item name="bgfx.cmake" type="462c0819:PsiDirectoryNode" />
-              <item name="bgfx" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,18 +242,18 @@
     <property name="SearchEverywhereHistoryKey" value="scen&#9;FILE&#9;file://D:/Dev/RogueGame/src/entity/Scene.cpp&#10;imgui_dem&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;imgui_demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;ImGui_Demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dev\RogueGame\assets\shaders\bump" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\RogueGame\deps\bgfx.cmake\bgfx\include\bgfx" />
       <recent name="D:\Dev\RogueGame\assets\shaders\cubes" />
       <recent name="D:\Dev\RogueGame\src\utils" />
       <recent name="D:\Dev\RogueGame\src\editor" />
       <recent name="$PROJECT_DIR$/assets/shaders" />
-      <recent name="$PROJECT_DIR$/src/render" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\RogueGame\assets\shaders\bump" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -374,183 +268,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="CMake Application.RogueGame">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" EXPLICIT_BUILD_TARGET_NAME="all">
+  <component name="RunManager" selected="CMake Application.assimp_cmd">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assimp" RUN_TARGET_NAME="RogueGame" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IrrXML" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="IrrXML" CONFIG_NAME="Debug">
+    <configuration name="IrrXML" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="IrrXML" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RogueGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="RogueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame">
+    <configuration name="UpdateAssimpLibsDebugSymbolsAndDLLs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="UpdateAssimpLibsDebugSymbolsAndDLLs" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdateAssimpLibsDebugSymbolsAndDLLs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="UpdateAssimpLibsDebugSymbolsAndDLLs" CONFIG_NAME="Debug">
+    <configuration name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="assimp" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="assimp" CONFIG_NAME="Debug">
+    <configuration name="assimp_cmd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="assimp_cmd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assimp" RUN_TARGET_NAME="assimp_cmd">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assimp_cmd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="assimp_cmd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="assimp_cmd">
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="astc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="astc" CONFIG_NAME="Debug">
+    <configuration name="unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="unit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Assimp" RUN_TARGET_NAME="unit">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bgfx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bgfx" CONFIG_NAME="Debug">
+    <configuration name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="zlib" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bimg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bimg" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="bx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bx" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="dear-imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="dear-imgui" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="edtaa3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="edtaa3" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="etc1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc1" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="etc2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc2" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="example-common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="example-common" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="fcpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="forsyth-too" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="forsyth-too" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="geometryc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="geometryc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="geometryc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glcpp" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glfw" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glsl-optimizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glsl-optimizer" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="glslang" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glslang" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ib-compress" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="ib-compress" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="imgui" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="iqa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="iqa" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="mesa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="mesa" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="nvtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="nvtt" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="pvrtc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="pvrtc" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="shaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="shaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="shaderc">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="squish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="squish" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="texturec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturec">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="texturev" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturev">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="unit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="unit">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="zlib" CONFIG_NAME="Debug">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="zlibstatic" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="zlibstatic" CONFIG_NAME="Debug">
+    <configuration name="zlibstatic" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Assimp" TARGET_NAME="zlibstatic" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -579,37 +338,10 @@
     <list>
       <item itemvalue="CMake Application.Build All" />
       <item itemvalue="CMake Application.IrrXML" />
-      <item itemvalue="CMake Application.RogueGame" />
+      <item itemvalue="CMake Application.UpdateAssimpLibsDebugSymbolsAndDLLs" />
       <item itemvalue="CMake Application.assimp" />
       <item itemvalue="CMake Application.assimp_cmd" />
-      <item itemvalue="CMake Application.astc" />
-      <item itemvalue="CMake Application.bgfx" />
-      <item itemvalue="CMake Application.bimg" />
-      <item itemvalue="CMake Application.bx" />
-      <item itemvalue="CMake Application.dear-imgui" />
-      <item itemvalue="CMake Application.edtaa3" />
-      <item itemvalue="CMake Application.etc1" />
-      <item itemvalue="CMake Application.etc2" />
-      <item itemvalue="CMake Application.example-common" />
-      <item itemvalue="CMake Application.fcpp" />
-      <item itemvalue="CMake Application.forsyth-too" />
-      <item itemvalue="CMake Application.geometryc" />
-      <item itemvalue="CMake Application.glcpp" />
-      <item itemvalue="CMake Application.glfw" />
-      <item itemvalue="CMake Application.glsl-optimizer" />
-      <item itemvalue="CMake Application.glslang" />
-      <item itemvalue="CMake Application.ib-compress" />
-      <item itemvalue="CMake Application.imgui" />
-      <item itemvalue="CMake Application.iqa" />
-      <item itemvalue="CMake Application.mesa" />
-      <item itemvalue="CMake Application.nvtt" />
-      <item itemvalue="CMake Application.pvrtc" />
-      <item itemvalue="CMake Application.shaderc" />
-      <item itemvalue="CMake Application.squish" />
-      <item itemvalue="CMake Application.texturec" />
-      <item itemvalue="CMake Application.texturev" />
       <item itemvalue="CMake Application.uninstall" />
-      <item itemvalue="CMake Application.UpdateAssimpLibsDebugSymbolsAndDLLs" />
       <item itemvalue="CMake Application.unit" />
       <item itemvalue="CMake Application.zlib" />
       <item itemvalue="CMake Application.zlibstatic" />
@@ -631,10 +363,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2568" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18561208" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14228936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -644,10 +375,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.28838658" />
+      <window_info anchor="bottom" id="CMake" order="7" visible="true" weight="0.22057678" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.33047545" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32969603" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -655,282 +386,18 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/deps/assimp" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/bigg_shaders.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="137" column="62" selection-start-line="137" selection-start-column="62" selection-end-line="137" selection-end-column="62" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/src/image.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <caret line="4100" column="51" selection-start-line="4100" selection-start-column="36" selection-end-line="4100" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/bgfx_utils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/include/bimg/bimg.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-193">
-          <caret line="550" column="9" selection-start-line="550" selection-start-column="9" selection-end-line="550" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-          <folding>
-            <element signature="e#105#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/assimp/contrib/gtest/include/gtest/internal/gtest-port.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="688" column="76" lean-forward="true" selection-start-line="688" selection-start-column="76" selection-end-line="688" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="156" column="52" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/include/bgfx/bgfx.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="1088" column="13" selection-start-line="1088" selection-start-column="13" selection-end-line="1088" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="4224" column="5" lean-forward="true" selection-start-line="4224" selection-start-column="5" selection-end-line="4224" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="e#42#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="138" column="79" selection-start-line="138" selection-start-column="66" selection-end-line="138" selection-end-column="79" />
-          <folding>
-            <element signature="e#4288#4290#0" expanded="true" />
-            <element signature="e#4518#4520#0" expanded="true" />
-            <element signature="e#4739#4741#0" expanded="true" />
-            <element signature="e#4978#4980#0" expanded="true" />
-            <element signature="e#5205#5207#0" expanded="true" />
-            <element signature="e#5307#5309#0" expanded="true" />
-            <element signature="e#5403#5405#0" expanded="true" />
-            <element signature="e#5511#5513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Scene.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="243" column="52" lean-forward="true" selection-start-line="243" selection-start-column="52" selection-end-line="243" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#107#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Physics.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/bigg_imgui.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Application.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-557">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-          <folding>
-            <element signature="e#153#216#0" expanded="true" />
-            <element signature="e#239#305#0" expanded="true" />
-            <element signature="e#421#441#0" expanded="true" />
-            <element signature="e#2319#2423#0" expanded="true" />
-            <element signature="e#2447#2494#0" expanded="true" />
-            <element signature="e#7971#8081#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/shaders/bump/varying.def.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/shaders/cubes/vs_cubes.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/shaders/cubes/fs_cubes.sc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/shaders/bump/fs_bump.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/Editor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Physics.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/entry/entry_windows.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/entry/cmd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-954" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/bgfx_utils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="699" column="9" lean-forward="true" selection-start-line="699" selection-start-column="9" selection-end-line="699" selection-end-column="9" />
-          <folding>
-            <element signature="e#138#157#0" expanded="true" />
-            <element signature="e#272#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/entry/entry.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="e#328#348#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/examples/common/entry/entry.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/cubes/fs_cubes.sc">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/shaders/bump/vs_bump.sc">
       <provider selected="true" editor-type-id="text-editor">
@@ -939,37 +406,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/src/image_decode.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#43#62#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,42 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/assimp/code/makefile.mingw">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h">
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11966" column="31" selection-start-line="11966" selection-start-column="31" selection-end-line="11966" selection-end-column="31" />
-          <folding>
-            <element signature="e#430439#430487#0" expanded="true" />
-            <element signature="e#443653#443718#0" expanded="true" />
-            <element signature="e#446220#446268#0" expanded="true" />
-            <element signature="e#449818#449866#0" expanded="true" />
-            <element signature="e#452060#452108#0" expanded="true" />
-            <element signature="e#456555#456603#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="14397" column="33" selection-start-line="14397" selection-start-column="33" selection-end-line="14397" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp">
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11_1.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="578" selection-start-line="578" selection-end-line="578" />
-          <folding>
-            <element signature="e#1924#1953#0" expanded="true" />
-            <element signature="e#2282#2307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="78" column="43" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="43" />
-          <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="312">
+          <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1033,24 +448,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11.h">
+    <entry file="file://$PROJECT_DIR$/deps/assimp/code/SMDLoader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="14397" column="33" lean-forward="true" selection-start-line="14397" selection-start-column="33" selection-end-line="14397" selection-end-column="33" />
+        <state relative-caret-position="278">
+          <caret line="578" selection-start-line="578" selection-end-line="578" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dxsdk/include/d3d11_1.h">
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+        <state relative-caret-position="270">
+          <caret line="11966" column="31" selection-start-line="11966" selection-start-column="31" selection-end-line="11966" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="4326" column="9" selection-start-line="4326" selection-start-column="9" selection-end-line="4326" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/varying.def.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/vs_bump.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="184" column="28" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/shaderc/shaderc.h" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/shaderc/shaderc_hlsl.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/shaderc/shaderc_glsl.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/shaderc/shaderc_spirv.cpp" />
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/shader_spirv.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="587" column="34" lean-forward="true" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bx/include/tinystl/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/brtshaderc/brtshaderc.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/brtshaderc/brtshaderc.h" />
+    <entry file="file://$PROJECT_DIR$/src/vendor/shaderc/shaderc.cpp" />
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/brtshaderc/brtshaderc.cpp" />
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/texturev.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/brtshaderc.cmake" />
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/brtshaderc/brtshaderc.h" />
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bx/include/bx/macros.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="231" column="10" selection-start-line="231" selection-start-column="4" selection-end-line="231" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="197" column="24" selection-start-line="197" selection-start-column="24" selection-end-line="197" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/brtshaderc.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="54" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#1107#1146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/include/bgfx/brtshaderc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/3rdparty/fcpp.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#42#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10404">
+          <caret line="612" column="43" selection-start-line="612" selection-start-column="28" selection-end-line="612" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/shaderc.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/cmake/bgfx.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        <state relative-caret-position="969">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/fcpp/fpp.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#1059#1071#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

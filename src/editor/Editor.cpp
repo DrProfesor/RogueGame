@@ -23,6 +23,7 @@ namespace Editor {
 
         if (!IsEditMode)
             return;
+
         {
             if (ImGui::BeginMainMenuBar())
             {

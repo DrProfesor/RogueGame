@@ -187,6 +187,7 @@ namespace Entities {
         std::string TextureId;
         bgfx::TextureHandle Texture;
 
+        bgfx::UniformHandle Sampler;
         bgfx::UniformHandle BaseColour;
     };
 };
