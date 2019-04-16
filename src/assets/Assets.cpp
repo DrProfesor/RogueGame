@@ -5,8 +5,8 @@
 #include <filesystem>
 #include "Assets.h"
 #include "../editor/Logger.h"
-#include "../../deps/bgfx.cmake/bgfx/3rdparty/fcpp/fpp.h"
-#include <bgfx/brtshaderc.h>
+#include <brtshaderc.h>
+#include <sstream>
 
 #define ASSET_DIR "assets/"
 #define MODEL_DIR "assets/models/"
@@ -38,12 +38,16 @@ TextureHandle Assets::GetTexture(std::string textureId)
 
 void Assets::LoadShader(const std::string programId)
 {
-    fs::path varyingDefPath = std::filesystem::current_path();
-    varyingDefPath += ("/" + std::string(SHADER_DIR) + programId + "/varying.def.sc").c_str();
+    std::stringstream vertPathStream;
+    vertPathStream << SHADER_DIR << "/" << programId << "/vs_" << programId << ".sc";
 
-    fs::path vertPath = std::filesystem::current_path();
-    vertPath += ("/" + std::string(SHADER_DIR) + programId + "/vs_" + programId + ".sc").c_str();
-    const bgfx::Memory* memVsh = shaderc::compileShader(shaderc::ST_VERTEX, (const char*) vertPath.c_str(), "", (const char*) varyingDefPath.c_str(), "vs_5_0");
+    std::stringstream varyingDefStream;
+    varyingDefStream << SHADER_DIR << "/" << programId << "/varying.def.sc";
+
+    std::stringstream fragPathStream;
+    fragPathStream << SHADER_DIR << "/" << programId << "/fs_" << programId << ".sc";
+
+    const bgfx::Memory* memVsh = shaderc::compileShader(shaderc::ST_VERTEX, vertPathStream.str().c_str(), nullptr, varyingDefStream.str().c_str(), "vs_5_0");
     if (!memVsh)
     {
         Logger::Instance->Info("Failed to load vertex shader for: %s", programId.c_str());
@@ -51,9 +55,7 @@ void Assets::LoadShader(const std::string programId)
     }
     auto vertexHandle = bgfx::createShader(memVsh);
 
-    fs::path fragPath = std::filesystem::current_path();
-    fragPath += ("/" + std::string(SHADER_DIR) + programId + "/fs_" + programId + ".sc").c_str();
-    const bgfx::Memory* memFsh = shaderc::compileShader(shaderc::ST_FRAGMENT, (const char*) fragPath.c_str(), "", (const char*) varyingDefPath.c_str(), "ps_5_0");
+    const bgfx::Memory* memFsh = shaderc::compileShader(shaderc::ST_FRAGMENT, fragPathStream.str().c_str(), nullptr, varyingDefStream.str().c_str(), "ps_5_0");
     if (!memFsh)
     {
         Logger::Instance->Info("Failed to load fragment shader for: %s", programId.c_str());
