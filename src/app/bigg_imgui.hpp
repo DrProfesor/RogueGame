@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "Application.hpp"
 /*
  * This is free and unencumbered software released into the public domain. 
  */
@@ -7,7 +7,7 @@
 static bgfx::VertexDecl    imguiVertexDecl;
 static bgfx::TextureHandle imguiFontTexture;
 static bgfx::UniformHandle imguiFontUniform;
-static bgfx::ProgramHandle imguiProgram;
+
 static void                imguiRender( ImDrawData* drawData );
 static void                imguiShutdown();
 static const char*         imguiGetClipboardText( void* userData );
@@ -38,7 +38,7 @@ static void imguiInit()
 	vs_ocornut_imgui();
 	bgfx::ShaderHandle vs = bgfx::createShader( bgfx::makeRef( vs_ocornut_imgui(), vs_ocornut_imgui_len() ) );
 	bgfx::ShaderHandle fs = bgfx::createShader( bgfx::makeRef( fs_ocornut_imgui(), fs_ocornut_imgui_len() ) );
-	imguiProgram = bgfx::createProgram( vs, fs, true );
+	app::Application::Instance->imguiProgram = bgfx::createProgram( vs, fs, true );
 
 	// Setup render callback
 	io.RenderDrawListsFn = imguiRender;
@@ -129,7 +129,7 @@ static void imguiRender( ImDrawData* drawData )
 				bgfx::setTexture( 0, imguiFontUniform, th );
 				bgfx::setVertexBuffer( 0, &tvb, 0, numVertices );
 				bgfx::setIndexBuffer( &tib, offset, cmd->ElemCount );
-				bgfx::submit( 200, imguiProgram );
+				bgfx::submit( 200, app::Application::Instance->imguiProgram );
 			}
 
 			offset += cmd->ElemCount;
@@ -141,7 +141,7 @@ static void imguiShutdown()
 {
 	bgfx::destroy( imguiFontUniform );
 	bgfx::destroy( imguiFontTexture );
-	bgfx::destroy( imguiProgram );
+	bgfx::destroy( app::Application::Instance->imguiProgram );
 	ImGui::DestroyContext();
 }
 

@@ -26,6 +26,7 @@
 #include "bigg_imgui.hpp"
 #include "../input/Input.h"
 #include "../physics/Time.h"
+#include "../editor/ImGuizmo.h"
 #include <imgui.h>
 
 using namespace app;
@@ -107,6 +108,7 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 
 	// Setup ImGui
 	imguiInit();
+	ImGuizmo::SetOrthographic(false);
 
 	// Initialize the application
 	Reset();
@@ -133,12 +135,14 @@ bool Application::Update()
 
 	// Begin frame
 	ImGui::NewFrame();
+    ImGuizmo::BeginFrame();
 	return true;
 }
 
 void Application::PostUpdate()
 {
 	// End frame
+	ImGui::EndFrame();
 	ImGui::Render();
 	bgfx::frame();
 

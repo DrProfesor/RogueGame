@@ -11,13 +11,73 @@
 #include <glm/gtx/quaternion.hpp>
 #include <bgfx/bgfx.h>
 #include "../entity/Entities.h"
+#include "../physics/Physics.h"
 
 using namespace glm;
 using namespace bgfx;
 using namespace Entities;
+using namespace Physics;
 
 namespace Utils {
     struct ImGuiUtils {
+
+        template<typename T>
+        static void ImGui_Component(T* component, Entity e)
+        {
+            EntityManager::ImGuiEditableComponent((Component*)component);
+        }
+
+        template<>
+        static void ImGui_Component<Entities::Transform>(Entities::Transform * component, Entity e)
+        {
+            ImGuiUtils::InputField_vec3("Position", &component->Position, e);
+            ImGuiUtils::InputField_quat("Rotation", &component->Rotation, e);
+            ImGuiUtils::InputField_vec3("Scale", &component->Scale, e);
+        }
+
+        template<>
+        static void ImGui_Component<Camera>(Camera * component, Entity e)
+        {
+            ImGuiUtils::InputField_ViewId("View", &component->View, e);
+            ImGuiUtils::InputField_int("Width", &component->Width, e);
+            ImGuiUtils::InputField_int("Height", &component->Height, e);
+            ImGuiUtils::InputField_FrameBufferHandle("FrameBuffer", &component->FrameBuffer, e);
+            ImGuiUtils::InputField_TextureHandle("TextureHandle", &component->TextureHandle, e);
+            ImGuiUtils::InputField_CameraMode("Mode", &component->Mode, e);
+            ImGuiUtils::InputField_float("FieldOfView", &component->FieldOfView, e);
+            ImGuiUtils::InputField_float("Near", &component->Near, e);
+            ImGuiUtils::InputField_float("Far", &component->Far, e);
+        }
+
+        template<>
+        static void ImGui_Component<MeshRenderer>(MeshRenderer * component, Entity e)
+        {
+            ImGuiUtils::InputField_string("ModelId", &component->ModelId, e);
+            ImGui::Checkbox("Render", &component->Render);
+
+            if (ImGui::Button("Set Model"))
+            {
+                component->Model = Assets::GetModel(component->ModelId);
+            }
+        }
+
+        template<>
+        static void ImGui_Component<Material>(Material * component, Entity e)
+        {
+            ImGuiUtils::InputField_vec4("Colour", &component->Colour, e);
+            ImGuiUtils::InputField_string("ShaderId", &component->ShaderId, e);
+            ImGuiUtils::InputField_ProgramHandle("Shader", &component->Shader, e);
+            ImGuiUtils::InputField_string("TextureId", &component->TextureId, e);
+            ImGuiUtils::InputField_TextureHandle("Texture", &component->Texture, e);
+            ImGuiUtils::InputField_UniformHandle("Sampler", &component->Sampler, e);
+            ImGuiUtils::InputField_UniformHandle("BaseColour", &component->BaseColour, e);
+        }
+
+        template<>
+        static void ImGui_Component<Collider>(Collider * component, Entity e)
+        {
+
+        }
 
         static void ImGui_Image(TextureHandle handle, vec2 size)
         {
@@ -25,7 +85,7 @@ namespace Utils {
             texture.s.handle = handle;
             texture.s.flags  = 0x01;
 
-            ImGui::Image(texture.ptr, ImVec2(size.x, size.y), ImVec2(1, 0), ImVec2(0, 1));
+            ImGui::Image(texture.ptr, ImVec2(size.x, size.y));
         }
 
         static void InputField_float(const char* name, float * val, Entity e)
@@ -80,6 +140,7 @@ namespace Utils {
             if (ImGui::Button("Change Texture"))
             {
                 auto mat = EntityManager::GetComponent<Material>(e);
+                // TODO validation
                 mat->Texture = Assets::GetTexture(mat->TextureId);
             }
         }
@@ -91,6 +152,7 @@ namespace Utils {
 
         static void InputField_ModelHandle(const char* name, ModelHandle * val, Entity e)
         {
+
         }
 
         static void InputField_ProgramHandle(const char* name, ProgramHandle * val, Entity e)
@@ -98,6 +160,7 @@ namespace Utils {
             if (ImGui::Button("Change Shader"))
             {
                 auto mat = EntityManager::GetComponent<Material>(e);
+                // TODO validation
                 mat->Shader = Assets::GetShader(mat->ShaderId);
             }
         }

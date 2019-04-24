@@ -19,6 +19,9 @@ namespace Editor {
         vec2 last_cursor_pos;
         bool IsSceneHovered;
 
+        ImVec2 WindowSize;
+        ImVec2 WindowMin;
+
     };
 }
 

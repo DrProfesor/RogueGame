@@ -25,23 +25,25 @@ using namespace Entities;
 using namespace Editor;
 using namespace Physics;
 using namespace Render;
+using namespace app;
 
 int main(int argc, char** argv)
 {
-    using namespace app;
 
     Application app;
-    app.Init(argc, argv);
+    app.Init(argc, argv, bgfx::RendererType::Direct3D12);
 
     PhysicsManager::Init();
     EditorManager::Init();
     Utils::Init();
     Renderer::Init();
 
-    {// Asset loading
-        Assets::LoadTexture("grass", "Plane_Grass_01.tga");
+    {// TODO move to scene manifest?
+        Assets::LoadTexture("grass", "Plane_Grass_01.png");
         Assets::LoadShader("bump");
         Assets::LoadShader("cubes");
+        Assets::LoadModel("knight", "D:\\Dev\\RogueGame\\cmake-build-debug\\assets\\models\\Knight2\\maria_prop_j_j_ong.fbx");
+        Assets::LoadModel("grass", R"(D:\Dev\RogueGame\assets\models\Terrain\PBOX22_Grass_01.FBX)");
     }
 
     SceneManager::LoadScene("main");
@@ -85,16 +87,18 @@ int main(int argc, char** argv)
 
     while (true)
     {
-        PhysicsManager::Update();
 
         if (!app.Update()) break;
 
         EditorManager::Update();
+
+        PhysicsManager::Update();
         SceneManager::Update();
         EntityManager::UpdateEntities();
 
-        Renderer::Update();
+        //ImGui::ShowMetricsWindow();
 
+        Renderer::Update();
         // Post update contains the bgfx frame call,
         // so should happen after everything has been submitted
         app.PostUpdate();

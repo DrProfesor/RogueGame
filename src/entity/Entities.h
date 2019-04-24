@@ -13,6 +13,7 @@
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/quaternion.hpp>
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/matrix_decompose.hpp>
 #include "../assets/Assets.h"
 
 using namespace bgfx;
@@ -62,6 +63,7 @@ namespace Entities {
         static T* AddComponent(unsigned int e);
 
         static void ImGuiEditableComponent(Component* comp);
+        static void ImGui_EditableComponent(Component* comp);
         static void ImGuiAddComponentMenuItems(Entity e);
         static Entity CreateEntityFromSerialized(std::string input);
         static std::string SerializeEntity(Entity e);
@@ -100,6 +102,16 @@ namespace Entities {
         vec3 Right() { return Rotation * vec3{1,0,0}; }
         vec3 Up() { return Rotation * vec3{0,1,0}; }
 
+        vec3 VecRotation() {
+            return glm::eulerAngles(Rotation);
+        }
+
+        void SetRotation(vec3 rot) {
+            Rotation = glm::angleAxis(rot.z, vec3(0,0,1))
+                    * glm::angleAxis(rot.x, vec3(1,0,0))
+                    * glm::angleAxis(rot.y, vec3(0,1,0));
+        }
+
         glm::mat4 GetMatrix()
         {
             glm::mat4 mtx(1.0f);
@@ -109,6 +121,14 @@ namespace Entities {
             mtx = glm::scale(mtx, Scale);
 
             return mtx;
+        }
+
+        void FromMatrix(glm::mat4 in)
+        {
+            glm::vec3 skew;
+            glm::vec4 perspective;
+            glm::decompose(in, Scale, Rotation, Position, skew, perspective);
+            Rotation = glm::conjugate(Rotation);
         }
 
     };
@@ -136,27 +156,37 @@ namespace Entities {
         float Near = 0.1f;
         float Far = 1000.0f;
 
-        void SetViewTransform()
+        void GetViewMatrix(float * mtx)
         {
             auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Entity);
 
             auto fwd = cameraTransform->Forward() + cameraTransform->Position;
             auto up = cameraTransform->Up();
 
-            float view[16];
-            bx::mtxLookAt(view, &cameraTransform->Position.x, &fwd.x, &up.x);
+            bx::mtxLookAt(mtx, &cameraTransform->Position.x, &fwd.x, &up.x);
+        }
 
-            float proj[16];
+        void GetProjectionMatrix(float * mtx)
+        {
             switch (Mode)
             {
                 case PERSPECTIVE:
-                    bx::mtxProj(proj, FieldOfView, float(Width)/float(Height), Near, Far, bgfx::getCaps()->homogeneousDepth);
+                    bx::mtxProj(mtx, FieldOfView, float(Width)/float(Height), Near, Far, bgfx::getCaps()->homogeneousDepth);
                     break;
                 case ORTHOGRAPHIC:
                     //TODO ortho
-                    bx::mtxOrtho(proj, 0,0,0,0,0,0,0,false);
+                    bx::mtxOrtho(mtx, 0,0,0,0,0,0,0,false);
                     break;
             }
+        }
+
+        void SetViewTransform()
+        {
+            float view[16];
+            GetViewMatrix(view);
+
+            float proj[16];
+            GetProjectionMatrix(proj);
 
             bgfx::setViewTransform(View, view, proj);
         }
@@ -171,8 +201,15 @@ namespace Entities {
     struct MeshRenderer : Component {
         const char* Name() override { return "MeshRenderer"; }
 
-        std::string ModelPath;
+        std::string ModelId;
         ModelHandle Model;
+
+        bool Render;
+
+        bool IsValid()
+        {
+            return !ModelId.empty() && Model.IBO.idx != bgfx::kInvalidHandle && Model.VBO.idx != bgfx::kInvalidHandle && Render;
+        }
     };
 
     //@component
@@ -189,6 +226,11 @@ namespace Entities {
 
         bgfx::UniformHandle Sampler;
         bgfx::UniformHandle BaseColour;
+
+        bool IsValid()
+        {
+            return !ShaderId.empty() && !TextureId.empty() && Shader.idx != bgfx::kInvalidHandle && Texture.idx != bgfx::kInvalidHandle;
+        }
     };
 };
 

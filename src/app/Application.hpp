@@ -84,5 +84,6 @@ namespace app
 		float mMouseWheel;
 
 		static Application * Instance;
+		bgfx::ProgramHandle imguiProgram;
 	};
 }

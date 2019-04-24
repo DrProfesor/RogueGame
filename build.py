@@ -4,7 +4,6 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 components = {}
 update_functions = {}
-includes = {}
 
 for root, dirs, files in os.walk(dir_path + "/src"):
     for file in files:
@@ -62,7 +61,6 @@ for root, dirs, files in os.walk(dir_path + "/src"):
                 lineParts = lineParts[0].split(" ")
                 fun_name = lineParts[len(lineParts)-1].strip(" ")
                 update_functions[update_comp] = {"func": fun_name, "priority": update_priority}
-                includes[file] = True
             if "@component_update" in line:
                 is_update = True
                 parts = line.split("(")
@@ -150,11 +148,12 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
     source += line("#include \"../utils/Json.h\"")
     source += line("#include \"../utils/JsonExtensions.h\"")
     source += line("#include \"../utils/MapUtils.h\"")
-    for inc, v in includes.items():
-        source += line("#include \"" + inc + "\"")
+    source += line("#include \"../physics/Physics.h\"")
+    source += line("#include \"Entities.h\"")
 
     source += line("")
     source += line("using namespace Utils;")
+    source += line("using namespace Physics;")
     source += line("")
 
     source += line_indent("namespace Entities {")
@@ -268,6 +267,16 @@ with open(dir_path + "/src/entity/Generated.cpp", 'w') as wr:
         source += line_indent("if ("+comp.lower()+") {")
         for cd in comp_data:
             source += line("ImGuiUtils::InputField_" + cd["type"] + "(\"" + cd["name"] + "\", &" + comp.lower() + "->" + cd["name"] + ", comp->Entity);")
+        source += line_outdent("}")
+    source += end_proc()
+
+    source += line("")
+    source += begin_proc("EntityManager::ImGui_EditableComponent", "void", "Component * comp")
+    for comp, comp_data in components.items():
+        print(comp_data)
+        source += line("auto " + comp.lower() + " = dynamic_cast<" + comp + "*>(comp);")
+        source += line_indent("if ("+comp.lower()+") {")
+        source += line("ImGuiUtils::ImGui_Component(" + comp.lower() + ", comp->Entity);")
         source += line_outdent("}")
     source += end_proc()
 

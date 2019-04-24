@@ -83,9 +83,14 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
             .end();
     Assimp::Importer importer;
     std::cout << modelPath << std::endl;
-    const aiScene *scene = importer.ReadFile(modelPath, aiProcess_CalcTangentSpace | aiProcess_Triangulate | aiProcess_JoinIdenticalVertices | aiProcess_SortByPType | aiProcess_FlipWindingOrder);
+    const aiScene *scene = importer.ReadFile(modelPath, 0
+            | aiProcess_Triangulate
+            | aiProcess_FlipWindingOrder
+            | aiProcess_FlipUVs
+            | aiProcess_JoinIdenticalVertices
+            | aiProcess_GenSmoothNormals);
     if (!scene) {
-        printf("Unable to laod mesh: %s\n", importer.GetErrorString());
+        printf("Unable to load mesh: %s\n", importer.GetErrorString());
     }
 
     std::vector<std::string> meshIds;
@@ -96,33 +101,33 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
 
         std::vector<Vertex> vertices(mesh->mNumVertices);
 
-        for (size_t i = 0; i < mesh->mNumVertices; i++)
+        for (size_t j = 0; j < mesh->mNumVertices; j++)
         {
-            auto vert = mesh->mVertices[i];
-            vertices[i].pos = glm::vec3(vert.x, vert.y, vert.z);
+            auto vert = mesh->mVertices[j];
+            vertices[j].pos = glm::vec3(vert.x, vert.y, vert.z);
 
-            auto norm = mesh->mNormals[i];
-            vertices[i].nor = glm::vec3(norm.x, norm.y, norm.z);
+            auto norm = mesh->mNormals[j];
+            vertices[j].nor = glm::vec3(norm.x, norm.y, norm.z);
 
-            vertices[i].col1 = glm::vec4(0.5f,0.5f,0.5f,1);
-            vertices[i].col2 = glm::vec4(0.5f,0.5f,0.5f,1);
+            vertices[j].col1 = glm::vec4(0.5f,0.5f,0.5f,1);
+            vertices[j].col2 = glm::vec4(0.5f,0.5f,0.5f,1);
 
             if (mesh->mColors[0])
             {
-                auto colour = mesh->mColors[0][i];
-                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+                auto colour = mesh->mColors[0][j];
+                vertices[j].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
             }
 
             if (mesh->mColors[1])
             {
-                auto colour = mesh->mColors[1][i];
-                vertices[i].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
+                auto colour = mesh->mColors[1][j];
+                vertices[j].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
             }
 
             if (mesh->mTextureCoords[0])
             {
-                auto tex = mesh->mTextureCoords[0][i];
-                vertices[i].tex = glm::vec2(tex.x , tex.y);
+                auto tex = mesh->mTextureCoords[0][j];
+                vertices[j].tex = glm::vec2(tex.x , tex.y);
             }
         }
 
@@ -140,7 +145,7 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
         auto ibo = bgfx::createIndexBuffer(bgfx::copy(indices.data(), indices.size() * sizeof(unsigned int)), BGFX_BUFFER_INDEX32);
 
         auto modelHandle = ModelHandle{vbo, ibo};
-        std::string id = modelId + std::to_string(i);
+        std::string id = modelId;// + std::to_string(i);
 
         Models[id] = modelHandle;
         meshIds.push_back(id);

@@ -84,7 +84,8 @@ namespace Entities {
         for (auto kp : LoadedScenes) {
             auto sceneId = kp.first;
             auto scene = kp.second;
-            if (scene.Dirty) {
+            if (scene.Dirty)
+            {
                 SaveScene(sceneId);
             }
         }

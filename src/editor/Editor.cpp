@@ -3,6 +3,8 @@
 //
 
 #include "Editor.h"
+#include "../app/Application.hpp"
+#include "../entity/Scene.h"
 
 namespace Editor {
 
@@ -10,11 +12,36 @@ namespace Editor {
     SceneWindow EditorManager::sceneWindow;
     Logger EditorManager::logger;
 
+    struct PosTexCoord0Vertex
+    {
+        float m_x;
+        float m_y;
+        float m_z;
+        float m_u;
+        float m_v;
+
+        static void init()
+        {
+            ms_decl
+                    .begin()
+                    .add(bgfx::Attrib::Position,  3, bgfx::AttribType::Float)
+                    .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)
+                    .end();
+        }
+
+        static bgfx::VertexDecl ms_decl;
+    };
+
+    bgfx::VertexDecl PosTexCoord0Vertex::ms_decl;
+
     void EditorManager::Init()
     {
         sceneWindow = SceneWindow();
         logger = Logger();
+        PosTexCoord0Vertex::init();
     }
+
+    void screenSpaceQuad(float _textureWidth, float _textureHeight, float _width = 1.0f, float _height = 1.0f);
 
     void EditorManager::Update()
     {
@@ -22,13 +49,36 @@ namespace Editor {
             IsEditMode = !IsEditMode;
 
         if (!IsEditMode)
+        { // TODO move this out of the editor. This is actually rendering the main camera to the full screen
+            bgfx::touch(100);
+            auto appl = app::Application::Instance;
+            auto camera = Entities::EntityManager::GetComponent<Entities::Camera>(appl->MainCamera);
+            auto s_tex = bgfx::createUniform("s_texColor", bgfx::UniformType::Int1);
+
+            bgfx::setViewClear( 100, BGFX_CLEAR_COLOR, 0x303030ff, 1.0f, 0 );
+            bgfx::setViewRect( 100, 0, 0, appl->mWidth, appl->mHeight );
+
+            float proj[16];
+            bx::mtxOrtho(proj, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 100.0f, 0.0f, bgfx::getCaps()->homogeneousDepth);
+
+            bgfx::setViewTransform(100, NULL, proj);
+
+            bgfx::setState(BGFX_STATE_WRITE_RGB|BGFX_STATE_WRITE_A);
+            bgfx::setTexture(0, s_tex, camera->TextureHandle, BGFX_TEXTURE_U_CLAMP | BGFX_TEXTURE_V_CLAMP);
+            screenSpaceQuad((float)appl->mWidth, (float)appl->mHeight);
+            bgfx::submit(100, Assets::GetShader("bump"));
             return;
+        }
 
         {
             if (ImGui::BeginMainMenuBar())
             {
                 if (ImGui::BeginMenu("File"))
                 {
+                    if (ImGui::MenuItem("Save", "CTRL+S"))
+                    {
+                        Entities::SceneManager::SetDirty("main");
+                    }
                     ImGui::EndMenu();
                 }
                 if (ImGui::BeginMenu("Edit"))
@@ -73,5 +123,61 @@ namespace Editor {
 
         sceneWindow.Update();
         logger.Draw();
+    }
+
+    void screenSpaceQuad(float _textureWidth, float _textureHeight, float _width, float _height)
+    {
+        if (3 == bgfx::getAvailTransientVertexBuffer(3, PosTexCoord0Vertex::ms_decl) )
+        {
+            bgfx::TransientVertexBuffer vb;
+            bgfx::allocTransientVertexBuffer(&vb, 3, PosTexCoord0Vertex::ms_decl);
+            PosTexCoord0Vertex* vertex = (PosTexCoord0Vertex*)vb.data;
+
+            const float minx = -_width;
+            const float maxx =  _width;
+            const float miny = 0.0f;
+            const float maxy = _height*2.0f;
+
+            auto texelHalf = 0.0f;
+            const float texelHalfW = texelHalf/_textureWidth;
+            const float texelHalfH = texelHalf/_textureHeight;
+            const float minu = -1.0f + texelHalfW;
+            const float maxu =  1.0f + texelHalfH;
+
+            const float zz = 0.0f;
+
+            float minv = texelHalfH;
+            float maxv = 2.0f + texelHalfH;
+
+            if (bgfx::getCaps()->originBottomLeft)
+            {
+                float temp = minv;
+                minv = maxv;
+                maxv = temp;
+
+                minv -= 1.0f;
+                maxv -= 1.0f;
+            }
+
+            vertex[0].m_x = minx;
+            vertex[0].m_y = miny;
+            vertex[0].m_z = zz;
+            vertex[0].m_u = minu;
+            vertex[0].m_v = minv;
+
+            vertex[1].m_x = maxx;
+            vertex[1].m_y = miny;
+            vertex[1].m_z = zz;
+            vertex[1].m_u = maxu;
+            vertex[1].m_v = minv;
+
+            vertex[2].m_x = maxx;
+            vertex[2].m_y = maxy;
+            vertex[2].m_z = zz;
+            vertex[2].m_u = maxu;
+            vertex[2].m_v = maxv;
+
+            bgfx::setVertexBuffer(0, &vb);
+        }
     }
 }

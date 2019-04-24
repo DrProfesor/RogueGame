@@ -7,6 +7,7 @@
 
 #include "Json.h"
 #include "../entity/Entities.h"
+#include "../physics/Physics.h"
 
 #include <glm/vec3.hpp>
 #include <glm/glm.hpp>
@@ -15,6 +16,7 @@
 #include <bgfx/bgfx.h>
 
 using nlohmann::json;
+using namespace Physics;
 
 namespace glm {
     void to_json(json &j, const vec3 &val) {
@@ -127,13 +129,13 @@ namespace Entities {
 
     void to_json(json &j, const MeshRenderer &val) {
         j = json {
-            {"ModelPath", val.ModelPath}
+            {"ModelId", val.ModelId}
         };
     }
 
     void from_json(const json &j, MeshRenderer &val) {
-        j.at("ModelPath").get_to<std::string>(val.ModelPath);
-        val.Model = Assets::GetModel(Assets::LoadModel("knight", val.ModelPath.c_str())[0]);
+        j.at("ModelId").get_to<std::string>(val.ModelId);
+        val.Model = Assets::GetModel(val.ModelId);
     }
 
     void to_json(json &j, const Material &val) {
@@ -157,6 +159,14 @@ namespace Entities {
         bgfx::setUniform(val.BaseColour, &val.Colour.x);
 
         val.Sampler = bgfx::createUniform("s_texColor", bgfx::UniformType::Int1);
+    }
+
+    void to_json(json &j, const Collider &val) {
+        j = json{};
+    }
+
+    void from_json(const json &j, Collider &val) {
+
     }
 }
 

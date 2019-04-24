@@ -7,6 +7,8 @@
 #include "../physics/Time.h"
 #include "../entity/Scene.h"
 #include "../utils/ImGuiUtils.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 using namespace Entities;
 using namespace Physics;
@@ -17,12 +19,32 @@ namespace Editor {
     SceneWindow::SceneWindow()
     {
         last_cursor_pos = vec2{};
+        WindowSize = ImVec2();
+        WindowMin = ImVec2();
     }
 
     void SceneWindow::Update()
     {
+
         auto camera = EntityManager::GetComponent<Entities::Camera>(Application::Instance->MainCamera);
         auto cameraTransform = EntityManager::GetComponent<Entities::Transform>(Application::Instance->MainCamera);
+
+        float view[16]; camera->GetViewMatrix(view);
+        float proj[16]; camera-> GetProjectionMatrix(proj);
+
+        Entities::Transform* thing = Entities::EntityManager::GetComponent<Entities::Transform>(1);
+//        float mtx[16];
+//        vec3 rot = thing->VecRotation();
+//        ImGuizmo::DecomposeMatrixToComponents(mtx, &thing->Position.x, &rot.x, &thing->Scale.x);
+        ImGuizmo::Enable(true);
+        glm::mat4 mtx = thing->GetMatrix();
+
+        ImGuizmo::SetRect(WindowMin.x, WindowMin.y, WindowSize.x, WindowSize.y);
+        ImGuizmo::Manipulate(view, proj, ImGuizmo::OPERATION::TRANSLATE, ImGuizmo::MODE::WORLD, glm::value_ptr(mtx));
+        thing->FromMatrix(mtx);
+//        ImGuizmo::RecomposeMatrixFromComponents(&thing->Position.x, &rot.x, &thing->Scale.x, mtx);
+//        thing->SetRotation(rot);
+
         float dt = Time::deltaTime;
         if (Input::GetKey(Input::KeyCode::W))
         {
@@ -34,11 +56,11 @@ namespace Editor {
         }
         if (Input::GetKey(Input::KeyCode::A))
         {
-            cameraTransform->Position += cameraTransform->Right() * dt * 10.0f;
+            cameraTransform->Position -= cameraTransform->Right() * dt * 10.0f;
         }
         if (Input::GetKey(Input::KeyCode::D))
         {
-            cameraTransform->Position -= cameraTransform->Right() * dt * 10.0f;
+            cameraTransform->Position += cameraTransform->Right() * dt * 10.0f;
         }
         if (Input::GetKey(Input::KeyCode::E))
         {
@@ -54,7 +76,7 @@ namespace Editor {
             auto current = Input::GetMousePosition() - vec2{Application::Instance->GetWidth(), Application::Instance->GetHeight()};
             auto delta = vec2{current.x - last_cursor_pos.x, current.y - last_cursor_pos.y} * dt;
 
-            auto qx = glm::angleAxis(-delta.x, vec3{0,1,0});
+            auto qx = glm::angleAxis(delta.x, vec3{0,1,0});
             auto qy = glm::angleAxis(delta.y, cameraTransform->Right());
             cameraTransform->Rotation = qy * qx * cameraTransform->Rotation;
 
@@ -118,7 +140,7 @@ namespace Editor {
 
                         if (open2)
                         {
-                            EntityManager::ImGuiEditableComponent(comp);
+                            EntityManager::ImGui_EditableComponent(comp);
                             ImGui::TreePop();
                         }
                     }
@@ -134,11 +156,14 @@ namespace Editor {
             ImGui::CaptureMouseFromApp(false);
             IsSceneHovered = ImGui::IsMouseHoveringWindow();
 
-            auto size = ImGui::GetContentRegionAvail();
-            Utils::ImGuiUtils::ImGui_Image(camera->TextureHandle, {size.x, size.y});
+            WindowMin = ImGui::GetWindowContentRegionMin();
+            WindowSize = ImGui::GetContentRegionAvail();
+            Utils::ImGuiUtils::ImGui_Image(camera->TextureHandle, {WindowSize.x, WindowSize.y});
         }
 
         ImGui::End();
     }
+
+
 
 }

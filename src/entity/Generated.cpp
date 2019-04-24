@@ -9,14 +9,18 @@
 #include "../utils/Json.h"
 #include "../utils/JsonExtensions.h"
 #include "../utils/MapUtils.h"
+#include "../physics/Physics.h"
+#include "Entities.h"
 
 using namespace Utils;
+using namespace Physics;
 
 namespace Entities {
 	static std::map<unsigned int, Transform*> Transforms;
 	static std::map<unsigned int, Camera*> Cameras;
 	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
 	static std::map<unsigned int, Material*> Materials;
+	static std::map<unsigned int, Collider*> Colliders;
 
 	template<typename T>
 	T* EntityManager::AddComponent(Entity e) {
@@ -53,6 +57,14 @@ namespace Entities {
 			AllEntities[e.Id] = e;
 			return (T*)nc;
 		}
+		else if (std::is_same<T, Collider>::value) {
+			auto nc = new Collider();
+			Colliders[e.Id] = nc;
+			nc->Entity = e;
+			e.Components.push_back(nc);
+			AllEntities[e.Id] = e;
+			return (T*)nc;
+		}
 		else {
 			std::cout << std::string("Unhandled component:") << typeid(T).name() << std::endl;
 			return nullptr;
@@ -77,6 +89,9 @@ namespace Entities {
 		}
 		else if (std::is_same<T, Material>::value) {
 			return (T*)Materials[e.Id];
+		}
+		else if (std::is_same<T, Collider>::value) {
+			return (T*)Colliders[e.Id];
 		}
 		else {
 			std::cout << std::string("Unhandled component:") << typeid(T).name() << std::endl;
@@ -110,6 +125,11 @@ namespace Entities {
 			Materials.erase(e.Id);
 			delete comp;
 		}
+		if (contains(Colliders, e.Id)) {
+			auto comp = Colliders[e.Id];
+			Colliders.erase(e.Id);
+			delete comp;
+		}
 		AllEntities.erase(e.Id);
 	}
 
@@ -120,26 +140,32 @@ namespace Entities {
 	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
 	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
 	template Material* EntityManager::GetComponent<Material>(unsigned int e);
+	template Collider* EntityManager::GetComponent<Collider>(unsigned int e);
 	template Transform* EntityManager::GetComponent<Transform>(Entity e);
 	template Camera* EntityManager::GetComponent<Camera>(Entity e);
 	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
 	template Material* EntityManager::GetComponent<Material>(Entity e);
+	template Collider* EntityManager::GetComponent<Collider>(Entity e);
 	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
 	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
 	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
 	template Material* EntityManager::AddComponent<Material>(unsigned int e);
+	template Collider* EntityManager::AddComponent<Collider>(unsigned int e);
 	template Transform* EntityManager::AddComponent<Transform>(Entity e);
 	template Camera* EntityManager::AddComponent<Camera>(Entity e);
 	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
 	template Material* EntityManager::AddComponent<Material>(Entity e);
+	template Collider* EntityManager::AddComponent<Collider>(Entity e);
 	template <> inline void EntityManager::AddComponent(Entity e, Transform & comp) { e = AllEntities[e.Id]; auto nc = new Transform(comp); Transforms[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Camera & comp) { e = AllEntities[e.Id]; auto nc = new Camera(comp); Cameras[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, MeshRenderer & comp) { e = AllEntities[e.Id]; auto nc = new MeshRenderer(comp); MeshRenderers[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Material & comp) { e = AllEntities[e.Id]; auto nc = new Material(comp); Materials[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
+	template <> inline void EntityManager::AddComponent(Entity e, Collider & comp) { e = AllEntities[e.Id]; auto nc = new Collider(comp); Colliders[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> std::map<unsigned int, Transform*> EntityManager::GetComponents() { return Transforms; }
 	template <> std::map<unsigned int, Camera*> EntityManager::GetComponents() { return Cameras; }
 	template <> std::map<unsigned int, MeshRenderer*> EntityManager::GetComponents() { return MeshRenderers; }
 	template <> std::map<unsigned int, Material*> EntityManager::GetComponents() { return Materials; }
+	template <> std::map<unsigned int, Collider*> EntityManager::GetComponents() { return Colliders; }
 	
 	void EntityManager::ImGuiEditableComponent(Component * comp) {
 		auto transform = dynamic_cast<Transform*>(comp);
@@ -162,7 +188,7 @@ namespace Entities {
 		}
 		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
 		if (meshrenderer) {
-			ImGuiUtils::InputField_string("ModelPath", &meshrenderer->ModelPath, comp->Entity);
+			ImGuiUtils::InputField_string("ModelId", &meshrenderer->ModelId, comp->Entity);
 			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model, comp->Entity);
 		}
 		auto material = dynamic_cast<Material*>(comp);
@@ -174,6 +200,33 @@ namespace Entities {
 			ImGuiUtils::InputField_TextureHandle("Texture", &material->Texture, comp->Entity);
 			ImGuiUtils::InputField_UniformHandle("Sampler", &material->Sampler, comp->Entity);
 			ImGuiUtils::InputField_UniformHandle("BaseColour", &material->BaseColour, comp->Entity);
+		}
+		auto collider = dynamic_cast<Collider*>(comp);
+		if (collider) {
+		}
+	}
+
+	
+	void EntityManager::ImGui_EditableComponent(Component * comp) {
+		auto transform = dynamic_cast<Transform*>(comp);
+		if (transform) {
+			ImGuiUtils::ImGui_Component(transform, comp->Entity);
+		}
+		auto camera = dynamic_cast<Camera*>(comp);
+		if (camera) {
+			ImGuiUtils::ImGui_Component(camera, comp->Entity);
+		}
+		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
+		if (meshrenderer) {
+			ImGuiUtils::ImGui_Component(meshrenderer, comp->Entity);
+		}
+		auto material = dynamic_cast<Material*>(comp);
+		if (material) {
+			ImGuiUtils::ImGui_Component(material, comp->Entity);
+		}
+		auto collider = dynamic_cast<Collider*>(comp);
+		if (collider) {
+			ImGuiUtils::ImGui_Component(collider, comp->Entity);
 		}
 	}
 
@@ -198,6 +251,11 @@ namespace Entities {
 				AddComponent<Material>(e);
 			}
 		}
+		if (!contains(Colliders, e.Id)) {
+			if (ImGui::MenuItem("Collider")) {
+				AddComponent<Collider>(e);
+			}
+		}
 	}
 
 	Entity EntityManager::CreateEntityFromSerialized(std::string input) {
@@ -217,6 +275,10 @@ namespace Entities {
 		}
 		if (json.contains("Material")) {
 			auto newComp = json.at("Material").get<Material>();
+			AddComponent(entity, newComp);
+		}
+		if (json.contains("Collider")) {
+			auto newComp = json.at("Collider").get<Collider>();
 			AddComponent(entity, newComp);
 		}
 		return entity;
@@ -240,6 +302,10 @@ namespace Entities {
 		if (materialIt != Materials.end()) {
 			json["Material"] = *Materials[e.Id];
 		}
+		auto colliderIt = Colliders.find(e.Id);
+		if (colliderIt != Colliders.end()) {
+			json["Collider"] = *Colliders[e.Id];
+		}
 		return json.dump();
 	}
 
@@ -259,7 +325,7 @@ namespace Entities {
 	//{'type': 'float', 'name': 'Near'}
 	//{'type': 'float', 'name': 'Far'}
 	//MeshRenderer
-	//{'type': 'string', 'name': 'ModelPath'}
+	//{'type': 'string', 'name': 'ModelId'}
 	//{'type': 'ModelHandle', 'name': 'Model'}
 	//Material
 	//{'type': 'vec4', 'name': 'Colour'}
@@ -269,6 +335,7 @@ namespace Entities {
 	//{'type': 'TextureHandle', 'name': 'Texture'}
 	//{'type': 'UniformHandle', 'name': 'Sampler'}
 	//{'type': 'UniformHandle', 'name': 'BaseColour'}
+	//Collider
 
 
 #endif
