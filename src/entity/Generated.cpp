@@ -190,6 +190,7 @@ namespace Entities {
 		if (meshrenderer) {
 			ImGuiUtils::InputField_string("ModelId", &meshrenderer->ModelId, comp->Entity);
 			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model, comp->Entity);
+			ImGuiUtils::InputField_bool("Render", &meshrenderer->Render, comp->Entity);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
@@ -327,6 +328,7 @@ namespace Entities {
 	//MeshRenderer
 	//{'type': 'string', 'name': 'ModelId'}
 	//{'type': 'ModelHandle', 'name': 'Model'}
+	//{'type': 'bool', 'name': 'Render'}
 	//Material
 	//{'type': 'vec4', 'name': 'Colour'}
 	//{'type': 'string', 'name': 'ShaderId'}

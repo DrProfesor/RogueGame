@@ -127,6 +127,11 @@ namespace Utils {
             *val = std::string(v);
         }
 
+        static void InputField_bool(const char* name, bool * val, Entity e)
+        {
+
+        }
+
         static void InputField_FrameBufferHandle(const char* name, FrameBufferHandle * val, Entity e)
         {
             // TODO view image

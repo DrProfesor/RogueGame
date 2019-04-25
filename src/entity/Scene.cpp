@@ -14,7 +14,7 @@ namespace Entities {
     bool SceneManager::LoadScene(std::string sceneName)
     {
         fs::path path = std::filesystem::current_path();
-        path += "/assets/scene/";
+        path += "/../assets/scene/";
         path += sceneName.c_str();
 
         if (!fs::exists(path))
@@ -50,7 +50,7 @@ namespace Entities {
     void SceneManager::SaveScene(std::string sceneName)
     {
         fs::path path = std::filesystem::current_path();
-        path += "/assets/scene/";
+        path += "/../assets/scene/";
         path += sceneName.c_str();
 
         fs::directory_iterator dir(path);

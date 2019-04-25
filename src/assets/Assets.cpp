@@ -8,10 +8,10 @@
 #include <brtshaderc.h>
 #include <sstream>
 
-#define ASSET_DIR "assets/"
-#define MODEL_DIR "assets/models/"
-#define SHADER_DIR "assets/shaders/"
-#define TEXTURE_DIR "assets/textures/"
+#define ASSET_DIR "../assets/"
+#define MODEL_DIR "../assets/models/"
+#define SHADER_DIR "../assets/shaders/"
+#define TEXTURE_DIR "../assets/textures/"
 
 namespace fs = std::filesystem;
 

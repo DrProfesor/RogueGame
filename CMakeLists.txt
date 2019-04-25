@@ -40,7 +40,7 @@ endif()
 message("Generating Code")
 execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/build.py")
 
-file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
+#file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 
 add_executable( ${APP_TARGET} ${SRC_FILES} )
 

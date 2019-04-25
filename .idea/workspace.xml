@@ -8,10 +8,10 @@
       <config projectName="RogueGame" targetName="shaderc" />
       <config projectName="RogueGame" targetName="glfw" />
       <config projectName="RogueGame" targetName="zlib" />
-      <config projectName="RogueGame" targetName="glsl-optimizer" />
-      <config projectName="RogueGame" targetName="brtshaderc" />
       <config projectName="RogueGame" targetName="unit" />
       <config projectName="RogueGame" targetName="UpdateAssimpLibsDebugSymbolsAndDLLs" />
+      <config projectName="RogueGame" targetName="glsl-optimizer" />
+      <config projectName="RogueGame" targetName="brtshaderc" />
       <config projectName="RogueGame" targetName="nvtt" />
       <config projectName="RogueGame" targetName="fcpp" />
       <config projectName="RogueGame" targetName="iqa" />
@@ -24,17 +24,17 @@
       <config projectName="RogueGame" targetName="assimp_cmd" />
       <config projectName="RogueGame" targetName="bgfx" />
       <config projectName="RogueGame" targetName="texturec" />
-      <config projectName="RogueGame" targetName="etc2" />
       <config projectName="RogueGame" targetName="dear-imgui" />
+      <config projectName="RogueGame" targetName="etc2" />
       <config projectName="RogueGame" targetName="etc1" />
       <config projectName="RogueGame" targetName="zlibstatic" />
-      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="astc" />
       <config projectName="RogueGame" targetName="bimg" />
+      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="glslang" />
-      <config projectName="RogueGame" targetName="example-common" />
       <config projectName="RogueGame" targetName="uninstall" />
       <config projectName="RogueGame" targetName="RogueGame" />
+      <config projectName="RogueGame" targetName="example-common" />
       <config projectName="RogueGame" targetName="mesa" />
       <config projectName="RogueGame" targetName="bx" />
       <config projectName="RogueGame" targetName="forsyth-too" />
@@ -47,15 +47,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RogueGame/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RogueGame/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/editor/FileViewer.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/editor/FileViewer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/models/Terrain/PBOX22_Grass_01.FBX" beforeDir="false" afterPath="$PROJECT_DIR$/assets/models/Terrain/PBOX22_Grass_01.FBX" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/assimp" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bgfx" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bgfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bimg/3rdparty/tinyexr/tinyexr.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Assets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/editor/Editor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/editor/Editor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Generated.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Generated.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Scene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/deps/assimp/cmake-build-debug/" />
@@ -73,64 +80,143 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="ImGuiUtils.h" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="323">
-                    <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-                    <folding>
-                      <element signature="e#105#123#0" expanded="true" />
-                      <element signature="e#409#421#0" expanded="true" />
-                      <element signature="e#512#514#0" expanded="true" />
-                      <element signature="e#661#663#0" expanded="true" />
-                      <element signature="e#802#804#0" expanded="true" />
-                      <element signature="e#943#945#0" expanded="true" />
-                      <element signature="e#1084#1086#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
+          <splitter split-orientation="horizontal" split-proportion="0.5">
+            <split-first>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file leaf-file-name="ImGuiUtils.h" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="306">
+                        <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+                        <folding>
+                          <element signature="e#105#123#0" expanded="true" />
+                        </folding>
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="imgui_demo.cpp" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_demo.cpp">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="782">
+                        <caret line="1243" column="84" selection-start-line="1243" selection-start-column="84" selection-end-line="1243" selection-end-column="84" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-first>
+            <split-second>
+              <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+                <file leaf-file-name="Assets.cpp" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="884">
+                        <caret line="52" column="14" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="14" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="Scene.cpp" pinned="false" current-in-tab="false">
+                  <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="289">
+                        <caret line="18" selection-start-line="18" selection-end-line="18" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+                <file leaf-file-name="SceneWindow.cpp" pinned="false" current-in-tab="true">
+                  <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
+                    <provider selected="true" editor-type-id="text-editor">
+                      <state relative-caret-position="1173">
+                        <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+                      </state>
+                    </provider>
+                  </entry>
+                </file>
+              </leaf>
+            </split-second>
+          </splitter>
         </state>
       </content>
     </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SceneWindow.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1331">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding>
-                <element signature="e#42#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imgui.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="7671" column="14" selection-start-line="7671" selection-start-column="14" selection-end-line="7671" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneWindow.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.45795247">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FileViewer.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+                  <folding>
+                    <element signature="e#42#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="imgui.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150110">
+                  <caret line="8830" column="12" selection-start-line="8830" selection-start-column="12" selection-end-line="8830" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="imgui.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2618">
+                  <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Editor.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="799">
+                  <caret line="47" selection-start-line="47" selection-end-line="47" />
+                  <folding>
+                    <element signature="e#42#61#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Editor.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/editor/Editor.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="714">
+                  <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+                  <folding>
+                    <element signature="e#97#121#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FileViewer.h" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -142,13 +228,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>source</find>
-      <find>strLTrim</find>
-      <find>CPACK_DEBIAN_PACKAGE_REMOVE_SOURCE_FILES</find>
-      <find>gtest</find>
-      <find>opendll</find>
-      <find>contrib</find>
-      <find>varyingPath</find>
       <find>filePath</find>
       <find>failed to</find>
       <find>bgfx_shader</find>
@@ -172,6 +251,13 @@
       <find>from_json_fn</find>
       <find>from_json(</find>
       <find>edit</find>
+      <find>drag</find>
+      <find>Drag and Drop</find>
+      <find>sc</find>
+      <find>ImGui::Tree</find>
+      <find>fs =</find>
+      <find>fonts</find>
+      <find>icons</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -184,11 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/vendor/shaderc/shaderc.cpp" />
-        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/shader_spirv.h" />
-        <option value="$PROJECT_DIR$/deps/bgfx.cmake/bx/include/tinystl/string.h" />
-        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools/brtshaderc.cmake" />
-        <option value="$PROJECT_DIR$/deps/bgfx.cmake/cmake/tools.cmake" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.h" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/brtshaderc.h" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/brtshaderc.cpp" />
@@ -203,7 +284,6 @@
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/.build/projects/cmake/bgfx/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bx/include/bx/bx.h" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/.build/projects/cmake/brtshaderc/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/brtshaderc/brtshaderc.cpp" />
         <option value="$PROJECT_DIR$/deps/assimp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/assets/shaders/common.sh" />
@@ -225,16 +305,22 @@
         <option value="$PROJECT_DIR$/src/rendering/Renderer.cpp" />
         <option value="$PROJECT_DIR$/src/assets/json.h" />
         <option value="$PROJECT_DIR$/build.py" />
-        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
         <option value="$PROJECT_DIR$/src/utils/JsonExtensions.h" />
-        <option value="$PROJECT_DIR$/src/utils/ImGuiUtils.h" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
-        <option value="$PROJECT_DIR$/src/entity/Scene.cpp" />
         <option value="$PROJECT_DIR$/src/entity/Entities.h" />
-        <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
         <option value="$PROJECT_DIR$/src/app/Application.cpp" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.h" />
         <option value="$PROJECT_DIR$/src/editor/SceneWindow.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/assets/Assets.cpp" />
+        <option value="$PROJECT_DIR$/src/utils/ImGuiUtils.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/entity/Scene.cpp" />
+        <option value="$PROJECT_DIR$/src/editor/Logger.cpp" />
+        <option value="$PROJECT_DIR$/src/editor/Logger.h" />
+        <option value="$PROJECT_DIR$/src/editor/Editor.cpp" />
+        <option value="$PROJECT_DIR$/src/editor/Editor.h" />
+        <option value="$PROJECT_DIR$/src/editor/FileViewer.h" />
+        <option value="$PROJECT_DIR$/src/editor/FileViewer.cpp" />
       </list>
     </option>
   </component>
@@ -251,7 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +368,32 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="shaders" type="462c0819:PsiDirectoryNode" />
               <item name="cubes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="imgui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="imgui" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RogueGame" type="462c0819:PsiDirectoryNode" />
+              <item name="deps" type="462c0819:PsiDirectoryNode" />
+              <item name="imgui" type="462c0819:PsiDirectoryNode" />
+              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assimp" type="b2602c69:ProjectViewProjectNode" />
@@ -341,11 +452,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="bgfx_shader&#9;FILE&#9;file://D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/bgfx_shader.sh&#10;shader&#9;FILE&#9;file://D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp&#10;scen&#9;FILE&#9;file://D:/Dev/RogueGame/src/entity/Scene.cpp&#10;imgui_dem&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;imgui_demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;ImGui_Demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
+    <property name="SearchEverywhereHistoryKey" value="showdemo&#9;null&#9;null&#10;bgfx_shader&#9;FILE&#9;file://D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/src/bgfx_shader.sh&#10;shader&#9;FILE&#9;file://D:/Dev/RogueGame/deps/bgfx.cmake/bgfx/tools/shaderc/shaderc.cpp&#10;scen&#9;FILE&#9;file://D:/Dev/RogueGame/src/entity/Scene.cpp&#10;imgui_dem&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;imgui_demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;ImGui_Demo&#9;FILE&#9;file://D:/Dev/RogueGame/deps/imgui/imgui_demo.cpp&#10;config.h&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/cmake-build-debug/deps/assimp/include/assimp/config.h&#10;defs&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/defs.h&#10;types.&#9;FILE&#9;file:///Users/jake/Documents/Dev/RogueGame/deps/assimp/include/assimp/types.h" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -375,40 +487,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RogueGame">
+  <component name="RunManager" selected="Application.IrrXML">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="IrrXML" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="IrrXML" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
     <configuration name="RogueGame" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="RogueGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
     <configuration name="UpdateAssimpLibsDebugSymbolsAndDLLs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="UpdateAssimpLibsDebugSymbolsAndDLLs" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
     <configuration name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="assimp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
     <configuration name="assimp_cmd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="assimp_cmd" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="astc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="astc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="bgfx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bgfx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="bimg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bimg" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="brtshaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="brtshaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="bx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bx" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="dear-imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="dear-imgui" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="edtaa3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="edtaa3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="etc1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="etc2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="example-common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="example-common" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="fcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="fcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="forsyth-too" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="forsyth-too" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="geometryc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="geometryc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="glcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glcpp" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glfw" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="glsl-optimizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glsl-optimizer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="glslang" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glslang" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="ib-compress" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="ib-compress" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
+    <configuration name="astc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="astc" CONFIG_NAME="Debug" />
+    <configuration name="bgfx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bgfx" CONFIG_NAME="Debug" />
+    <configuration name="bimg" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bimg" CONFIG_NAME="Debug" />
+    <configuration name="brtshaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="brtshaderc" CONFIG_NAME="Debug" />
+    <configuration name="bx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="bx" CONFIG_NAME="Debug" />
+    <configuration name="dear-imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="dear-imgui" CONFIG_NAME="Debug" />
+    <configuration name="edtaa3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="edtaa3" CONFIG_NAME="Debug" />
+    <configuration name="etc1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc1" CONFIG_NAME="Debug" />
+    <configuration name="etc2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="etc2" CONFIG_NAME="Debug" />
+    <configuration name="example-common" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="example-common" CONFIG_NAME="Debug" />
+    <configuration name="fcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="fcpp" CONFIG_NAME="Debug" />
+    <configuration name="forsyth-too" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="forsyth-too" CONFIG_NAME="Debug" />
+    <configuration name="geometryc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="geometryc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="geometryc" />
+    <configuration name="glcpp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glcpp" CONFIG_NAME="Debug" />
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glfw" CONFIG_NAME="Debug" />
+    <configuration name="glsl-optimizer" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glsl-optimizer" CONFIG_NAME="Debug" />
+    <configuration name="glslang" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="glslang" CONFIG_NAME="Debug" />
+    <configuration name="ib-compress" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="ib-compress" CONFIG_NAME="Debug" />
     <configuration name="imgui" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="imgui" CONFIG_NAME="Debug" />
-    <configuration name="iqa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="iqa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="mesa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="mesa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="nvtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="nvtt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="pvrtc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="pvrtc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="shaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="shaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="squish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="squish" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="texturec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
-    <configuration name="texturev" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="RogueGame" />
+    <configuration name="iqa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="iqa" CONFIG_NAME="Debug" />
+    <configuration name="mesa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="mesa" CONFIG_NAME="Debug" />
+    <configuration name="nvtt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="nvtt" CONFIG_NAME="Debug" />
+    <configuration name="pvrtc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="pvrtc" CONFIG_NAME="Debug" />
+    <configuration name="shaderc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="shaderc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="shaderc" />
+    <configuration name="squish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="squish" CONFIG_NAME="Debug" />
+    <configuration name="texturec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturec" />
+    <configuration name="texturev" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="texturev" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="texturev" />
     <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="uninstall" CONFIG_NAME="Debug" />
     <configuration name="unit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="unit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="RogueGame" RUN_TARGET_NAME="unit" />
     <configuration name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RogueGame" TARGET_NAME="zlib" CONFIG_NAME="Debug" />
@@ -495,7 +607,6 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289777" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3697156" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32820907" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23597233" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -509,6 +620,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32820907" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -520,66 +632,30 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deps/assimp/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="526" column="3" selection-start-line="526" selection-start-column="3" selection-end-line="526" selection-end-column="3" />
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/brtshaderc/brtshaderc.h">
+    <entry file="file://$PROJECT_DIR$/src/editor/Editor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="714">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#97#121#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/tools/brtshaderc/brtshaderc.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="481" column="44" selection-start-line="481" selection-start-column="41" selection-end-line="481" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/bgfx_shader.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" lean-forward="true" selection-end-line="529" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/varying.def.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/cubes/fs_cubes.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/cubes/vs_cubes.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/src/vertexdecl.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="92" column="28" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -597,20 +673,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/scene/main/1.e">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="232" lean-forward="true" selection-start-column="232" selection-end-column="232" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/common.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="525" column="28" lean-forward="true" selection-start-line="525" selection-start-column="28" selection-end-line="525" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/scene/main/1.e" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/common.sh" />
     <entry file="file://$PROJECT_DIR$/src/assets/AssetUtils.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -618,23 +682,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/vs_bump.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/vs_bump.sc" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/assets/shaders/bump/fs_bump.sc" />
     <entry file="file://$PROJECT_DIR$/deps/assimp/include/assimp/postprocess.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -649,9 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/Editor.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Application.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="579">
@@ -663,14 +709,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="130" column="36" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/math/Math.h">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/include/bgfx/defines.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -728,16 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/physics/Physics.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/physics/Physics.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="41" selection-end-column="12" />
-          <folding>
-            <element signature="e#99#121#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -745,370 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="1557" column="25" selection-start-line="1557" selection-start-column="17" selection-end-line="1557" selection-end-column="25" />
-          <folding>
-            <element signature="e#25376#25561#0" expanded="true" />
-            <element signature="e#25756#25930#0" expanded="true" />
-            <element signature="e#26176#26250#0" expanded="true" />
-            <element signature="e#26445#26521#0" expanded="true" />
-            <element signature="e#26638#26689#0" expanded="true" />
-            <element signature="e#26767#26790#0" expanded="true" />
-            <element signature="e#26993#27202#0" expanded="true" />
-            <element signature="e#27677#27853#0" expanded="true" />
-            <element signature="e#28040#28092#0" expanded="true" />
-            <element signature="e#28247#28293#0" expanded="true" />
-            <element signature="e#28450#28573#0" expanded="true" />
-            <element signature="e#28739#28818#0" expanded="true" />
-            <element signature="e#29040#29141#0" expanded="true" />
-            <element signature="e#29517#29540#0" expanded="true" />
-            <element signature="e#33000#33025#0" expanded="true" />
-            <element signature="e#33317#33344#0" expanded="true" />
-            <element signature="e#33427#33439#0" expanded="true" />
-            <element signature="e#33660#33681#0" expanded="true" />
-            <element signature="e#33941#33975#0" expanded="true" />
-            <element signature="e#34028#34066#0" expanded="true" />
-            <element signature="e#34242#34257#0" expanded="true" />
-            <element signature="e#34474#34476#0" expanded="true" />
-            <element signature="e#34563#34565#0" expanded="true" />
-            <element signature="e#34654#34670#0" expanded="true" />
-            <element signature="e#34802#34814#0" expanded="true" />
-            <element signature="e#34894#34896#0" expanded="true" />
-            <element signature="e#34982#34994#0" expanded="true" />
-            <element signature="e#35093#35105#0" expanded="true" />
-            <element signature="e#35256#35281#0" expanded="true" />
-            <element signature="e#35658#35674#0" expanded="true" />
-            <element signature="e#35760#35776#0" expanded="true" />
-            <element signature="e#35989#36019#0" expanded="true" />
-            <element signature="e#36080#36093#0" expanded="true" />
-            <element signature="e#36815#36844#0" expanded="true" />
-            <element signature="e#36906#36918#0" expanded="true" />
-            <element signature="e#37061#37073#0" expanded="true" />
-            <element signature="e#38088#38213#0" expanded="true" />
-            <element signature="e#38162#38172#0" expanded="true" />
-            <element signature="e#38347#38406#0" expanded="true" />
-            <element signature="e#38371#38381#0" expanded="true" />
-            <element signature="e#38586#38630#0" expanded="true" />
-            <element signature="e#38595#38605#0" expanded="true" />
-            <element signature="e#38733#38777#0" expanded="true" />
-            <element signature="e#38742#38752#0" expanded="true" />
-            <element signature="e#38876#38935#0" expanded="true" />
-            <element signature="e#38900#38910#0" expanded="true" />
-            <element signature="e#39019#39078#0" expanded="true" />
-            <element signature="e#39043#39053#0" expanded="true" />
-            <element signature="e#39176#39236#0" expanded="true" />
-            <element signature="e#39201#39211#0" expanded="true" />
-            <element signature="e#39337#39391#0" expanded="true" />
-            <element signature="e#39356#39366#0" expanded="true" />
-            <element signature="e#39658#39697#0" expanded="true" />
-            <element signature="e#40150#40193#0" expanded="true" />
-            <element signature="e#40234#40799#0" expanded="true" />
-            <element signature="e#40243#40285#0" expanded="true" />
-            <element signature="e#40339#40369#0" expanded="true" />
-            <element signature="e#40641#40653#0" expanded="true" />
-            <element signature="e#40712#40748#0" expanded="true" />
-            <element signature="e#41145#41169#0" expanded="true" />
-            <element signature="e#42156#42166#0" expanded="true" />
-            <element signature="e#42456#42468#0" expanded="true" />
-            <element signature="e#42541#42553#0" expanded="true" />
-            <element signature="e#42620#42632#0" expanded="true" />
-            <element signature="e#42703#42715#0" expanded="true" />
-            <element signature="e#42796#42808#0" expanded="true" />
-            <element signature="e#42873#42885#0" expanded="true" />
-            <element signature="e#42954#42966#0" expanded="true" />
-            <element signature="e#43051#43063#0" expanded="true" />
-            <element signature="e#43130#43160#0" expanded="true" />
-            <element signature="e#43258#43288#0" expanded="true" />
-            <element signature="e#43390#43414#0" expanded="true" />
-            <element signature="e#43593#43646#0" expanded="true" />
-            <element signature="e#43724#43760#0" expanded="true" />
-            <element signature="e#44316#44369#0" expanded="true" />
-            <element signature="e#44459#44495#0" expanded="true" />
-            <element signature="e#45076#45129#0" expanded="true" />
-            <element signature="e#45205#45241#0" expanded="true" />
-            <element signature="e#45684#45713#0" expanded="true" />
-            <element signature="e#45796#45808#0" expanded="true" />
-            <element signature="e#46399#46428#0" expanded="true" />
-            <element signature="e#46509#46521#0" expanded="true" />
-            <element signature="e#46631#46719#0" expanded="true" />
-            <element signature="e#46814#46869#0" expanded="true" />
-            <element signature="e#47648#47703#0" expanded="true" />
-            <element signature="e#47861#47952#0" expanded="true" />
-            <element signature="e#48050#48108#0" expanded="true" />
-            <element signature="e#49005#49063#0" expanded="true" />
-            <element signature="e#49254#49342#0" expanded="true" />
-            <element signature="e#49437#49492#0" expanded="true" />
-            <element signature="e#49933#49991#0" expanded="true" />
-            <element signature="e#50152#50243#0" expanded="true" />
-            <element signature="e#50341#50399#0" expanded="true" />
-            <element signature="e#50880#50938#0" expanded="true" />
-            <element signature="e#51105#51176#0" expanded="true" />
-            <element signature="e#51270#51324#0" expanded="true" />
-            <element signature="e#52201#52255#0" expanded="true" />
-            <element signature="e#52410#52484#0" expanded="true" />
-            <element signature="e#52581#52638#0" expanded="true" />
-            <element signature="e#52941#52998#0" expanded="true" />
-            <element signature="e#54451#54508#0" expanded="true" />
-            <element signature="e#54672#54769#0" expanded="true" />
-            <element signature="e#54865#54929#0" expanded="true" />
-            <element signature="e#55817#55881#0" expanded="true" />
-            <element signature="e#56074#56140#0" expanded="true" />
-            <element signature="e#56228#56277#0" expanded="true" />
-            <element signature="e#56579#56628#0" expanded="true" />
-            <element signature="e#56846#56871#0" expanded="true" />
-            <element signature="e#60046#60070#0" expanded="true" />
-            <element signature="e#60424#60685#0" expanded="true" />
-            <element signature="e#61660#61684#0" expanded="true" />
-            <element signature="e#62063#62087#0" expanded="true" />
-            <element signature="e#62462#62844#0" expanded="true" />
-            <element signature="e#63211#63235#0" expanded="true" />
-            <element signature="e#63399#63423#0" expanded="true" />
-            <element signature="e#63590#63614#0" expanded="true" />
-            <element signature="e#63780#63892#0" expanded="true" />
-            <element signature="e#64177#64317#0" expanded="true" />
-            <element signature="e#64855#64975#0" expanded="true" />
-            <element signature="e#65371#65395#0" expanded="true" />
-            <element signature="e#65639#65690#0" expanded="true" />
-            <element signature="e#66028#66085#0" expanded="true" />
-            <element signature="e#66860#66917#0" expanded="true" />
-            <element signature="e#67500#68010#0" expanded="true" />
-            <element signature="e#68580#68753#0" expanded="true" />
-            <element signature="e#69882#70493#0" expanded="true" />
-            <element signature="e#71664#71714#0" expanded="true" />
-            <element signature="e#71887#71947#0" expanded="true" />
-            <element signature="e#72189#72231#0" expanded="true" />
-            <element signature="e#72403#72633#0" expanded="true" />
-            <element signature="e#73262#73508#0" expanded="true" />
-            <element signature="e#74188#74224#0" expanded="true" />
-            <element signature="e#74854#74882#0" expanded="true" />
-            <element signature="e#75282#75310#0" expanded="true" />
-            <element signature="e#75600#75623#0" expanded="true" />
-            <element signature="e#78234#78257#0" expanded="true" />
-            <element signature="e#79200#79268#0" expanded="true" />
-            <element signature="e#79592#79660#0" expanded="true" />
-            <element signature="e#80278#80413#0" expanded="true" />
-            <element signature="e#80434#80457#0" expanded="true" />
-            <element signature="e#80618#80656#0" expanded="true" />
-            <element signature="e#80926#80954#0" expanded="true" />
-            <element signature="e#81247#81256#0" expanded="true" />
-            <element signature="e#81311#81313#0" expanded="true" />
-            <element signature="e#81390#81414#0" expanded="true" />
-            <element signature="e#81671#81673#0" expanded="true" />
-            <element signature="e#81749#81773#0" expanded="true" />
-            <element signature="e#82019#82043#0" expanded="true" />
-            <element signature="e#82295#82501#0" expanded="true" />
-            <element signature="e#82806#82808#0" expanded="true" />
-            <element signature="e#82890#82914#0" expanded="true" />
-            <element signature="e#83185#83187#0" expanded="true" />
-            <element signature="e#83272#83296#0" expanded="true" />
-            <element signature="e#83573#83575#0" expanded="true" />
-            <element signature="e#83659#83683#0" expanded="true" />
-            <element signature="e#83958#83960#0" expanded="true" />
-            <element signature="e#84035#84059#0" expanded="true" />
-            <element signature="e#84307#84331#0" expanded="true" />
-            <element signature="e#84585#84788#0" expanded="true" />
-            <element signature="e#85165#85189#0" expanded="true" />
-            <element signature="e#85600#85724#0" expanded="true" />
-            <element signature="e#86113#86115#0" expanded="true" />
-            <element signature="e#86191#86215#0" expanded="true" />
-            <element signature="e#86465#86489#0" expanded="true" />
-            <element signature="e#86745#86923#0" expanded="true" />
-            <element signature="e#87355#87488#0" expanded="true" />
-            <element signature="e#87640#87811#0" expanded="true" />
-            <element signature="e#87975#87999#0" expanded="true" />
-            <element signature="e#88185#88309#0" expanded="true" />
-            <element signature="e#88598#88807#0" expanded="true" />
-            <element signature="e#89124#89330#0" expanded="true" />
-            <element signature="e#89643#89755#0" expanded="true" />
-            <element signature="e#90034#90058#0" expanded="true" />
-            <element signature="e#90222#90756#0" expanded="true" />
-            <element signature="e#90926#91046#0" expanded="true" />
-            <element signature="e#91224#91248#0" expanded="true" />
-            <element signature="e#91436#91679#0" expanded="true" />
-            <element signature="e#91851#91875#0" expanded="true" />
-            <element signature="e#92065#92302#0" expanded="true" />
-            <element signature="e#92458#92500#0" expanded="true" />
-            <element signature="e#92685#92840#0" expanded="true" />
-            <element signature="e#92961#93021#0" expanded="true" />
-            <element signature="e#93191#93233#0" expanded="true" />
-            <element signature="e#93433#93469#0" expanded="true" />
-            <element signature="e#93996#94016#0" expanded="true" />
-            <element signature="e#94354#94398#0" expanded="true" />
-            <element signature="e#94980#95024#0" expanded="true" />
-            <element signature="e#95578#95612#0" expanded="true" />
-            <element signature="e#96098#96123#0" expanded="true" />
-            <element signature="e#101838#101873#0" expanded="true" />
-            <element signature="e#104400#104425#0" expanded="true" />
-            <element signature="e#107503#107528#0" expanded="true" />
-            <element signature="e#108345#108355#0" expanded="true" />
-            <element signature="e#110065#110415#0" expanded="true" />
-            <element signature="e#110650#111000#0" expanded="true" />
-            <element signature="e#111276#111526#0" expanded="true" />
-            <element signature="e#112984#113008#0" expanded="true" />
-            <element signature="e#113189#113570#0" expanded="true" />
-            <element signature="e#113975#114003#0" expanded="true" />
-            <element signature="e#114504#114528#0" expanded="true" />
-            <element signature="e#118271#118295#0" expanded="true" />
-            <element signature="e#123010#123026#0" expanded="true" />
-            <element signature="e#124245#124269#0" expanded="true" />
-            <element signature="e#132081#132097#0" expanded="true" />
-            <element signature="e#134997#135021#0" expanded="true" />
-            <element signature="e#136789#136817#0" expanded="true" />
-            <element signature="e#137039#137051#0" expanded="true" />
-            <element signature="e#137139#137151#0" expanded="true" />
-            <element signature="e#137273#137303#0" expanded="true" />
-            <element signature="e#137442#137473#0" expanded="true" />
-            <element signature="e#137615#137660#0" expanded="true" />
-            <element signature="e#137834#137863#0" expanded="true" />
-            <element signature="e#137987#137999#0" expanded="true" />
-            <element signature="e#138138#138167#0" expanded="true" />
-            <element signature="e#138285#138297#0" expanded="true" />
-            <element signature="e#138397#138409#0" expanded="true" />
-            <element signature="e#138546#138558#0" expanded="true" />
-            <element signature="e#138656#138688#0" expanded="true" />
-            <element signature="e#138922#138960#0" expanded="true" />
-            <element signature="e#140750#140788#0" expanded="true" />
-            <element signature="e#144158#144233#0" expanded="true" />
-            <element signature="e#149783#149804#0" expanded="true" />
-            <element signature="e#213613#213668#0" expanded="true" />
-            <element signature="e#215217#215238#0" expanded="true" />
-            <element signature="e#218774#218799#0" expanded="true" />
-            <element signature="e#219458#219482#0" expanded="true" />
-            <element signature="e#272162#272190#0" expanded="true" />
-            <element signature="e#272885#272909#0" expanded="true" />
-            <element signature="e#277308#277322#0" expanded="true" />
-            <element signature="e#278106#278120#0" expanded="true" />
-            <element signature="e#292385#292416#0" expanded="true" />
-            <element signature="e#295865#295889#0" expanded="true" />
-            <element signature="e#296346#296371#0" expanded="true" />
-            <element signature="e#297018#297041#0" expanded="true" />
-            <element signature="e#297090#297113#0" expanded="true" />
-            <element signature="e#298098#298122#0" expanded="true" />
-            <element signature="e#315875#315906#0" expanded="true" />
-            <element signature="e#316799#316814#0" expanded="true" />
-            <element signature="e#319709#319739#0" expanded="true" />
-            <element signature="e#320056#320080#0" expanded="true" />
-            <element signature="e#352475#352502#0" expanded="true" />
-            <element signature="e#352636#352660#0" expanded="true" />
-            <element signature="e#353187#353316#0" expanded="true" />
-            <element signature="e#354654#354685#0" expanded="true" />
-            <element signature="e#354980#355008#0" expanded="true" />
-            <element signature="e#355346#355365#0" expanded="true" />
-            <element signature="e#355673#355692#0" expanded="true" />
-            <element signature="e#355831#355850#0" expanded="true" />
-            <element signature="e#356449#356468#0" expanded="true" />
-            <element signature="e#357090#357160#0" expanded="true" />
-            <element signature="e#357675#357745#0" expanded="true" />
-            <element signature="e#358622#358665#0" expanded="true" />
-            <element signature="e#397619#397744#0" expanded="true" />
-            <element signature="e#398120#398239#0" expanded="true" />
-            <element signature="e#400202#400389#0" expanded="true" />
-            <element signature="e#406785#406841#0" expanded="true" />
-            <element signature="e#407728#407854#0" expanded="true" />
-            <element signature="e#408022#408150#0" expanded="true" />
-            <element signature="e#408609#408705#0" expanded="true" />
-            <element signature="e#408845#409177#0" expanded="true" />
-            <element signature="e#409695#409755#0" expanded="true" />
-            <element signature="e#410215#410240#0" expanded="true" />
-            <element signature="e#411384#411418#0" expanded="true" />
-            <element signature="e#416046#416066#0" expanded="true" />
-            <element signature="e#444009#444029#0" expanded="true" />
-            <element signature="e#445417#445485#0" expanded="true" />
-            <element signature="e#449538#449558#0" expanded="true" />
-            <element signature="e#452041#452065#0" expanded="true" />
-            <element signature="e#474130#474347#0" expanded="true" />
-            <element signature="e#490767#490784#0" expanded="true" />
-            <element signature="e#491021#491045#0" expanded="true" />
-            <element signature="e#491123#491166#0" expanded="true" />
-            <element signature="e#491248#491286#0" expanded="true" />
-            <element signature="e#491368#491392#0" expanded="true" />
-            <element signature="e#491480#491504#0" expanded="true" />
-            <element signature="e#491952#491976#0" expanded="true" />
-            <element signature="e#492081#492105#0" expanded="true" />
-            <element signature="e#492194#492213#0" expanded="true" />
-            <element signature="e#492309#492324#0" expanded="true" />
-            <element signature="e#492421#492440#0" expanded="true" />
-            <element signature="e#492616#492635#0" expanded="true" />
-            <element signature="e#492974#493003#0" expanded="true" />
-            <element signature="e#498059#498232#0" expanded="true" />
-            <element signature="e#498301#498373#0" expanded="true" />
-            <element signature="e#498411#498486#0" expanded="true" />
-            <element signature="e#498544#498707#0" expanded="true" />
-            <element signature="e#498764#498789#0" expanded="true" />
-            <element signature="e#498828#498897#0" expanded="true" />
-            <element signature="e#499187#499424#0" expanded="true" />
-            <element signature="e#499539#499577#0" expanded="true" />
-            <element signature="e#500121#500171#0" expanded="true" />
-            <element signature="e#517157#517187#0" expanded="true" />
-            <element signature="e#532872#533148#0" expanded="true" />
-            <element signature="e#534545#534764#0" expanded="true" />
-            <element signature="e#549597#549819#0" expanded="true" />
-            <element signature="e#575276#575319#0" expanded="true" />
-            <element signature="e#576189#576360#0" expanded="true" />
-            <element signature="e#576832#577019#0" expanded="true" />
-            <element signature="e#578705#579100#0" expanded="true" />
-            <element signature="e#581113#581414#0" expanded="true" />
-            <element signature="e#583035#583277#0" expanded="true" />
-            <element signature="e#584475#584591#0" expanded="true" />
-            <element signature="e#584924#585130#0" expanded="true" />
-            <element signature="e#586386#586502#0" expanded="true" />
-            <element signature="e#586783#586899#0" expanded="true" />
-            <element signature="e#588013#588135#0" expanded="true" />
-            <element signature="e#588363#588579#0" expanded="true" />
-            <element signature="e#590025#590895#0" expanded="true" />
-            <element signature="e#590467#590728#0" expanded="true" />
-            <element signature="e#604418#604430#0" expanded="true" />
-            <element signature="e#606021#606033#0" expanded="true" />
-            <element signature="e#608307#608434#0" expanded="true" />
-            <element signature="e#610785#610912#0" expanded="true" />
-            <element signature="e#615921#616166#0" expanded="true" />
-            <element signature="e#620006#620251#0" expanded="true" />
-            <element signature="e#626070#626085#0" expanded="true" />
-            <element signature="e#626430#626445#0" expanded="true" />
-            <element signature="e#627427#627442#0" expanded="true" />
-            <element signature="e#628451#628466#0" expanded="true" />
-            <element signature="e#656305#656320#0" expanded="true" />
-            <element signature="e#658174#658189#0" expanded="true" />
-            <element signature="e#659221#659239#0" expanded="true" />
-            <element signature="e#680043#680156#0" expanded="true" />
-            <element signature="e#680410#680523#0" expanded="true" />
-            <element signature="e#681428#681541#0" expanded="true" />
-            <element signature="e#681799#681912#0" expanded="true" />
-            <element signature="e#685991#686104#0" expanded="true" />
-            <element signature="e#686359#686472#0" expanded="true" />
-            <element signature="e#687433#687546#0" expanded="true" />
-            <element signature="e#687813#687926#0" expanded="true" />
-            <element signature="e#688864#688977#0" expanded="true" />
-            <element signature="e#689235#689348#0" expanded="true" />
-            <element signature="e#690326#690439#0" expanded="true" />
-            <element signature="e#690709#690822#0" expanded="true" />
-            <element signature="e#699135#699149#0" expanded="true" />
-            <element signature="e#702008#702255#0" expanded="true" />
-            <element signature="e#702650#702897#0" expanded="true" />
-            <element signature="e#703069#703327#0" expanded="true" />
-            <element signature="e#733331#733464#0" expanded="true" />
-            <element signature="e#738444#738577#0" expanded="true" />
-            <element signature="e#742750#742883#0" expanded="true" />
-            <element signature="e#746896#747029#0" expanded="true" />
-            <element signature="e#773902#773904#0" expanded="true" />
-            <element signature="e#774407#774409#0" expanded="true" />
-            <element signature="e#774828#774830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2459">
-          <caret line="147" column="22" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="22" />
-          <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1116,9 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="131" column="21" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
-          <folding>
-            <element signature="e#113#130#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,72 +796,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="e#105#123#0" expanded="true" />
-            <element signature="e#409#421#0" expanded="true" />
-            <element signature="e#512#514#0" expanded="true" />
-            <element signature="e#661#663#0" expanded="true" />
-            <element signature="e#802#804#0" expanded="true" />
-            <element signature="e#943#945#0" expanded="true" />
-            <element signature="e#1084#1086#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#55#69#0" expanded="true" />
-            <element signature="e#2619#2631#0" expanded="true" />
-            <element signature="e#6066#6068#0" expanded="true" />
-            <element signature="e#6168#6170#0" expanded="true" />
-            <element signature="e#6264#6266#0" expanded="true" />
-            <element signature="e#6372#6374#0" expanded="true" />
-            <element signature="e#6472#6474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding>
-            <element signature="e#42#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="77" column="55" selection-start-line="77" selection-start-column="55" selection-end-line="77" selection-end-column="55" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,21 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
           <caret line="110" column="37" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
-          <folding>
-            <element signature="e#153#216#0" expanded="true" />
-            <element signature="e#239#305#0" expanded="true" />
-            <element signature="e#421#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="158" column="13" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
-          <folding>
-            <element signature="e#107#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,26 +817,168 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="1016" column="4" selection-start-line="1016" selection-start-column="4" selection-end-line="1016" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="206" column="13" selection-start-line="206" selection-start-column="13" selection-end-line="206" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="200" column="89" lean-forward="true" selection-start-line="200" selection-start-column="89" selection-end-line="200" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Logger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Logger.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="204">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Editor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/Editor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <folding>
+            <element signature="e#97#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/VC/Tools/MSVC/14.14.26428/include/filesystem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="4094" column="12" selection-start-line="4094" selection-start-column="12" selection-end-line="4094" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/imgui/imgui.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2618">
+          <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="7671" column="14" selection-start-line="7671" selection-start-column="14" selection-end-line="7671" selection-end-column="14" />
+        <state relative-caret-position="150110">
+          <caret line="8830" column="12" selection-start-line="8830" selection-start-column="12" selection-end-line="8830" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/ImGuiUtils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+          <folding>
+            <element signature="e#105#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Scene.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/imgui/misc/fonts/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="51" column="124" selection-start-line="51" selection-start-column="81" selection-end-line="51" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1331">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="1173">
+          <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_demo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="1243" column="84" selection-start-line="1243" selection-start-column="84" selection-end-line="1243" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
           <folding>
-            <element signature="e#42#66#0" expanded="true" />
+            <element signature="e#42#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
