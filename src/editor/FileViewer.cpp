@@ -4,11 +4,11 @@
 
 #include <iostream>
 #include "FileViewer.h"
+#include "../assets/Assets.h"
 
 #define ASSET_DIR "/../assets"
 
 namespace Editor {
-
     FileViewer::FileViewer()
     {
 
@@ -22,13 +22,13 @@ namespace Editor {
             bool fileNodeOpen;
             bool isDir = std::filesystem::is_directory(entry);
             if (isDir)
-                fileNodeOpen = ImGui::TreeNode(entry.filename().string().c_str());
+                fileNodeOpen = ImGui::TreeNodeEx(entry.filename().string().c_str(), ImGuiTreeNodeFlags_CollapsingHeader & (~ImGuiTreeNodeFlags_NoTreePushOnOpen));
             else
                 fileNodeOpen = ImGui::TreeNodeEx(entry.filename().string().c_str(), ImGuiTreeNodeFlags_Leaf);
 
             if (ImGui::BeginDragDropSource(ImGuiDragDropFlags_None))
             {
-                ImGui::SetDragDropPayload("Asset", "asd", sizeof("asd"));
+                //ImGui::SetDragDropPayload("Asset", &ast, sizeof(AssetPayload));
                 ImGui::Text(entry.filename().string().c_str());
                 ImGui::EndDragDropSource();
             }

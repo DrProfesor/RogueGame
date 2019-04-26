@@ -8,6 +8,7 @@
 #include "Json.h"
 #include "../entity/Entities.h"
 #include "../physics/Physics.h"
+#include "../entity/Scene.h"
 
 #include <glm/vec3.hpp>
 #include <glm/glm.hpp>
@@ -127,13 +128,13 @@ namespace Entities {
         val.FrameBuffer = bgfx::createFrameBuffer(val.View, &val.TextureHandle);
     }
 
-    void to_json(json &j, const MeshRenderer &val) {
+    void to_json(json &j, const ModelRenderer &val) {
         j = json {
             {"ModelId", val.ModelId}
         };
     }
 
-    void from_json(const json &j, MeshRenderer &val) {
+    void from_json(const json &j, ModelRenderer &val) {
         j.at("ModelId").get_to<std::string>(val.ModelId);
         val.Model = Assets::GetModel(val.ModelId);
     }
@@ -168,6 +169,7 @@ namespace Entities {
     void from_json(const json &j, Collider &val) {
 
     }
+
 }
 
 #endif //ROGUEGAME_JSONEXTENSIONS_H

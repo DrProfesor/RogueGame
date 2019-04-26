@@ -18,7 +18,7 @@ using namespace Physics;
 namespace Entities {
 	static std::map<unsigned int, Transform*> Transforms;
 	static std::map<unsigned int, Camera*> Cameras;
-	static std::map<unsigned int, MeshRenderer*> MeshRenderers;
+	static std::map<unsigned int, ModelRenderer*> ModelRenderers;
 	static std::map<unsigned int, Material*> Materials;
 	static std::map<unsigned int, Collider*> Colliders;
 
@@ -41,9 +41,9 @@ namespace Entities {
 			AllEntities[e.Id] = e;
 			return (T*)nc;
 		}
-		else if (std::is_same<T, MeshRenderer>::value) {
-			auto nc = new MeshRenderer();
-			MeshRenderers[e.Id] = nc;
+		else if (std::is_same<T, ModelRenderer>::value) {
+			auto nc = new ModelRenderer();
+			ModelRenderers[e.Id] = nc;
 			nc->Entity = e;
 			e.Components.push_back(nc);
 			AllEntities[e.Id] = e;
@@ -84,8 +84,8 @@ namespace Entities {
 		else if (std::is_same<T, Camera>::value) {
 			return (T*)Cameras[e.Id];
 		}
-		else if (std::is_same<T, MeshRenderer>::value) {
-			return (T*)MeshRenderers[e.Id];
+		else if (std::is_same<T, ModelRenderer>::value) {
+			return (T*)ModelRenderers[e.Id];
 		}
 		else if (std::is_same<T, Material>::value) {
 			return (T*)Materials[e.Id];
@@ -115,9 +115,9 @@ namespace Entities {
 			Cameras.erase(e.Id);
 			delete comp;
 		}
-		if (contains(MeshRenderers, e.Id)) {
-			auto comp = MeshRenderers[e.Id];
-			MeshRenderers.erase(e.Id);
+		if (contains(ModelRenderers, e.Id)) {
+			auto comp = ModelRenderers[e.Id];
+			ModelRenderers.erase(e.Id);
 			delete comp;
 		}
 		if (contains(Materials, e.Id)) {
@@ -138,32 +138,32 @@ namespace Entities {
 
 	template Transform* EntityManager::GetComponent<Transform>(unsigned int e);
 	template Camera* EntityManager::GetComponent<Camera>(unsigned int e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(unsigned int e);
+	template ModelRenderer* EntityManager::GetComponent<ModelRenderer>(unsigned int e);
 	template Material* EntityManager::GetComponent<Material>(unsigned int e);
 	template Collider* EntityManager::GetComponent<Collider>(unsigned int e);
 	template Transform* EntityManager::GetComponent<Transform>(Entity e);
 	template Camera* EntityManager::GetComponent<Camera>(Entity e);
-	template MeshRenderer* EntityManager::GetComponent<MeshRenderer>(Entity e);
+	template ModelRenderer* EntityManager::GetComponent<ModelRenderer>(Entity e);
 	template Material* EntityManager::GetComponent<Material>(Entity e);
 	template Collider* EntityManager::GetComponent<Collider>(Entity e);
 	template Transform* EntityManager::AddComponent<Transform>(unsigned int e);
 	template Camera* EntityManager::AddComponent<Camera>(unsigned int e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(unsigned int e);
+	template ModelRenderer* EntityManager::AddComponent<ModelRenderer>(unsigned int e);
 	template Material* EntityManager::AddComponent<Material>(unsigned int e);
 	template Collider* EntityManager::AddComponent<Collider>(unsigned int e);
 	template Transform* EntityManager::AddComponent<Transform>(Entity e);
 	template Camera* EntityManager::AddComponent<Camera>(Entity e);
-	template MeshRenderer* EntityManager::AddComponent<MeshRenderer>(Entity e);
+	template ModelRenderer* EntityManager::AddComponent<ModelRenderer>(Entity e);
 	template Material* EntityManager::AddComponent<Material>(Entity e);
 	template Collider* EntityManager::AddComponent<Collider>(Entity e);
 	template <> inline void EntityManager::AddComponent(Entity e, Transform & comp) { e = AllEntities[e.Id]; auto nc = new Transform(comp); Transforms[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Camera & comp) { e = AllEntities[e.Id]; auto nc = new Camera(comp); Cameras[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
-	template <> inline void EntityManager::AddComponent(Entity e, MeshRenderer & comp) { e = AllEntities[e.Id]; auto nc = new MeshRenderer(comp); MeshRenderers[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
+	template <> inline void EntityManager::AddComponent(Entity e, ModelRenderer & comp) { e = AllEntities[e.Id]; auto nc = new ModelRenderer(comp); ModelRenderers[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Material & comp) { e = AllEntities[e.Id]; auto nc = new Material(comp); Materials[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> inline void EntityManager::AddComponent(Entity e, Collider & comp) { e = AllEntities[e.Id]; auto nc = new Collider(comp); Colliders[e.Id] = nc; nc->Entity = e; e.Components.push_back(nc); AllEntities[e.Id] = e; } 
 	template <> std::map<unsigned int, Transform*> EntityManager::GetComponents() { return Transforms; }
 	template <> std::map<unsigned int, Camera*> EntityManager::GetComponents() { return Cameras; }
-	template <> std::map<unsigned int, MeshRenderer*> EntityManager::GetComponents() { return MeshRenderers; }
+	template <> std::map<unsigned int, ModelRenderer*> EntityManager::GetComponents() { return ModelRenderers; }
 	template <> std::map<unsigned int, Material*> EntityManager::GetComponents() { return Materials; }
 	template <> std::map<unsigned int, Collider*> EntityManager::GetComponents() { return Colliders; }
 	
@@ -186,11 +186,11 @@ namespace Entities {
 			ImGuiUtils::InputField_float("Near", &camera->Near, comp->Entity);
 			ImGuiUtils::InputField_float("Far", &camera->Far, comp->Entity);
 		}
-		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
-		if (meshrenderer) {
-			ImGuiUtils::InputField_string("ModelId", &meshrenderer->ModelId, comp->Entity);
-			ImGuiUtils::InputField_ModelHandle("Model", &meshrenderer->Model, comp->Entity);
-			ImGuiUtils::InputField_bool("Render", &meshrenderer->Render, comp->Entity);
+		auto modelrenderer = dynamic_cast<ModelRenderer*>(comp);
+		if (modelrenderer) {
+			ImGuiUtils::InputField_string("ModelId", &modelrenderer->ModelId, comp->Entity);
+			ImGuiUtils::InputField_ModelHandle("Model", &modelrenderer->Model, comp->Entity);
+			ImGuiUtils::InputField_bool("Render", &modelrenderer->Render, comp->Entity);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
@@ -217,9 +217,9 @@ namespace Entities {
 		if (camera) {
 			ImGuiUtils::ImGui_Component(camera, comp->Entity);
 		}
-		auto meshrenderer = dynamic_cast<MeshRenderer*>(comp);
-		if (meshrenderer) {
-			ImGuiUtils::ImGui_Component(meshrenderer, comp->Entity);
+		auto modelrenderer = dynamic_cast<ModelRenderer*>(comp);
+		if (modelrenderer) {
+			ImGuiUtils::ImGui_Component(modelrenderer, comp->Entity);
 		}
 		auto material = dynamic_cast<Material*>(comp);
 		if (material) {
@@ -242,9 +242,9 @@ namespace Entities {
 				AddComponent<Camera>(e);
 			}
 		}
-		if (!contains(MeshRenderers, e.Id)) {
-			if (ImGui::MenuItem("MeshRenderer")) {
-				AddComponent<MeshRenderer>(e);
+		if (!contains(ModelRenderers, e.Id)) {
+			if (ImGui::MenuItem("ModelRenderer")) {
+				AddComponent<ModelRenderer>(e);
 			}
 		}
 		if (!contains(Materials, e.Id)) {
@@ -270,8 +270,8 @@ namespace Entities {
 			auto newComp = json.at("Camera").get<Camera>();
 			AddComponent(entity, newComp);
 		}
-		if (json.contains("MeshRenderer")) {
-			auto newComp = json.at("MeshRenderer").get<MeshRenderer>();
+		if (json.contains("ModelRenderer")) {
+			auto newComp = json.at("ModelRenderer").get<ModelRenderer>();
 			AddComponent(entity, newComp);
 		}
 		if (json.contains("Material")) {
@@ -295,9 +295,9 @@ namespace Entities {
 		if (cameraIt != Cameras.end()) {
 			json["Camera"] = *Cameras[e.Id];
 		}
-		auto meshrendererIt = MeshRenderers.find(e.Id);
-		if (meshrendererIt != MeshRenderers.end()) {
-			json["MeshRenderer"] = *MeshRenderers[e.Id];
+		auto modelrendererIt = ModelRenderers.find(e.Id);
+		if (modelrendererIt != ModelRenderers.end()) {
+			json["ModelRenderer"] = *ModelRenderers[e.Id];
 		}
 		auto materialIt = Materials.find(e.Id);
 		if (materialIt != Materials.end()) {
@@ -325,7 +325,7 @@ namespace Entities {
 	//{'type': 'float', 'name': 'FieldOfView'}
 	//{'type': 'float', 'name': 'Near'}
 	//{'type': 'float', 'name': 'Far'}
-	//MeshRenderer
+	//ModelRenderer
 	//{'type': 'string', 'name': 'ModelId'}
 	//{'type': 'ModelHandle', 'name': 'Model'}
 	//{'type': 'bool', 'name': 'Render'}

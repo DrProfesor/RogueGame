@@ -9,15 +9,28 @@
 #include <filesystem>
 #include <vector>
 #include "Entities.h"
+#include "../utils/Json.h"
 
 namespace Entities {
 
     // runtime scene
+    struct AssetEntry {
+        std::string AssetId;
+        std::string RelativePath;
+        AssetType Type;
+    };
+
+    struct Manifest {
+        std::vector<AssetEntry> AssetList;
+    };
+
     struct Scene {
         std::string SceneName;
 
         std::vector<Entity> Entities;
         bool Dirty;
+
+        Manifest SceneManifest;
     };
 
     struct SceneManager {
@@ -27,6 +40,7 @@ namespace Entities {
         static void Update();
         static void SetDirty(std::string sceneName, bool state = true);
     };
+
 }
 
 

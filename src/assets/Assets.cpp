@@ -71,7 +71,7 @@ ProgramHandle Assets::GetShader(std::string programId)
     return Shaders[programId];
 }
 
-std::vector<std::string> Assets::LoadModel(const std::string modelId, const char* modelPath)
+void Assets::LoadModel(const std::string modelId, const char* modelPath)
 {
     bgfx::VertexDecl ms_decl;
     ms_decl.begin()
@@ -92,8 +92,6 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
     if (!scene) {
         printf("Unable to load mesh: %s\n", importer.GetErrorString());
     }
-
-    std::vector<std::string> meshIds;
 
     for (int i = 0; i < scene->mNumMeshes; ++i)
     {
@@ -148,8 +146,5 @@ std::vector<std::string> Assets::LoadModel(const std::string modelId, const char
         std::string id = modelId;// + std::to_string(i);
 
         Models[id] = modelHandle;
-        meshIds.push_back(id);
     };
-
-    return meshIds;
 }

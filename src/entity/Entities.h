@@ -30,7 +30,7 @@ struct Entity {
 
 namespace Entities {
 
-    struct MeshRenderer;
+    struct ModelRenderer;
     struct Transform;
     struct Material;
 
@@ -72,7 +72,7 @@ namespace Entities {
 
         static void Update_Material(unsigned int e, Material* mesh);
 
-        static void Update_MeshRender(unsigned int e, MeshRenderer* mesh);
+        static void Update_ModelRenderer(unsigned int e, ModelRenderer* mesh);
 
         static void Update_Transform(unsigned int e, Entities::Transform* transform);
     };
@@ -198,8 +198,8 @@ namespace Entities {
     };
 
     //@component
-    struct MeshRenderer : Component {
-        const char* Name() override { return "MeshRenderer"; }
+    struct ModelRenderer : Component {
+        const char* Name() override { return "ModelRenderer"; }
 
         std::string ModelId;
         ModelHandle Model;

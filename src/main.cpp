@@ -55,7 +55,7 @@ int main(int argc, char** argv)
 //
 //        auto e = EntityManager::Instantiate();
 //        EntityManager::AddComponent<Entities::Transform>(e);
-//        auto mr = EntityManager::AddComponent<MeshRenderer>(e);
+//        auto mr = EntityManager::AddComponent<ModelRenderer>(e);
 //        mr->Model = Assets::GetModel(ids[0]);
 //        mr->ModelPath = R"(D:\Dev\RogueGame\assets\models\Terrain\PBOX22_Grass_01.FBX)";
 //
@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 //        // D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx
 //        auto ids = Assets::LoadModel("knight", R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)");
 //        auto e = EntityManager::Instantiate();
-//        auto mr = EntityManager::AddComponent<MeshRenderer>(e);
+//        auto mr = EntityManager::AddComponent<ModelRenderer>(e);
 //        mr->Model = Assets::GetModel(ids[0]);
 //        mr->ModelPath = R"(D:\Dev\RogueGame\assets\models\Knight2\maria_prop_j_j_ong.fbx)";
 //

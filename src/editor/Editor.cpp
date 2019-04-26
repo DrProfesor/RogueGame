@@ -63,6 +63,7 @@ namespace Editor {
                 }
                 if (ImGui::BeginMenu("Edit"))
                 {
+
                     ImGui::EndMenu();
                 }
                 ImGui::EndMainMenuBar();

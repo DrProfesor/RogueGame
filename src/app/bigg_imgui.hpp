@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Application.hpp"
+#include "ImGuiStyles.h"
 /*
  * This is free and unencumbered software released into the public domain. 
  */
@@ -72,6 +73,7 @@ static void imguiInit()
 
 static void imguiReset( uint16_t width, uint16_t height )
 {
+    SetStyleDark();
 	bgfx::setViewRect( 200, 0, 0, width, height );
 	bgfx::setViewClear( 0, BGFX_CLEAR_COLOR, 0x00000000 );
 }

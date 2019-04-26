@@ -105,7 +105,7 @@ namespace Editor {
                 auto key = kp.first;
                 Entity entity = kp.second;
 
-                auto open1 = ImGui::TreeNode(std::to_string(key).c_str());
+                auto open1 = ImGui::TreeNodeEx(std::to_string(key).c_str(), ImGuiTreeNodeFlags_CollapsingHeader & (~ImGuiTreeNodeFlags_NoTreePushOnOpen));
                 if (ImGui::BeginPopupContextItem(std::to_string(key).c_str(), 1))
                 {
                     // TODO entity context
@@ -126,7 +126,7 @@ namespace Editor {
                 {
                     for (auto comp : entity.Components)
                     {
-                        auto open2 = ImGui::TreeNode(comp->Name());
+                        auto open2 = ImGui::TreeNodeEx(comp->Name(), ImGuiTreeNodeFlags_CollapsingHeader & (~ImGuiTreeNodeFlags_NoTreePushOnOpen));
 
                         if (ImGui::BeginPopupContextItem())
                         {

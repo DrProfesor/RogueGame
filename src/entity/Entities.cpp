@@ -22,7 +22,7 @@ namespace Entities {
         return AllEntities.find(e.Id) != AllEntities.end();
     }
 
-    void EntityManager::Update_MeshRender(unsigned int e, MeshRenderer* mesh) {
+    void EntityManager::Update_ModelRenderer(unsigned int e, ModelRenderer* mesh) {
 
     }
 }

@@ -18,7 +18,7 @@ namespace Render {
     void Renderer::Update()
     {
         auto cameras = EntityManager::GetComponents<Camera>();
-        auto meshes = EntityManager::GetComponents<MeshRenderer>();
+        auto meshes = EntityManager::GetComponents<ModelRenderer>();
         auto materials = EntityManager::GetComponents<Material>();
 
         for (auto ckp : cameras) {

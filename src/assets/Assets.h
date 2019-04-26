@@ -8,6 +8,7 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <filesystem>
 
 #include <bgfx/bgfx.h>
 #include <glm/glm.hpp>
@@ -20,11 +21,23 @@
 #include <assimp/postprocess.h>
 #include <iostream>
 
+namespace fs = std::filesystem;
 using namespace bgfx;
 
 struct ModelHandle {
     VertexBufferHandle VBO;
     IndexBufferHandle IBO;
+};
+
+enum AssetType {
+    INVALID,
+    SHADER,
+    TEXTURE,
+    MODEL,
+};
+
+struct AssetPayload {
+    std::string AssetPath;
 };
 
 struct Vertex
@@ -43,7 +56,7 @@ namespace Assets {
     void LoadShader(const std::string programId);
     ProgramHandle GetShader(std::string programId);
 
-    std::vector<std::string> LoadModel(const std::string modelId, const char* modelPath);
+    void LoadModel(const std::string modelId, const char* modelPath);
     ModelHandle GetModel(std::string id);
 };
 

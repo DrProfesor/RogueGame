@@ -50,9 +50,31 @@ namespace Utils {
         }
 
         template<>
-        static void ImGui_Component<MeshRenderer>(MeshRenderer * component, Entity e)
+        static void ImGui_Component<ModelRenderer>(ModelRenderer * component, Entity e)
         {
+
             ImGuiUtils::InputField_string("ModelId", &component->ModelId, e);
+            if (ImGui::BeginDragDropTarget())
+            {
+                if (const ImGuiPayload* payload = ImGui::AcceptDragDropPayload("Asset")) {
+
+                    printf("%p %d\n", payload->Data, payload->DataSize);
+
+                    AssetPayload payloadData = *(AssetPayload *) payload->Data;
+
+                    auto id = payloadData.AssetPath;
+                    auto path = payloadData.AssetPath.c_str();
+
+                    printf("%s\n", payloadData.AssetPath);
+
+                    Assets::LoadModel(id, path);
+                    component->Model = Assets::GetModel(id);
+                    component->ModelId = id;
+                }
+
+                ImGui::EndDragDropTarget();
+            }
+
             ImGui::Checkbox("Render", &component->Render);
 
             if (ImGui::Button("Set Model"))
