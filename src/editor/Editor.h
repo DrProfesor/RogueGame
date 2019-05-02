@@ -35,6 +35,8 @@ namespace Editor {
         static void Init();
         static void Update();
 
+        static AssetPayload CurrentPayload;
+
         static bool IsEditMode;
         static SceneWindow SceneWindow;
         static Logger logger;

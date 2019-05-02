@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "FileViewer.h"
+#include "Editor.h"
 #include "../assets/Assets.h"
 
 #define ASSET_DIR "/../assets"
@@ -28,7 +29,9 @@ namespace Editor {
 
             if (ImGui::BeginDragDropSource(ImGuiDragDropFlags_None))
             {
-                //ImGui::SetDragDropPayload("Asset", &ast, sizeof(AssetPayload));
+                EditorManager::CurrentPayload = { entry.string() };
+
+                ImGui::SetDragDropPayload("Asset", &EditorManager::CurrentPayload, sizeof(AssetPayload));
                 ImGui::Text(entry.filename().string().c_str());
                 ImGui::EndDragDropSource();
             }

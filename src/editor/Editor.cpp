@@ -9,6 +9,7 @@
 namespace Editor {
 
     bool EditorManager::IsEditMode = true;
+    AssetPayload EditorManager::CurrentPayload;
     SceneWindow EditorManager::SceneWindow;
     Logger EditorManager::logger;
     FileViewer EditorManager::FileViewer;
@@ -102,8 +103,8 @@ namespace Editor {
             ImGui::End();
         }
 
-        SceneWindow.Update();
         FileViewer.Update();
+        SceneWindow.Update();
         logger.Draw();
     }
 

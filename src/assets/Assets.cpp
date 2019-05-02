@@ -40,13 +40,13 @@ void Assets::LoadShader(const std::string programId)
 {
     std::stringstream vertPathStream;
     vertPathStream << SHADER_DIR << "/" << programId << "/vs_" << programId << ".sc";
-
+    
     std::stringstream varyingDefStream;
     varyingDefStream << SHADER_DIR << "/" << programId << "/varying.def.sc";
-
+    
     std::stringstream fragPathStream;
     fragPathStream << SHADER_DIR << "/" << programId << "/fs_" << programId << ".sc";
-
+    
     const bgfx::Memory* memVsh = shaderc::compileShader(shaderc::ST_VERTEX, vertPathStream.str().c_str(), nullptr, varyingDefStream.str().c_str(), "vs_5_0");
     if (!memVsh)
     {
@@ -54,7 +54,7 @@ void Assets::LoadShader(const std::string programId)
         return;
     }
     auto vertexHandle = bgfx::createShader(memVsh);
-
+    
     const bgfx::Memory* memFsh = shaderc::compileShader(shaderc::ST_FRAGMENT, fragPathStream.str().c_str(), nullptr, varyingDefStream.str().c_str(), "ps_5_0");
     if (!memFsh)
     {
@@ -62,7 +62,7 @@ void Assets::LoadShader(const std::string programId)
         return;
     }
     auto fragmentHandle = bgfx::createShader(memFsh);
-
+    
     Shaders[programId] = bgfx::createProgram(vertexHandle, fragmentHandle, true);
 }
 
@@ -71,66 +71,69 @@ ProgramHandle Assets::GetShader(std::string programId)
     return Shaders[programId];
 }
 
-void Assets::LoadModel(const std::string modelId, const char* modelPath)
+void Assets::LoadModel(const std::string modelId, const char* relativeModelPath)
 {
     bgfx::VertexDecl ms_decl;
     ms_decl.begin()
-            .add(bgfx::Attrib::Position, 3, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Normal, 3, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Color0, 4, bgfx::AttribType::Float)
-            .add(bgfx::Attrib::Color1, 4, bgfx::AttribType::Float)
-            .end();
+        .add(bgfx::Attrib::Position, 3, bgfx::AttribType::Float)
+        .add(bgfx::Attrib::TexCoord0, 2, bgfx::AttribType::Float)
+        .add(bgfx::Attrib::Normal, 3, bgfx::AttribType::Float)
+        .add(bgfx::Attrib::Color0, 4, bgfx::AttribType::Float)
+        .add(bgfx::Attrib::Color1, 4, bgfx::AttribType::Float)
+        .end();
     Assimp::Importer importer;
-    std::cout << modelPath << std::endl;
-    const aiScene *scene = importer.ReadFile(modelPath, 0
-            | aiProcess_Triangulate
-            | aiProcess_FlipWindingOrder
-            | aiProcess_FlipUVs
-            | aiProcess_JoinIdenticalVertices
-            | aiProcess_GenSmoothNormals);
+    
+    std::stringstream modelPath;
+    modelPath << MODEL_DIR << "/" << relativeModelPath;
+    
+    const aiScene *scene = importer.ReadFile(modelPath.str().c_str(), 0
+                                             | aiProcess_Triangulate
+                                             | aiProcess_FlipWindingOrder
+                                             | aiProcess_FlipUVs
+                                             | aiProcess_JoinIdenticalVertices
+                                             | aiProcess_GenSmoothNormals);
     if (!scene) {
         printf("Unable to load mesh: %s\n", importer.GetErrorString());
     }
-
+    
     for (int i = 0; i < scene->mNumMeshes; ++i)
     {
         aiMesh *mesh = scene->mMeshes[i];
-
+        
         std::vector<Vertex> vertices(mesh->mNumVertices);
-
+        
         for (size_t j = 0; j < mesh->mNumVertices; j++)
         {
             auto vert = mesh->mVertices[j];
             vertices[j].pos = glm::vec3(vert.x, vert.y, vert.z);
-
+            
             auto norm = mesh->mNormals[j];
             vertices[j].nor = glm::vec3(norm.x, norm.y, norm.z);
-
+            
             vertices[j].col1 = glm::vec4(0.5f,0.5f,0.5f,1);
             vertices[j].col2 = glm::vec4(0.5f,0.5f,0.5f,1);
-
+            
             if (mesh->mColors[0])
             {
                 auto colour = mesh->mColors[0][j];
                 vertices[j].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
             }
-
+            
             if (mesh->mColors[1])
             {
                 auto colour = mesh->mColors[1][j];
                 vertices[j].col2 = glm::vec4(colour.r, colour.g, colour.b, colour.a);
             }
-
+            
             if (mesh->mTextureCoords[0])
             {
                 auto tex = mesh->mTextureCoords[0][j];
                 vertices[j].tex = glm::vec2(tex.x , tex.y);
             }
         }
-
+        
         auto vbo = createVertexBuffer(bgfx::copy(&vertices[0], mesh->mNumVertices * sizeof(Vertex)), ms_decl);
-
+        
         std::vector<unsigned int> indices;
         for (size_t i = 0; i < mesh->mNumFaces; i++)
         {
@@ -139,12 +142,12 @@ void Assets::LoadModel(const std::string modelId, const char* modelPath)
                 indices.push_back(mesh->mFaces[i].mIndices[j]);
             }
         }
-
+        
         auto ibo = bgfx::createIndexBuffer(bgfx::copy(indices.data(), indices.size() * sizeof(unsigned int)), BGFX_BUFFER_INDEX32);
-
+        
         auto modelHandle = ModelHandle{vbo, ibo};
         std::string id = modelId;// + std::to_string(i);
-
+        
         Models[id] = modelHandle;
     };
 }

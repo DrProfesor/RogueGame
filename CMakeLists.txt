@@ -38,7 +38,7 @@ elseif(WIN32)
 endif()
 
 message("Generating Code")
-execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/build.py")
+execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/generate_entity_system.py")
 
 #file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 
