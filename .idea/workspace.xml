@@ -8,10 +8,10 @@
       <config projectName="RogueGame" targetName="shaderc" />
       <config projectName="RogueGame" targetName="glfw" />
       <config projectName="RogueGame" targetName="zlib" />
-      <config projectName="RogueGame" targetName="unit" />
-      <config projectName="RogueGame" targetName="UpdateAssimpLibsDebugSymbolsAndDLLs" />
       <config projectName="RogueGame" targetName="glsl-optimizer" />
       <config projectName="RogueGame" targetName="brtshaderc" />
+      <config projectName="RogueGame" targetName="unit" />
+      <config projectName="RogueGame" targetName="UpdateAssimpLibsDebugSymbolsAndDLLs" />
       <config projectName="RogueGame" targetName="nvtt" />
       <config projectName="RogueGame" targetName="fcpp" />
       <config projectName="RogueGame" targetName="iqa" />
@@ -24,17 +24,17 @@
       <config projectName="RogueGame" targetName="assimp_cmd" />
       <config projectName="RogueGame" targetName="bgfx" />
       <config projectName="RogueGame" targetName="texturec" />
-      <config projectName="RogueGame" targetName="dear-imgui" />
       <config projectName="RogueGame" targetName="etc2" />
+      <config projectName="RogueGame" targetName="dear-imgui" />
       <config projectName="RogueGame" targetName="etc1" />
       <config projectName="RogueGame" targetName="zlibstatic" />
+      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="astc" />
       <config projectName="RogueGame" targetName="bimg" />
-      <config projectName="RogueGame" targetName="edtaa3" />
       <config projectName="RogueGame" targetName="glslang" />
+      <config projectName="RogueGame" targetName="example-common" />
       <config projectName="RogueGame" targetName="uninstall" />
       <config projectName="RogueGame" targetName="RogueGame" />
-      <config projectName="RogueGame" targetName="example-common" />
       <config projectName="RogueGame" targetName="mesa" />
       <config projectName="RogueGame" targetName="bx" />
       <config projectName="RogueGame" targetName="forsyth-too" />
@@ -42,25 +42,72 @@
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" GENERATION_DIR="." />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93626b12-6311-489a-a656-d057853a0bba" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/RogueGame.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RogueGame.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/RogueGame.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scene/main/0.e" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scene/main/0.e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scene/main/1.e" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scene/main/1.e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.bat" beforeDir="false" afterPath="$PROJECT_DIR$/build.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/deps/CMakeFiles/imgui.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/deps/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/assimp" beforeDir="false" afterPath="$PROJECT_DIR$/deps/assimp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bgfx" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bgfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" beforeDir="false" afterPath="$PROJECT_DIR$/deps/bgfx.cmake/bimg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.4coder" beforeDir="false" afterPath="$PROJECT_DIR$/project.4coder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Assets.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Assets.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Assets.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/editor/Editor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/editor/Editor.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/Editor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/editor/FileViewer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/FileViewer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/editor/SceneWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Entities.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Generated.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Generated.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/Physics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/Physics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics/Physics.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics/Physics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rendering/Renderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/rendering/Renderer.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ImGuiUtils.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/deps/assimp/cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/test/headercheck/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/tools/assimp_qt_viewer/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/bgfx.cmake/bgfx/.build/projects/cmake/brtshaderc/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/contrib/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/bgfx.cmake/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/glfw/src/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/glfw/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/contrib/irrXML/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/test/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/tools/assimp_cmd/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/contrib/zlib/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/CMakeFiles/" />
+    <ignored path="$PROJECT_DIR$/deps/assimp/code/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +127,7 @@
             <entry file="file://$PROJECT_DIR$/src/main.cpp">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="561">
-                  <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+                  <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
                   <folding>
                     <element signature="e#42#61#0" expanded="true" />
                   </folding>
@@ -91,8 +138,8 @@
           <file leaf-file-name="FileViewer.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="235">
-                  <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+                <state relative-caret-position="391">
+                  <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
                   <folding>
                     <element signature="e#42#61#0" expanded="true" />
                   </folding>
@@ -115,8 +162,8 @@
           <file leaf-file-name="SceneWindow.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="422">
-                  <caret line="132" column="53" lean-forward="true" selection-start-line="132" selection-start-column="53" selection-end-line="132" selection-end-column="53" />
+                <state relative-caret-position="2159">
+                  <caret line="127" column="53" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
                 </state>
               </provider>
             </entry>
@@ -124,8 +171,8 @@
           <file leaf-file-name="Renderer.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="589">
-                  <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+                <state relative-caret-position="901">
+                  <caret line="53" selection-start-line="53" selection-end-line="53" />
                 </state>
               </provider>
             </entry>
@@ -134,7 +181,7 @@
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="459">
-                  <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+                  <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -143,7 +190,7 @@
             <entry file="file://$PROJECT_DIR$/deps/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+                  <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -155,23 +202,16 @@
           <file leaf-file-name="Assets.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="816">
-                  <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+                <state relative-caret-position="1003">
+                  <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="generate_entity_system.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/generate_entity_system.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-3395" />
               </provider>
             </entry>
           </file>
           <file leaf-file-name="Generated.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
+                <state relative-caret-position="1479">
                   <caret line="87" column="37" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="37" />
                   <folding>
                     <element signature="e#55#69#0" expanded="true" />
@@ -183,7 +223,7 @@
           <file leaf-file-name="ImGuizmo.cpp" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/editor/ImGuizmo.cpp">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="371">
+                <state relative-caret-position="578">
                   <caret line="34" column="25" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="25" />
                 </state>
               </provider>
@@ -192,17 +232,35 @@
           <file leaf-file-name="JsonExtensions.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="137" column="50" lean-forward="true" selection-start-line="137" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+                <state relative-caret-position="2329">
+                  <caret line="137" column="50" selection-start-line="137" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Entities.h" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Entities.h" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1140">
+                <state relative-caret-position="17">
                   <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Collision.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/physics/Collision.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="47" column="20" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Collision.cpp" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/physics/Collision.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="359">
+                  <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
@@ -322,7 +380,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="2576" />
-    <option name="height" value="1456" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -330,6 +388,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -413,7 +472,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,13 +621,12 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1453125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1453125" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.25595695" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.22674866" />
+      <window_info active="true" anchor="bottom" id="CMake" order="7" visible="true" weight="0.3343582" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32820907" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23597233" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23597233" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
@@ -582,6 +639,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32820907" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -596,13 +654,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/shaders/bump/varying.def.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bx/src/math.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -694,16 +745,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/imguistyleserializer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/editor/imguistyleserializer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/editor/imguistyleserializer.h" />
+    <entry file="file://$PROJECT_DIR$/src/editor/imguistyleserializer.cpp" />
     <entry file="file://$PROJECT_DIR$/src/app/ImGuiStyles.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2377">
@@ -715,48 +758,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/guid.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="156" column="2" lean-forward="true" selection-start-line="156" selection-start-column="2" selection-end-line="156" selection-end-column="2" />
-          <folding>
-            <element signature="e#1108#1126#0" expanded="true" />
-            <element signature="e#1178#1200#0" expanded="true" />
-            <element signature="e#1228#1262#0" expanded="true" />
-            <element signature="e#1291#1311#0" expanded="true" />
-            <element signature="e#1340#1375#0" expanded="true" />
-            <element signature="e#1424#2164#0" expanded="true" />
-            <element signature="e#6869#7063#0" expanded="true" />
-            <element signature="e#7126#7572#0" expanded="true" />
-            <element signature="e#7642#8397#0" expanded="true" />
-            <element signature="e#8476#9871#0" expanded="true" />
-            <element signature="e#10008#10010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/guid.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
-          <folding>
-            <element signature="e#1142#1176#0" expanded="true" />
-            <element signature="e#1185#1206#0" expanded="true" />
-            <element signature="e#2742#3119#0" expanded="true" />
-            <element signature="e#3173#3186#0" expanded="true" />
-            <element signature="e#3353#3383#0" expanded="true" />
-            <element signature="e#3855#3857#0" expanded="true" />
-            <element signature="e#4094#4096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/guid.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/utils/guid.h" />
     <entry file="file://$PROJECT_DIR$/deps/bgfx.cmake/bgfx/3rdparty/dear-imgui/imgui_demo.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -771,13 +777,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="150" column="52" lean-forward="true" selection-start-line="150" selection-start-column="52" selection-end-line="150" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build.py" />
     <entry file="file://$PROJECT_DIR$/src/entity/Scene.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -810,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#105#123#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,9 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-          <folding>
-            <element signature="e#97#121#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -844,9 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-          <folding>
-            <element signature="e#91#105#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,15 +867,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/Assets.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="68" column="54" lean-forward="true" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/FileViewer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
           </folding>
@@ -895,16 +886,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
-          <folding>
-            <element signature="e#105#123#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/SceneWindow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="132" column="53" lean-forward="true" selection-start-line="132" selection-start-column="53" selection-end-line="132" selection-end-column="53" />
+        <state relative-caret-position="2159">
+          <caret line="127" column="53" selection-start-line="127" selection-start-column="53" selection-end-line="127" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -924,33 +912,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rendering/Renderer.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="901">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deps/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/JsonExtensions.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="137" column="50" lean-forward="true" selection-start-line="137" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
+        <state relative-caret-position="2329">
+          <caret line="137" column="50" selection-start-line="137" selection-start-column="50" selection-end-line="138" selection-end-column="50" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate_entity_system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3395" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Generated.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="1479">
           <caret line="87" column="37" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="37" />
           <folding>
             <element signature="e#55#69#0" expanded="true" />
@@ -965,7 +948,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/editor/ImGuizmo.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
+        <state relative-caret-position="578">
           <caret line="34" column="25" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
@@ -973,13 +956,13 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Entities.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140">
+        <state relative-caret-position="17">
           <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
         </state>
       </provider>
@@ -987,10 +970,24 @@
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics/Collision.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/physics/Collision.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
         </state>
       </provider>
     </entry>

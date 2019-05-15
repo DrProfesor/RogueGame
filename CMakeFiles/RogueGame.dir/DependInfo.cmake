@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Dev/RogueGame/src/entity/Scene.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/entity/Scene.cpp.obj"
   "D:/Dev/RogueGame/src/input/Input.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/input/Input.cpp.obj"
   "D:/Dev/RogueGame/src/main.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/main.cpp.obj"
+  "D:/Dev/RogueGame/src/physics/Collision.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/physics/Collision.cpp.obj"
   "D:/Dev/RogueGame/src/physics/Physics.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/physics/Physics.cpp.obj"
   "D:/Dev/RogueGame/src/physics/Time.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/physics/Time.cpp.obj"
   "D:/Dev/RogueGame/src/rendering/Renderer.cpp" "D:/Dev/RogueGame/CMakeFiles/RogueGame.dir/src/rendering/Renderer.cpp.obj"

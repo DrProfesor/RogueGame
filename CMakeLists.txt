@@ -19,7 +19,7 @@ include_directories(deps/bgfx.cmake/bgfx/tools/brtshaderc)
 #include( deps/bgfx.cmake/cmake/util/ConfigureDebugging.cmake )
 #add_library( app STATIC src/app.cpp src/bigg_assets.h src/bigg_imgui.hpp src/bigg_shaders.hpp include/app.hpp )
 
-file(GLOB_RECURSE SRC_FILES src/*.cpp src/*.h src/*.hpp)
+#file(GLOB_RECURSE SRC_FILES src/*.cpp)
 
 
 if (APPLE)
@@ -42,7 +42,26 @@ execute_process(COMMAND python "${CMAKE_CURRENT_LIST_DIR}/generate_entity_system
 
 #file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 
-add_executable( ${APP_TARGET} ${SRC_FILES} )
+add_executable( ${APP_TARGET}
+                src/main.cpp
+                src/app/Application.cpp
+                src/assets/Assets.cpp
+                src/assets/AssetUtils.cpp
+                src/assets/tinyfiledialogs.cpp
+                src/editor/Editor.cpp
+                src/editor/FileViewer.cpp
+                src/editor/ImGuizmo.cpp
+                src/editor/Logger.cpp
+                src/editor/SceneWindow.cpp
+                src/entity/Entities.cpp
+                src/entity/Generated.cpp
+                src/entity/Scene.cpp
+                src/input/Input.cpp
+                src/physics/Collision.cpp
+                src/physics/Physics.cpp
+                src/physics/Time.cpp
+                src/rendering/Renderer.cpp
+                )
 
 target_link_libraries(${APP_TARGET} ${frameworks})
 

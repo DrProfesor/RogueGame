@@ -42,9 +42,11 @@ int main(int argc, char** argv)
         Assets::LoadTexture("grass", "Plane_Grass_01.png");
         Assets::LoadShader("bump");
         Assets::LoadShader("cubes");
-        Assets::LoadModel("knight", R"(Knight2/maria_prop_j_j_ong.fbx)");
-        Assets::LoadModel("grass", R"(Terrain/PBOX22_Grass_01.FBX)");
+        Assets::LoadModel("knight", R"(models/Knight2/maria_prop_j_j_ong.fbx)");
+        Assets::LoadModel("models\\Terrain\\PBOX23_Grass_01.FBX", R"(models/Terrain/PBOX22_Grass_01.FBX)");
     }
+    
+    
     
     SceneManager::LoadScene("main");
     
@@ -85,9 +87,10 @@ int main(int argc, char** argv)
     
     app.MainCamera = EntityManager::AllEntities[0];
     
+    Collision::Raycast(vec3{}, vec3{});
+    
     while (true)
     {
-        
         if (!app.Update()) break;
         
         EditorManager::Update();

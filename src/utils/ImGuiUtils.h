@@ -65,7 +65,7 @@ namespace Utils {
                     auto id = Editor::EditorManager::CurrentPayload.AssetPath;
                     auto path = Editor::EditorManager::CurrentPayload.AssetPath;
                     
-                    Assets::LoadModel(id, path);
+                    Assets::LoadModel(id, path.c_str());
                     component->Model = Assets::GetModel(id);
                     component->ModelId = id;
                 }
@@ -106,6 +106,11 @@ namespace Utils {
             texture.s.flags  = 0x01;
             
             ImGui::Image(texture.ptr, ImVec2(size.x, size.y));
+        }
+        
+        static void InputField_ColliderType(const char* name, ColliderType * val, Entity e)
+        {
+            
         }
         
         static void InputField_float(const char* name, float * val, Entity e)

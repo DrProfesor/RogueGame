@@ -2,18 +2,9 @@
 // Created by jwvan on 2019-04-04.
 //
 
-#include <filesystem>
 #include "Assets.h"
-#include "../editor/Logger.h"
-#include <brtshaderc.h>
-#include <sstream>
 
-#define ASSET_DIR "../assets/"
-#define MODEL_DIR "../assets/models/"
-#define SHADER_DIR "../assets/shaders/"
-#define TEXTURE_DIR "../assets/textures/"
-
-namespace fs = std::filesystem;
+using namespace bgfx;
 
 std::map<std::string, TextureHandle> Textures = {};
 std::map<std::string, ProgramHandle> Shaders = {};
@@ -39,13 +30,13 @@ TextureHandle Assets::GetTexture(std::string textureId)
 void Assets::LoadShader(const std::string programId)
 {
     std::stringstream vertPathStream;
-    vertPathStream << SHADER_DIR << "/" << programId << "/vs_" << programId << ".sc";
+    vertPathStream << SHADER_DIR << programId << "/vs_" << programId << ".sc";
     
     std::stringstream varyingDefStream;
-    varyingDefStream << SHADER_DIR << "/" << programId << "/varying.def.sc";
+    varyingDefStream << SHADER_DIR << programId << "/varying.def.sc";
     
     std::stringstream fragPathStream;
-    fragPathStream << SHADER_DIR << "/" << programId << "/fs_" << programId << ".sc";
+    fragPathStream << SHADER_DIR << programId << "/fs_" << programId << ".sc";
     
     const bgfx::Memory* memVsh = shaderc::compileShader(shaderc::ST_VERTEX, vertPathStream.str().c_str(), nullptr, varyingDefStream.str().c_str(), "vs_5_0");
     if (!memVsh)
@@ -84,7 +75,7 @@ void Assets::LoadModel(const std::string modelId, const char* relativeModelPath)
     Assimp::Importer importer;
     
     std::stringstream modelPath;
-    modelPath << MODEL_DIR << "/" << relativeModelPath;
+    modelPath << ASSET_DIR << relativeModelPath;
     
     const aiScene *scene = importer.ReadFile(modelPath.str().c_str(), 0
                                              | aiProcess_Triangulate

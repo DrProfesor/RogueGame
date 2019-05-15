@@ -204,6 +204,7 @@ namespace Entities {
 		}
 		auto collider = dynamic_cast<Collider*>(comp);
 		if (collider) {
+			ImGuiUtils::InputField_ColliderType("Type", &collider->Type, comp->Entity);
 		}
 	}
 
@@ -338,6 +339,7 @@ namespace Entities {
 	//{'type': 'UniformHandle', 'name': 'Sampler'}
 	//{'type': 'UniformHandle', 'name': 'BaseColour'}
 	//Collider
+	//{'type': 'ColliderType', 'name': 'Type'}
 
 
 #endif

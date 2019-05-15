@@ -1,0 +1,35 @@
+"D:\CLion\CLion 2018.1.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" D:\Dev\RogueGame
+-- Could NOT find Vulkan (missing: VULKAN_LIBRARY VULKAN_INCLUDE_DIR) 
+-- Using Win32 for window creation
+-- Shared libraries disabled
+-- Looking for DirectX...
+-- DirectX_PREFIX_PATH changed.
+-- Found DirectX: C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x64/d3d9.lib
+-- DX lib dir: C:/Program Files (x86)/Windows Kits/10/Lib/10.0.17763.0/um/x64
+-- Looking for ZLIB...
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could not locate ZLIB
+-- compiling zlib from sources
+-- Could NOT find rt (missing: RT_LIBRARY) 
+-- Enabled importer formats: AMF 3DS AC ASE ASSBIN ASSXML B3D BVH COLLADA DXF CSM HMP IRRMESH IRR LWO LWS MD2 MD3 MD5 MDC MDL NFF NDO OFF OBJ OGRE OPENGEX PLY MS3D COB BLEND IFC XGL FBX Q3D Q3BSP RAW SIB SMD STL TERRAGEN 3D X X3D GLTF 3MF MMD STEP
+-- Disabled importer formats:
+-- Enabled exporter formats: 3DS ASSBIN COLLADA OBJ OPENGEX PLY FBX STL X X3D GLTF 3MF STEP
+-- Disabled exporter formats:
+CMake Warning at deps/assimp/tools/assimp_qt_viewer/CMakeLists.txt:26 (MESSAGE):
+  Build of assimp_qt_viewer is disabled.  Unsatisfied dendencies: Qt5
+
+
+Generating Code
+[{'type': 'vec3', 'name': 'Position'}, {'type': 'quat', 'name': 'Rotation'}, {'type': 'vec3', 'name': 'Scale'}]
+[{'type': 'ViewId', 'name': 'View'}, {'type': 'int', 'name': 'Width'}, {'type': 'int', 'name': 'Height'}, {'type': 'FrameBufferHandle', 'name': 'FrameBuffer'}, {'type': 'TextureHandle', 'name': 'TextureHandle'}, {'type': 'CameraMode', 'name': 'Mode'}, {'type': 'float', 'name': 'FieldOfView'}, {'type': 'float', 'name': 'Near'}, {'type': 'float', 'name': 'Far'}]
+[{'type': 'string', 'name': 'ModelId'}, {'type': 'ModelHandle', 'name': 'Model'}, {'type': 'bool', 'name': 'Render'}]
+[{'type': 'vec4', 'name': 'Colour'}, {'type': 'string', 'name': 'ShaderId'}, {'type': 'ProgramHandle', 'name': 'Shader'}, {'type': 'string', 'name': 'TextureId'}, {'type': 'TextureHandle', 'name': 'Texture'}, {'type': 'UniformHandle', 'name': 'Sampler'}, {'type': 'UniformHandle', 'name': 'BaseColour'}]
+[{'type': 'ColliderType', 'name': 'Type'}]
+[{'type': 'vec3', 'name': 'Position'}, {'type': 'quat', 'name': 'Rotation'}, {'type': 'vec3', 'name': 'Scale'}]
+[{'type': 'ViewId', 'name': 'View'}, {'type': 'int', 'name': 'Width'}, {'type': 'int', 'name': 'Height'}, {'type': 'FrameBufferHandle', 'name': 'FrameBuffer'}, {'type': 'TextureHandle', 'name': 'TextureHandle'}, {'type': 'CameraMode', 'name': 'Mode'}, {'type': 'float', 'name': 'FieldOfView'}, {'type': 'float', 'name': 'Near'}, {'type': 'float', 'name': 'Far'}]
+[{'type': 'string', 'name': 'ModelId'}, {'type': 'ModelHandle', 'name': 'Model'}, {'type': 'bool', 'name': 'Render'}]
+[{'type': 'vec4', 'name': 'Colour'}, {'type': 'string', 'name': 'ShaderId'}, {'type': 'ProgramHandle', 'name': 'Shader'}, {'type': 'string', 'name': 'TextureId'}, {'type': 'TextureHandle', 'name': 'Texture'}, {'type': 'UniformHandle', 'name': 'Sampler'}, {'type': 'UniformHandle', 'name': 'BaseColour'}]
+[{'type': 'ColliderType', 'name': 'Type'}]
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Dev/RogueGame

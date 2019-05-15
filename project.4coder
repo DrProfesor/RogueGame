@@ -28,12 +28,12 @@ command_list = {
 		.footer_panel = true,
 		.save_dirty_files = true,
 		.cursor_at_end = false,
-		.cmd = { { "build.bat -run", .os = "win" }, },
+		.cmd = { { "build.bat", .os = "win" }, },
 	},
 	{
 		.name = "run",
 		.out = "*run*",
-		.footer_panel = true,
+		.footer_panel = false,
 		.save_dirty_files = false,
 		.cursor_at_end = true,
 		.cmd = { 
@@ -43,11 +43,11 @@ command_list = {
 	{
 		.name = "gen",
 		.out = "*gen*",
-		.footer_panel = true,
+		.footer_panel = false,
 		.save_dirty_files = false,
 		.cursor_at_end = true,
 		.cmd = { 
-				{ "build.bat -no-build -gen", .os = "win" },
+				{ "build.bat -gen -no-build", .os = "win" },
 			   },
 	},
 };

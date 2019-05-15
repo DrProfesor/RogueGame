@@ -1,4 +1,4 @@
-#"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" amd64
+@ECHO OFF
 
 set generate_code=FALSE
 set build=TRUE
@@ -25,5 +25,7 @@ if %build% == TRUE (
 )
 
 if %run% == TRUE (
-	START cmake-build-debug\RogueGame.exe
+	cd cmake-build-debug
+	START RogueGame.exe
+	cd ..
 )

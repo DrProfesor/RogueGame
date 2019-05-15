@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RogueGame.dir/src/main.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/app/Application.cpp.obj"
-  "CMakeFiles/RogueGame.dir/src/assets/AssetUtils.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/assets/Assets.cpp.obj"
+  "CMakeFiles/RogueGame.dir/src/assets/AssetUtils.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/assets/tinyfiledialogs.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/editor/Editor.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/editor/FileViewer.cpp.obj"
@@ -12,7 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RogueGame.dir/src/entity/Generated.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/entity/Scene.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/input/Input.cpp.obj"
-  "CMakeFiles/RogueGame.dir/src/main.cpp.obj"
+  "CMakeFiles/RogueGame.dir/src/physics/Collision.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/physics/Physics.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/physics/Time.cpp.obj"
   "CMakeFiles/RogueGame.dir/src/rendering/Renderer.cpp.obj"

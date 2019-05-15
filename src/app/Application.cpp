@@ -43,7 +43,7 @@ Application::Application()
 	mMousePressed[ 1 ] = false;
 	mMousePressed[ 2 ] = false;
 	mMouseWheel = 0.0f;
-
+    
 	Instance = this;
 }
 
@@ -54,7 +54,7 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	{
 		return -1;
 	}
-
+    
 	// Create a window
 	glfwWindowHint( GLFW_CLIENT_API, GLFW_NO_API );
 	mWindow = glfwCreateWindow( GetWidth(), GetHeight(), "", NULL, NULL );
@@ -63,14 +63,14 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 		glfwTerminate();
 		return -1;
 	}
-
+    
 	// Setup input callbacks
 	glfwSetWindowUserPointer( mWindow, this );
 	glfwSetKeyCallback( mWindow, keyCallback );
 	glfwSetMouseButtonCallback( mWindow, mouseButtonCallback );
 	glfwSetScrollCallback( mWindow, scrollCallback );
 	glfwSetCharCallback( mWindow, charCallback );
-
+    
 	glfwSetKeyCallback( mWindow, keyCallback );
 	glfwSetCharCallback( mWindow, charCallback );
 	glfwSetCharModsCallback( mWindow, charModsCallback );
@@ -79,12 +79,12 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	glfwSetCursorEnterCallback( mWindow, cursorEnterCallback );
 	glfwSetScrollCallback( mWindow, scrollCallback );
 	glfwSetDropCallback( mWindow, dropCallback );
-
+    
 	// Setup bgfx
 	bgfx::PlatformData platformData;
 	memset( &platformData, 0, sizeof( platformData ) );
 	bgfx::Init init;
-
+    
 #if BX_PLATFORM_LINUX || BX_PLATFORM_BSD
 	platformData.nwh = (void*)(uintptr_t)glfwGetX11Window(mWindow);
 	platformData.ndt = glfwGetX11Display();
@@ -94,45 +94,45 @@ int Application::Init( int argc, char** argv, bgfx::RendererType::Enum type, uin
 	platformData.nwh = glfwGetWin32Window(mWindow);
 #endif // BX_PLATFORM_
 	bgfx::setPlatformData( platformData );
-
+    
 	// Init bgfx
-
+    
 	init.type = type;
 	init.vendorId = vendorId;
 	init.deviceId = deviceId;
 	init.callback = callback;
 	init.allocator = allocator;
 	bgfx::init(init);
-
+    
 	Input::Init(mWindow);
-
+    
 	// Setup ImGui
 	imguiInit();
 	ImGuizmo::SetOrthographic(false);
-
+    
 	// Initialize the application
 	Reset();
-
-//    {// init the main camera
-//        MainCamera = EntityManager::Instantiate();
-//        auto c = EntityManager::AddComponent<Camera>(MainCamera);
-//        EntityManager::AddComponent<Entities::Transform>(MainCamera);
-//        c->View = 1;
-//        c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
-//        c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
-//    }
-
+    
+    //    {// init the main camera
+    //        MainCamera = EntityManager::Instantiate();
+    //        auto c = EntityManager::AddComponent<Camera>(MainCamera);
+    //        EntityManager::AddComponent<Entities::Transform>(MainCamera);
+    //        c->View = 1;
+    //        c->TextureHandle = bgfx::createTexture2D(mWidth, mHeight, false, 1, bgfx::TextureFormat::BGRA8, BGFX_TEXTURE_RT);
+    //        c->FrameBuffer = bgfx::createFrameBuffer(1, &c->TextureHandle);
+    //    }
+    
 	return 0;
 }
 
 bool Application::Update()
 {
 	if (glfwWindowShouldClose( mWindow )) return false;
-
+    
 	// Events
 	glfwPollEvents();
 	imguiEvents( Physics::Time::deltaTime );
-
+    
 	// Begin frame
 	ImGui::NewFrame();
     ImGuizmo::BeginFrame();
@@ -142,10 +142,11 @@ bool Application::Update()
 void Application::PostUpdate()
 {
 	// End frame
+    
 	ImGui::EndFrame();
 	ImGui::Render();
 	bgfx::frame();
-
+    
 	// Handle resize TODO move?
 	int w, h;
 	glfwGetWindowSize( mWindow, &w, &h );
@@ -155,7 +156,7 @@ void Application::PostUpdate()
 		mHeight = h;
 		Reset( mReset );
 	}
-
+    
     Input::Update();
 }
 
@@ -171,10 +172,10 @@ void Application::Reset( uint32_t flags )
 	mReset = flags;
 	bgfx::reset( mWidth, mHeight, mReset );
 	imguiReset( uint16_t( GetWidth() ), uint16_t( GetHeight() ) );
-
+    
     bgfx::setViewClear( 0, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x303030ff, 1.0f, 0 );
     bgfx::setViewRect( 0, 0, 0, uint16_t( GetWidth() ), uint16_t( GetHeight() ) );
-
+    
     bgfx::setViewClear( 1, BGFX_CLEAR_COLOR | BGFX_CLEAR_DEPTH, 0x6dbae0ff, 1.0f, 0 );
     bgfx::setViewRect( 1, 0, 0, uint16_t( GetWidth() ), uint16_t( GetHeight() ) );
 }
@@ -218,7 +219,7 @@ void Application::charCallback( GLFWwindow* window, unsigned int codepoint )
 	{
 		io.AddInputCharacter( ( unsigned short )codepoint );
 	}
-
+    
 	Input::charCallback(window, codepoint);
 }
 
@@ -253,7 +254,7 @@ void Application::scrollCallback( GLFWwindow* window, double xoffset, double yof
 {
 	Application* app = ( Application* )glfwGetWindowUserPointer( window );
 	app->mMouseWheel += (float)yoffset;
-
+    
 	Input::scrollCallback(window, xoffset, yoffset);
 }
 
@@ -301,21 +302,21 @@ void Application::imguiEvents( float dt )
 glm::tmat4x4<float, glm::defaultp> app::perspective( float fovy, float aspect, float zNear, float zFar )
 {
 	glm::tmat4x4<float, glm::defaultp> mtx;
-#	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
-	bx::mtxProjLh( &mtx[ 0 ][ 0 ], glm::degrees( fovy ), aspect, zNear, zFar, bgfx::getCaps()->homogeneousDepth );
-#	else
-	bx::mtxProjRh( &mtx[ 0 ][ 0 ], glm::degrees( fovy ), aspect, zNear, zFar, bgfx::getCaps()->homogeneousDepth );
-#	endif
-	return mtx;
+    #	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
+        bx::mtxProjLh( &mtx[ 0 ][ 0 ], glm::degrees( fovy ), aspect, zNear, zFar, bgfx::getCaps()->homogeneousDepth );
+    #	else
+        bx::mtxProjRh( &mtx[ 0 ][ 0 ], glm::degrees( fovy ), aspect, zNear, zFar, bgfx::getCaps()->homogeneousDepth );
+    #	endif
+        return mtx;
 }
 
 glm::tmat4x4<float, glm::defaultp> app::ortho( float left, float right, float bottom, float top, float zNear, float zFar, float offset )
 {
 	glm::tmat4x4<float, glm::defaultp> mtx;
-#	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
-	bx::mtxOrthoLh( &mtx[ 0 ][ 0 ], left, right, bottom, top, zNear, zFar, offset, bgfx::getCaps()->homogeneousDepth );
-#	else
-	bx::mtxOrthoRh( &mtx[ 0 ][ 0 ], left, right, bottom, top, zNear, zFar, offset, bgfx::getCaps()->homogeneousDepth );
-#	endif
-	return mtx;
+    #	if GLM_COORDINATE_SYSTEM == GLM_LEFT_HANDED
+        bx::mtxOrthoLh( &mtx[ 0 ][ 0 ], left, right, bottom, top, zNear, zFar, offset, bgfx::getCaps()->homogeneousDepth );
+    #	else
+        bx::mtxOrthoRh( &mtx[ 0 ][ 0 ], left, right, bottom, top, zNear, zFar, offset, bgfx::getCaps()->homogeneousDepth );
+    #	endif
+        return mtx;
 }

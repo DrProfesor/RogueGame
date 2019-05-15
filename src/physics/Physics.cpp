@@ -6,14 +6,15 @@
 
 namespace Physics{
     Time PhysicsManager::time;
-
+    
     void PhysicsManager::Init()
     {
-
+        
     }
-
+    
     void PhysicsManager::Update()
     {
         time.Update();
+        
     }
 }
